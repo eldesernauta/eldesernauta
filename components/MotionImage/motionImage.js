@@ -101,7 +101,7 @@ export default function MotionImage() {
                         placeItems: "center",
                         placeContent: "center",
                     }}
-                    className="w-full h-full "
+                    className="w-full h-full"
                 >
                     <Image
                         src={heroImg}

@@ -162,4 +162,20 @@ so that it is smooth among other more minor things */
     align-items: center;
     cursor: pointer;
   }
+
+  .hero-img:hover {
+    animation: hero 0.3s infinite;
+  }
+
+  @keyframes hero {
+    0% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(-1deg);
+    }
+    100% {
+      transform: rotate(1deg);
+    }
+  }
 }

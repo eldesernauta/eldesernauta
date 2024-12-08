@@ -8,15 +8,49 @@ import Footer from '../components/Footer/footer';
 import Hero from '../components/Hero/hero';
 import Card from '../components/Card/card';
 import Circles from '../components/Circles/circles';
+import Accordion from '../components/Accordion/accordion'
 import Badge from '../components/Badge/badge';
 import Button from '../components/Button/button';
-import ReorderCards from '../components/ReorderCards/reorderCards';
-import Values from '../components/Values/values'
+import LockedCard from '../components/LockedCard/lockedCard'
 
 export default function Home() {
 
   const items = ['HTML', 'CSS', 'Javascript', 'React', 'NextJs', 'Framer Motion', 'Wordpress', 'Webpack', 'Node', 'Git', 'AWS']
   const logos = ['HTML', 'CSS', 'Javascript', 'React', 'NextJs', 'Framer Motion', 'Wordpress', 'Webpack', 'Node', 'Git', 'AWS']
+
+  const primary = 'bg-primary hover:bg-accent'
+  const secondary = 'bg-secondary hover:bg-warning'
+  const accent = 'bg-accent hover:bg-primary'
+  const warning = 'bg-warning hover:bg-secondary'
+
+  const icon1 = require('../src/img/icon1.svg')
+  const icon2 = require('../src/img/icon2.svg')
+  const icon3 = require('../src/img/icon3.svg')
+
+  const itemsCards = [
+    {
+      title: 'Item #1',
+      imgUrl: icon1,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      btnUrl: "https://www.example.com/url1",
+      bgColor: primary
+    },
+    {
+      title: 'Item #2',
+      imgUrl: icon2,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      btnUrl: "https://www.example.com/url2",
+      bgColor: warning
+    },
+    {
+      title: 'Item #3',
+      imgUrl: icon3,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      btnUrl: "https://www.example.com/url3",
+      bgColor: accent
+    }
+  ]
+
 
   return (
     <>
@@ -36,17 +70,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='w-full h-screen flex justify-center items-center bg-dark '>
-          {/* <div className='w-[30vw] h-[60vh] mx-auto rounded-[100px] bg-accent bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]'>
+        <section className='w-full h-screen flex flex-col justify-center items-center bg-dark'>
+          <h2 className='font-Wobblezz text-7xl text-white flex'>We provide world</h2>
+          <h2 className='font-Wobblezz text-7xl text-white flex'>class<span className='px-4 py-4 text-7xl text-light bg-secondary rounded-full border-2 border-light -mx-4 -rotate-12'><span className='border-2 border-dotted border-dark rounded-full px-8 py-0'>services</span></span>for you</h2>
+          <div className='container mx-auto mt-8 flex justify-center items-center gap-24'>
 
-          </div>
-          <div className='w-[30vw] h-[60vh] mx-auto rounded-[100px] bg-primary bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]'>
-
-          </div>
-          <div className='w-[30vw] h-[60vh] mx-auto rounded-[100px] bg-accent bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]'>
-
-          </div> */}
-          <Values />
+            {itemsCards.map((item) => (
+              <LockedCard bgColor={item.bgColor} imgUrl={item.imgUrl} title={item.title} description={item.description} btnUrl={item.btnUrl} />
+            ))}
+          </ div>
         </section>
 
         <Marquee items={items} bg={`bg-dark`} />
@@ -57,8 +89,29 @@ export default function Home() {
             <div className='w-full lg:w-3/6 flex justify-center items-center'>
               <Circles />
             </div>
-            <div className='w-full lg:w-3/6 flex justify-center items-center'>
-              <Card width='w-full bg-secondary' className='w-full mb-12'>
+            <div className='w-full lg:w-3/6 flex flex-col gap-4 justify-center items-center'>
+              <Accordion
+                question="Lorem ipsum dolor sit amet"
+                answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!"
+                className="bg-secondary border-dark"
+              />
+              <Accordion
+                question="Lorem ipsum dolor sit amet"
+                answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!"
+                className="bg-primary border-dark"
+              />
+              <Accordion
+                question="Lorem ipsum dolor sit amet"
+                answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!"
+                className="bg-secondary border-dark"
+              />
+              <Accordion
+                question="Lorem ipsum dolor sit amet"
+                answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!"
+                className="bg-primary border-dark"
+              />
+
+              {/* <Card width='w-full bg-secondary' className='w-full mb-12'>
                 <div className='w-full flex justify-start items-center'>
                   <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">HelpGo</h3>
                   <Badge text='DDB Colombia' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
@@ -77,7 +130,7 @@ export default function Home() {
                 >
                   View more
                 </Button>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </section>
@@ -93,7 +146,7 @@ export default function Home() {
         </section>
 
         <Footer />
-      </Layout>
+      </Layout >
 
     </>
   );

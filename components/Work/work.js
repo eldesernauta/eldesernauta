@@ -2,13 +2,15 @@ import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import Link from 'next/link';
+
 import Button from '../Button/button'
 import { useRouter } from 'next/navigation'
 import Badge from '../Badge/badge';
 import Card from '../Card/card'
 
 const caseStudy1 = require('../../src/img/hero_bg.jpg')
+
+const star = require('../../src/img/star.svg')
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,11 +87,13 @@ const Work = () => {
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
-                                <Card width="w-auto bg-light">
+                                <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">Audi</h3>
+
                                         <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
+                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
@@ -104,6 +108,12 @@ const Work = () => {
                                     >
                                         View more
                                     </Button>
+                                    <Image
+                                        src={star}
+                                        alt='estrella'
+                                        width={50}
+                                        className='absolute top-8 right-8'
+                                    />
                                 </Card>
 
                             </div>
@@ -115,6 +125,8 @@ const Work = () => {
                                 objectFit='cover'
                                 className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
                             />
+                            <Dots />
+                            <Dotted />
                         </div>
                     </div>
                 </section>
@@ -125,11 +137,13 @@ const Work = () => {
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
-                                <Card width="w-auto bg-light">
+                                <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">La Cima Ecohotel</h3>
                                         {/* <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' /> */}
                                     </div>
+
+                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
@@ -144,6 +158,12 @@ const Work = () => {
                                     >
                                         View more
                                     </Button>
+                                    <Image
+                                        src={star}
+                                        alt='estrella'
+                                        width={50}
+                                        className='absolute top-8 right-8'
+                                    />
                                 </Card>
 
                             </div>
@@ -155,6 +175,8 @@ const Work = () => {
                                 objectFit='cover'
                                 className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
                             />
+                            <Dots />
+                            <Dotted />
                         </div>
                     </div>
                 </section>
@@ -165,11 +187,13 @@ const Work = () => {
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
-                                <Card width="w-auto bg-light">
+                                <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">HelpGo</h3>
                                         <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
+
+                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
@@ -184,6 +208,12 @@ const Work = () => {
                                     >
                                         View more
                                     </Button>
+                                    <Image
+                                        src={star}
+                                        alt='estrella'
+                                        width={50}
+                                        className='absolute top-8 right-8'
+                                    />
                                 </Card>
 
                             </div>
@@ -195,6 +225,8 @@ const Work = () => {
                                 objectFit='cover'
                                 className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
                             />
+                            <Dots />
+                            <Dotted />
                         </div>
                     </div>
                 </section>
@@ -205,12 +237,21 @@ const Work = () => {
 
 export default Work;
 
-export const Botones = () => {
+export const Dots = () => {
     return (
         <>
-            <div className='bg-gray-600 rounded-full w-4 h-4 border-2 border-gray-400 absolute top-4 left-[15px]'></div>
-            <div className='bg-gray-600 rounded-full w-4 h-4 border-2 border-gray-400 absolute top-4 left-[35px]'></div>
-            <div className='bg-gray-600 rounded-full w-4 h-4 border-2 border-gray-400 absolute top-4 left-[55px]'></div>
+            <div className='bg-accent rounded-full w-24 h-24 border-2 border-dark absolute bottom-16 right-[20%]'></div>
+            <div className='bg-accent rounded-full w-6 h-6 border-2 border-dark absolute bottom-40 right-[30%]'></div>
+            <div className='bg-accent rounded-full w-12 h-12 border-2 border-dark absolute bottom-4 right-[30%]'></div>
         </>
+    )
+}
+
+export const Dotted = () => {
+    return (
+        <div className='absolute left-[23%] top-[40%]'>
+            <div className='bg-warning rounded-full w-12 h-12 border-2 border-dark absolute bottom-20 left-8'></div>
+            <div className='bg-transparent rounded-full w-24 h-24 border-2 border-dotted border-dark absolute bottom-14 left-2'></div>
+        </div>
     )
 }
