@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useCursor } from '../../context/CursorContext';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -8,19 +9,32 @@ import { useRouter } from 'next/navigation'
 import Badge from '../Badge/badge';
 import Card from '../Card/card'
 
-const caseStudy1 = require('../../src/img/hero_bg.jpg')
+const caseStudy1 = require('../../src/img/goo_card.jpg')
+const caseStudy2 = require('../../src/img/audi_card.jpg')
+const caseStudy3 = require('../../src/img/lce_card.png')
 
 const star = require('../../src/img/star.svg')
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
+    const { setCursorText, setCursorVariant } = useCursor();
 
     const router = useRouter()
     const section1Ref = useRef(null);
     const section2Ref = useRef(null);
     const section3Ref = useRef(null);
     const progressBarRef = useRef(null);
+
+    function contactEnter() {
+        setCursorText("👁️");
+        setCursorVariant("contact");
+    }
+
+    function contactLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
 
     useEffect(() => {
         const section1 = section1Ref.current;
@@ -89,9 +103,9 @@ const Work = () => {
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">Audi</h3>
+                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
 
-                                        <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='freelance' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 font-Montserrat text-justify z-0">
@@ -121,6 +135,8 @@ const Work = () => {
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
                             <Image
                                 src={caseStudy1}
+                                onMouseEnter={contactEnter}
+                                onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
                                 className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
@@ -139,57 +155,7 @@ const Work = () => {
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">La Cima Ecohotel</h3>
-                                        {/* <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' /> */}
-                                    </div>
-
-                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
-                                        ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
-                                    </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
-                                        Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
-                                    </p>
-                                    <Button
-                                        onClick={() => {
-                                            router.push('/portfolio/audi')
-                                        }}
-                                        className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
-                                    >
-                                        View more
-                                    </Button>
-                                    <Image
-                                        src={star}
-                                        alt='estrella'
-                                        width={50}
-                                        className='absolute top-8 right-8'
-                                    />
-                                </Card>
-
-                            </div>
-                        </div>
-                        <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
-                            <Image
-                                src={caseStudy1}
-                                alt='case study1'
-                                objectFit='cover'
-                                className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
-                            />
-                            <Dots />
-                            <Dotted />
-                        </div>
-                    </div>
-                </section>
-
-                {/* Section #3 */}
-                <section ref={section3Ref} className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
-                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
-                        <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
-                            <div className="w-full flex flex-col gap-8">
-
-                                <Card width="w-auto bg-light relative">
-                                    <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">HelpGo</h3>
+                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">Audi España</h3>
                                         <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
 
@@ -220,7 +186,61 @@ const Work = () => {
                         </div>
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
                             <Image
-                                src={caseStudy1}
+                                src={caseStudy2}
+                                onMouseEnter={contactEnter}
+                                onMouseLeave={contactLeave}
+                                alt='case study1'
+                                objectFit='cover'
+                                className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
+                            />
+                            <Dots />
+                            <Dotted />
+                        </div>
+                    </div>
+                </section>
+
+                {/* Section #3 */}
+                <section ref={section3Ref} className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
+                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
+                        <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
+                            <div className="w-full flex flex-col gap-8">
+
+                                <Card width="w-auto bg-light relative">
+                                    <div className='w-full flex justify-start items-center'>
+                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">La Cime Ecohotel</h3>
+                                        <Badge text='freelance' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                    </div>
+
+                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                        ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
+                                    </p>
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                        Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
+                                    </p>
+                                    <Button
+                                        onClick={() => {
+                                            router.push('/portfolio/audi')
+                                        }}
+                                        className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
+                                    >
+                                        View more
+                                    </Button>
+                                    <Image
+                                        src={star}
+                                        alt='estrella'
+                                        width={50}
+                                        className='absolute top-8 right-8'
+                                    />
+                                </Card>
+
+                            </div>
+                        </div>
+                        <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
+                            <Image
+                                src={caseStudy3}
+                                onMouseEnter={contactEnter}
+                                onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
                                 className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'

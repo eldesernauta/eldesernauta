@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCursor } from "../../context/CursorContext";
 
-const infoImg = require("../../src/img/info_img.svg");
+const infoImg = require("../../src/img/info_img2.svg");
 
 export default function Nav() {
   const { setCursorText, setCursorVariant } = useCursor();
@@ -58,7 +58,7 @@ export default function Nav() {
     <div
       className={`fixed left-0 top-0 z-40 w-full h-20 sm:h-32 flex justify-center items-center transition-colors duration-300 ${isScrolled ? "bg-dark" : "bg-transparent"}`}
     >
-      <nav className="w-full h-full px-5 flex justify-between items-center">
+      <nav className="w-full h-full px-12 flex justify-between items-center">
         <Link
           onMouseEnter={linkEnter}
           onMouseLeave={linkLeave}
@@ -73,7 +73,7 @@ export default function Nav() {
             href={`${links[0].path}#contact`}
             onMouseEnter={availableEnter}
             onMouseLeave={availableLeave}
-            className={`${isScrolled ? 'text-primary' : 'text-dark'} font-Adam text-md hidden sm:flex justify-center items-center`}
+            className={`${isScrolled ? 'text-primary' : 'text-light'} font-Adam text-md hidden sm:flex justify-center items-center`}
           >
             AVAILABLE FOR WORK
           </Link>
@@ -117,7 +117,7 @@ export default function Nav() {
           </p>
           <Image
             src={infoImg}
-            className={`z-0 w-[35%] block absolute mix-blend-multiply -bottom-0 left-2`}
+            className={`z-0 w-[35%] block absolute -bottom-0 left-2`}
             alt="Portrait"
           />
         </Drawer>

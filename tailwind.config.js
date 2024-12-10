@@ -17,7 +17,7 @@ module.exports = {
                 accent: '#76f7ae',
                 warning: '#ffe959',
                 light: '#fffbf4',
-                dark: '#111111'
+                dark: '#212121'
             },
             fontFamily: {
                 Adam: ['Adam', 'serif'],

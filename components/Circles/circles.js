@@ -35,9 +35,9 @@ const Circles = () => {
         <div className="relative h-screen flex items-center justify-center">
             <div className="transform-bubbles relative">
                 <Circle ref={circleRefs[0]} color="#b37dff" />
-                <Circle ref={circleRefs[1]} className="absolute top-0 scale-[75%]" color="#ff5454" />
+                <Circle ref={circleRefs[1]} className="absolute top-0 scale-[75%]" color="#212121" />
                 <Circle ref={circleRefs[2]} className="absolute top-0 scale-[55%]" color="#b37dff" />
-                <Circle ref={circleRefs[3]} className="absolute top-0 scale-[40%]" color="#ff5454" />
+                <Circle ref={circleRefs[3]} className="absolute top-0 scale-[40%]" color="#212121" />
             </div>
         </div>
     );

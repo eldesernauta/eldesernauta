@@ -27,7 +27,7 @@ export default function Accordion({ question, answer, className }: Props) {
   return (
     <div
       data-state={showContent ? "open" : "closed"}
-      className="w-[500px] group rounded-xl hover:scale-105 transition-transform duration-100 hover:shadow-dark overflow-x-hidden border-2 border-dark dark:border-darkBorder shadow-light dark:shadow-dark"
+      className="w-[500px] group rounded-xl hover:scale-105 transition-transform duration-100 hover:shadow-dark overflow-x-hidden border-2 border-dark dark:border-darkBorder shadow-dark dark:shadow-dark"
     >
       <button
         role="button"

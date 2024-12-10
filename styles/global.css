@@ -56,11 +56,16 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @apply bg-light overflow-x-hidden max-w-full;
+    @apply bg-dark overflow-x-hidden max-w-full;
   }
 
   html {
     scroll-snap-type: y mandatory;
+  }
+
+  html a,
+  html button {
+    scroll-behavior: smooth;
   }
 
   h1,
@@ -163,8 +168,12 @@ so that it is smooth among other more minor things */
     cursor: pointer;
   }
 
+  .hero-img {
+    animation: hero 1.75s infinite ease-in-out;
+  }
+
   .hero-img:hover {
-    animation: hero 0.3s infinite;
+    animation-play-state: paused;
   }
 
   @keyframes hero {

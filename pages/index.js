@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <Nav />
       <Layout>
-        <section className="w-full h-auto lg:h-screen flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center bg-light bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
+        <section id="main" className="w-full h-auto lg:h-screen flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center bg-dark bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
           <Hero />
         </section>
 
@@ -64,11 +64,11 @@ export default function Home() {
           <Work />
         </section>
 
-        <section className='max-w-full bg-primary overflow-visible'>
+        {/* <section className='max-w-full bg-primary overflow-visible'>
           <div className='w-[120vw] rotate-3 translate-y-16'>
             <Marquee items={items} bg={`bg-light`} />
           </div>
-        </section>
+        </section> */}
 
         <section className='w-full h-screen flex flex-col justify-center items-center bg-dark'>
           <h2 className='font-Wobblezz text-7xl text-white flex'>We provide world</h2>
@@ -83,7 +83,7 @@ export default function Home() {
 
         <Marquee items={items} bg={`bg-dark`} />
 
-        <section className='w-full h-auto lg:h-screen px-5 lg:px-8 2xl:px-0  flex flex-col justify-center items-center bg-light pt-24'>
+        <section className='w-full h-auto lg:h-screen px-5 lg:px-8 2xl:px-0  flex flex-col justify-center items-center bg-accent'>
 
           <div className='container mx-auto flex flex-col lg:flex-row gap-8'>
             <div className='w-full lg:w-3/6 flex justify-center items-center'>
@@ -93,7 +93,7 @@ export default function Home() {
               <Accordion
                 question="Lorem ipsum dolor sit amet"
                 answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!"
-                className="bg-secondary border-dark"
+                className="bg-warning border-dark"
               />
               <Accordion
                 question="Lorem ipsum dolor sit amet"
@@ -103,7 +103,7 @@ export default function Home() {
               <Accordion
                 question="Lorem ipsum dolor sit amet"
                 answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores delectus totam repellat provident minima, veniam sunt ullam voluptates, aliquid tempore consequatur, blanditiis laborum! Consequuntur hic veritatis deserunt! Iusto, nisi!"
-                className="bg-secondary border-dark"
+                className="bg-warning border-dark"
               />
               <Accordion
                 question="Lorem ipsum dolor sit amet"
@@ -136,7 +136,7 @@ export default function Home() {
         </section>
 
 
-        <section id="contact" className='w-full pb-24 lg:pb-40 pt-24 px-5 lg:px-8 2xl:px-0 bg-light flex justify-center items-center rounded-tl-[100px] rounded-tr-[100px]'>
+        <section id="contact" className='w-full pb-24 pt-24 px-5 lg:px-8 2xl:px-0 bg-dark flex justify-center items-center rounded-tl-[100px] rounded-tr-[100px]'>
           <div className='container mx-auto'>
             <Card width='w-full bg-warning' className='w-full mb-12 bg-primary'>
               <h2 className='font-Wobblezz text-7xl mb-12'>Put in touch!</h2>

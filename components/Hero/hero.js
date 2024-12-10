@@ -44,7 +44,7 @@ const Hero = () => {
         <>
             <div className='container mx-auto flex flex-col lg:flex-row items-center'>
                 <div className='w-full lg:w-3/6 flex flex-col gap-4 items-center lg:items-start relative'>
-                    <Badge text='Hey! I am' className='z-10 bg-secondary border-dark -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4' />
+                    <Badge text='Hey! I am' className='z-10 bg-warning border-dark -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4' />
                     <div
                         className="hoverable"
                         onMouseEnter={contactEnter}
@@ -64,7 +64,7 @@ const Hero = () => {
 
                     </div>
                     <div className='w-4/6 flex flex-col lg:flex-row items-center lg:items-start relative'>
-                        <h2 className='font-Adam text-center lg:text-left uppercase text-xl lg:text-2xl z-10'>Frontend Developer</h2>
+                        <h2 className='font-Adam text-light text-center lg:text-left uppercase text-xl lg:text-2xl z-10'>Frontend Developer</h2>
                         <Link
                             onMouseEnter={photoEnter}
                             onMouseLeave={photoLeave}
@@ -76,9 +76,9 @@ const Hero = () => {
                         onClick={() => {
                             router.push('#work')
                         }}
-                        className="hoverable bg-secondary hover:bg-warning shadow-dark border-dark"
+                        className="hoverable bg-warning hover:bg-secondary shadow-dark border-dark"
                     >
-                        View more &#8595;
+                        Wanne see?
                     </Button>
                     <Image
                         src={arrow}
@@ -92,7 +92,7 @@ const Hero = () => {
                         src={heroImg}
                         width={'700'}
                         alt='hero image'
-                        className="hero-img"
+                        className="hero-img "
                     />
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import useMouse from "@react-hook/mouse-position";
 
 import { motion, useTransform, AnimatePresence } from "framer-motion";
