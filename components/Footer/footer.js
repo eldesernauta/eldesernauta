@@ -65,7 +65,7 @@ const Footer = () => {
                             onMouseEnter={linkEnter}
                             onMouseLeave={linkLeave}
                             icon={faLinkedin}
-                            className="text-primary"
+                            className="text-primary hover:text-accent transition-colors duration-700"
                             style={{ fontSize: 30 }}
                         />
                     </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                             onMouseEnter={linkEnter}
                             onMouseLeave={linkLeave}
                             icon={faGithub}
-                            className="text-primary"
+                            className="text-primary hover:text-accent transition-colors duration-700"
                             style={{ fontSize: 30 }}
                         />
                     </Link>

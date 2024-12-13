@@ -43,14 +43,14 @@ const Form = () => {
                     />
                     <Button
                         type='submit'
-                        className="w-48 mt-8 flex justify-center items-center bg-secondary shadow-dark border-dark">
+                        className="w-48 mt-8 flex justify-center items-center bg-secondary hover:bg-accent shadow-dark border-dark">
                         Submit
                     </Button>
                 </div>
                 <div className='w-full lg:w-2/6'>
                     <Image
                         src={contactImg}
-                        className={`z-0 w-48 lg:w-[20%] block absolute -bottom-2 right-[5%]`}
+                        className={`z-0 w-48 lg:w-[25%] block absolute -bottom-4 right-[2%]`}
                         alt="Portrait"
                     />
                 </div>

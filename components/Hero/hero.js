@@ -44,7 +44,7 @@ const Hero = () => {
         <>
             <div className='container mx-auto flex flex-col lg:flex-row items-center'>
                 <div className='w-full lg:w-3/6 flex flex-col gap-4 items-center lg:items-start relative'>
-                    <Badge text='Hey! I am' className='z-10 bg-warning border-dark -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4' />
+                    <Badge text='Hey! I am' className='z-10 bg-warning border-light -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4' />
                     <div
                         className="hoverable"
                         onMouseEnter={contactEnter}
@@ -69,14 +69,14 @@ const Hero = () => {
                             onMouseEnter={photoEnter}
                             onMouseLeave={photoLeave}
                             href={'https://ph.eldesernauta.com'} target='_blank'>
-                            <Badge text={`n' film photographer`} className=' z-0 bg-accent border-dark rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4' />
+                            <Badge text={`n' film photographer`} className=' z-0 bg-accent border-light rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4' />
                         </Link>
                     </div>
                     <Button
                         onClick={() => {
                             router.push('#work')
                         }}
-                        className="hoverable bg-warning hover:bg-secondary shadow-dark border-dark"
+                        className="hoverable bg-warning hover:bg-secondary shadow-light border-light"
                     >
                         Wanne see?
                     </Button>
