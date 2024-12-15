@@ -83,14 +83,14 @@ export default function Home() {
         </section>
 
         <section className='max-w-full bg-primary overflow-visible'>
-          <div className='w-[120vw] rotate-3 translate-y-16'>
+          <div className='w-[120vw] rotate-3 translate-y-2'>
             <Marquee items={items} bg={`bg-light`} />
           </div>
         </section>
 
         <section className='w-full h-screen flex flex-col justify-center items-center bg-dark'>
-          <h2 className='font-Wobblezz text-7xl text-white flex'>We provide world</h2>
-          <h2 className='font-Wobblezz text-7xl text-white flex'>class<span className='px-4 py-4 text-7xl text-light bg-secondary hover:bg-primary transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'><span className='border-2 border-dotted border-dark rounded-full px-8 py-0'>services</span></span>for you</h2>
+          <h2 className='font-Unbounded font-black text-7xl text-white flex'>We provide world</h2>
+          <h2 className='font-Unbounded font-black text-7xl text-white flex'>class<span className='px-4 py-4 text-7xl text-light font-light bg-secondary hover:bg-primary scale-[90%] transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'><span className='border-2 border-dotted border-dark  rounded-full px-8 py-0'>services</span></span>for you</h2>
           <div className='container mx-auto mt-8 flex justify-center items-center gap-24'>
 
             {itemsCards.map((item) => (
@@ -110,8 +110,13 @@ export default function Home() {
               <Circles />
             </div>
             <div className='w-full lg:w-3/6 flex flex-col gap-4 justify-center items-start'>
-              <h2 className='font-Wobblezz text-7xl text-dark flex mb-4'>Hear what my</h2>
-              <h2 className='font-Wobblezz text-7xl text-dark flex'><span className='px-8 py-2 text-7xl text-warning bg-dark hover:bg-primary transition-all duration-300 rounded-full border-2 border-dark -mt-3 mr-4'>clients</span> have to say.</h2>
+              <h2 className='font-Unbounded font-black text-7xl text-dark flex mb-4'>Hear what my</h2>
+              <h2 className='font-Unbounded font-black text-7xl text-dark flex'>
+                <span className='px-8 py-2 text-7xl text-warning bg-dark hover:bg-primary transition-all duration-300 rounded-full border-2 border-dark -mt-3 mr-4'>
+                  clients
+                </span>
+                say.
+              </h2>
               {itemsAccordion.map((item, index) => (
                 <Accordion
                   key={index}
@@ -130,7 +135,7 @@ export default function Home() {
         <section id="contact" className='w-full pb-24 pt-24 px-5 lg:px-8 2xl:px-0 bg-dark flex justify-center items-center rounded-tl-[100px] rounded-tr-[100px]'>
           <div className='container mx-auto'>
             <Card width='w-full bg-primary hover:bg-warning transition-all duration-700' className='w-full mb-12 bg-primary'>
-              <h2 className='font-Wobblezz text-7xl '>Put in touch!</h2>
+              <h2 className='font-Unbounded font-black text-7xl '>Put in touch!</h2>
               <p className='w-3/6 mt-4 mb-8'>¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos</p>
               <Form />
             </Card>

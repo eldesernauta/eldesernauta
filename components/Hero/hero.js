@@ -42,7 +42,7 @@ const Hero = () => {
 
     return (
         <>
-            <div className='container mx-auto flex flex-col lg:flex-row items-center'>
+            <div className='container mx-auto flex flex-col lg:flex-row gap-8 justify-center items-center'>
                 <div className='w-full lg:w-3/6 flex flex-col gap-4 items-center lg:items-start relative'>
                     <Badge text='Hey! I am' className='z-10 bg-warning border-light -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4' />
                     <div
@@ -54,7 +54,7 @@ const Hero = () => {
                         <motion.h1
                             initial="hidden"
                             animate="visible"
-                            transition={{ duration: 2 }}
+                            transition={{ duration: 1 }}
                             variants={variants1}
                             className="text-center lg:text-left z-0 text-7xl lg:text-9xl text-primary order-1"
                         >
@@ -63,13 +63,13 @@ const Hero = () => {
                         </motion.h1>
 
                     </div>
-                    <div className='w-4/6 flex flex-col lg:flex-row items-center lg:items-start relative'>
-                        <h2 className='font-Adam text-light text-center lg:text-left uppercase text-xl lg:text-2xl z-10'>Frontend Developer</h2>
+                    <div className='w-full flex flex-col lg:flex-row items-center lg:items-start relative'>
+                        <h2 className='text-light text-center lg:text-left font-Adam uppercase text-xl lg:text-2xl z-10'>Frontend Developer</h2>
                         <Link
                             onMouseEnter={photoEnter}
                             onMouseLeave={photoLeave}
                             href={'https://ph.eldesernauta.com'} target='_blank'>
-                            <Badge text={`n' film photographer`} className=' z-0 bg-accent border-light rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4' />
+                            <Badge text={`n' film photographer`} className='hidden sm:block z-0 mt-2 lg:mt-0 bg-accent border-light rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4' />
                         </Link>
                     </div>
                     <Button
@@ -84,7 +84,7 @@ const Hero = () => {
                         src={arrow}
                         width={'100'}
                         alt='hero arrow'
-                        className="absolute right-[35%] top-[35%]"
+                        className="hidden lg:block absolute -right-4 xl:right-[15%] 2xl:right-[35%] top-[35%]"
                     />
                 </div>
                 <div className='w-full lg:w-3/6 flex justify-center items-center scale-x-[-1]'>

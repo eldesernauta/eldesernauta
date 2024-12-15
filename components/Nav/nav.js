@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCursor } from "../../context/CursorContext";
 
-const infoImg = require("../../src/img/info_img2.svg");
+const infoImg = require("../../src/img/info_img.svg");
 
 export default function Nav() {
   const { setCursorText, setCursorVariant } = useCursor();
@@ -56,14 +56,14 @@ export default function Nav() {
 
   return (
     <div
-      className={`fixed left-0 top-0 z-40 w-full h-20 sm:h-32 flex justify-center items-center transition-colors duration-300 ${isScrolled ? "bg-dark" : "bg-transparent"}`}
+      className={`fixed left-0 top-0 z-40 w-full h-20 sm:h-24 xl:h-28 2xl:h-32 flex justify-center items-center transition-colors duration-300 ${isScrolled ? "bg-dark" : "bg-transparent"}`}
     >
-      <nav className="w-full h-full px-12 flex justify-between items-center">
+      <nav className="w-full h-full px-4 md:px-12 flex justify-between items-center">
         <Link
           onMouseEnter={linkEnter}
           onMouseLeave={linkLeave}
           href="portfolio"
-          className="text-4xl sm:text-7xl font-France text-primary"
+          className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
         >
           WORK
         </Link>
@@ -73,7 +73,7 @@ export default function Nav() {
             href={`${links[0].path}#contact`}
             onMouseEnter={availableEnter}
             onMouseLeave={availableLeave}
-            className={`${isScrolled ? 'text-primary' : 'text-light'} font-Adam text-md hidden sm:flex justify-center items-center`}
+            className={`${isScrolled ? 'text-primary' : 'text-light'} text-md font-Adam hidden sm:flex justify-center items-center`}
           >
             AVAILABLE FOR WORK
           </Link>
@@ -93,7 +93,7 @@ export default function Nav() {
           onMouseEnter={linkEnter}
           onMouseLeave={linkLeave}
           onClick={() => setIsDrawerActive(true)}
-          className="text-4xl sm:text-7xl font-France text-primary"
+          className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
         >
           INFO
         </button>

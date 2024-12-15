@@ -35,7 +35,7 @@ const LockedCard = ({ bgColor, imgUrl, title, description, btnUrl }) => {
                 height={100}
                 alt="icon1"
                 className='select-none' />
-            <h3 className="text-3xl font-Wobblezz font-bold mb-2">{title}</h3>
+            <h3 className="text-3xl font-bold my-4">{title}</h3>
             <p className="h-4/6 flex justify-center mb-4 text-center">{description}</p>
             <Button
                 className="px-4 py-2 rounded-full bg-primary hover:bg-secondary transition shadow-dark border-dark"

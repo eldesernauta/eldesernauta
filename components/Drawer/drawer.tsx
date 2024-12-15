@@ -34,11 +34,11 @@ export default function Drawer({ active, setActive, children }: Props) {
       aria-modal="true"
       data-visible={isVisible ? "true" : "false"}
       onClick={closeDrawer}
-      className="fixed -right-1 group top-1 z-50 flex h-[100dvh] data-[visible=true]:opacity-100 data-[visible=true]:visible  data-[visible=false]:invisible w-screen items-start justify-end bg-overlay transition-all duration-500 ease-in-out"
+      className="fixed -right-1 group top-1 z-50 flex h-[100dvh] data-[visible=true]:opacity-100 data-[visible=true]:visible  data-[visible=false]:invisible w-screen items-start justify-end bg-overlay transition-all duration-500 ease-in-out shadow-dark "
     >
       <div
         onClick={closeDrawer}
-        className="z-10 h-[99vh] w-[95vw] lg:w-[50vw] flex flex-col justify-start items-end p-8 group-data-[visible=true]:translate-x-0 group-data-[visible=false]:translate-x-[50vw] bg-secondary rounded-tl-xl rounded-bl-xl font-base transition-transform duration-500 ease-in-out"
+        className="z-10 h-[99vh] w-[95vw] lg:w-[50vw] flex flex-col justify-start items-end p-8 group-data-[visible=true]:translate-x-0 group-data-[visible=false]:translate-x-[50vw] bg-primary rounded-tl-xl rounded-bl-xl font-base transition-transform duration-500 ease-in-out shadow-[-2px_2px_0_rgba(33,33,33,1)]"
       >
         {children}
       </div>

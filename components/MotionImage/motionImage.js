@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, useSpring, useMotionTemplate, transform } from "framer-motion";
 import Image from "next/image";
 
-const heroImg = require('../../src/img/hero_img.svg')
+const audiLogo = require('../../src/img/goo_card.png')
 
 export default function MotionImage() {
     /* State */
@@ -104,15 +104,14 @@ export default function MotionImage() {
                     className="w-full h-full"
                 >
                     <Image
-                        src={heroImg}
+                        src={audiLogo}
                         width={'700'}
                         alt='hero image'
                         style={{
                             x,
                             y,
-                            filter
                         }}
-                        className="scale-x-[-1]"
+                        className="w-96"
                     />
                 </motion.div>
 

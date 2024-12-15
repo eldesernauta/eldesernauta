@@ -21,7 +21,7 @@ module.exports = {
             },
             fontFamily: {
                 Adam: ['Adam', 'serif'],
-                Wobblezz: ['Wobblezz', 'serif'],
+                Unbounded: ['Unbounded', 'serif'],
                 France: ['France', 'serif'],
                 Roboto: ['Roboto Mono', 'sans-serif'],
             },

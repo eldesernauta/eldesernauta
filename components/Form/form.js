@@ -15,7 +15,7 @@ const Form = () => {
     return (
         <>
             <div className='container mx-auto flex flex-col lg:flex-row gap-8 relative'>
-                <div className='flex flex-col gap-6 w-full lg:w-4/6'>
+                <div className='flex flex-col gap-6 w-full lg:w-3/6'>
                     <Input
                         value={name}
                         setValue={setName}
@@ -47,10 +47,10 @@ const Form = () => {
                         Submit
                     </Button>
                 </div>
-                <div className='w-full lg:w-2/6'>
+                <div className='w-full lg:w-3/6'>
                     <Image
                         src={contactImg}
-                        className={`z-0 w-48 lg:w-[25%] block absolute -bottom-4 right-[2%]`}
+                        className={`z-0 w-48 lg:w-[25%] block absolute -bottom-4 right-[10%]`}
                         alt="Portrait"
                     />
                 </div>

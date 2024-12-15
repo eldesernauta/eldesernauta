@@ -3,17 +3,23 @@ import { useCursor } from '../../context/CursorContext';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import MotionImage from '../MotionImage/motionImage';
 
 import Button from '../Button/button'
 import { useRouter } from 'next/navigation'
 import Badge from '../Badge/badge';
 import Card from '../Card/card'
 
-const caseStudy1 = require('../../src/img/goo_card.jpg')
-const caseStudy2 = require('../../src/img/audi_card.jpg')
-const caseStudy3 = require('../../src/img/lce_card.png')
+const caseStudy1 = require('../../src/img/goo_card.png')
+const caseStudy2 = require('../../src/img/DDB_logo.svg')
+const caseStudy3 = require('../../src/img/incrustes_card.png')
 
 const star = require('../../src/img/star.svg')
+const dotted = require('../../src/img/dotted.svg')
+const dots = require('../../src/img/dots.svg')
+const bar = require('../../src/img/bar.svg')
+const cursor = require('../../src/img/cursor.svg')
+const flower = require('../../src/img/flower.svg')
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,7 +55,7 @@ const Work = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: section1,
-                start: 'bottom top',
+                start: 'bottom 100px',
                 end: () => window.innerWidth * 4,
                 scrub: true,
                 onUpdate: self => {
@@ -96,22 +102,22 @@ const Work = () => {
                 <div ref={progressBarRef} className="progress-bar absolute sm:right-0 md:right-12 lg:right-0 xl:right-0 2xl:right-32 top-0 w-1 bg-light-purple-goo z-900 translate-y-48 xl:translate-y-52 2xl:translate-y-56 rounded-xl hidden lg:block"></div>
                 <div className="absolute sm:right-0 md:right-12 lg:right-0 xl:right-0 2xl:right-32 h-[50%] top-0 w-1 bg-white-goo z-50 translate-y-48 xl:translate-y-52 2xl:translate-y-56 rounded-xl hidden lg:block"></div>
                 {/* Section #1 */}
-                <section ref={section1Ref} className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
+                <section ref={section1Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
                     <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
+                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
 
-                                        <Badge text='freelance' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='freelance' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
-                                        ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
+                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
+                                        Goo Hub es una agencia de marketing digital
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
                                     <Button
@@ -132,6 +138,7 @@ const Work = () => {
 
                             </div>
                         </div>
+
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
                             <Image
                                 src={caseStudy1}
@@ -139,31 +146,34 @@ const Work = () => {
                                 onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
+                                className='rounded-full bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
                             />
                             <Dots />
                             <Dotted />
+                            <Bar />
+                            <Cursor />
+                            <Flower />
                         </div>
                     </div>
                 </section>
 
                 {/* Section #2 */}
-                <section ref={section2Ref} className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
+                <section ref={section2Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
                     <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">Audi España</h3>
+                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Audi España</h3>
                                         <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
                                     <Button
@@ -191,31 +201,34 @@ const Work = () => {
                                 onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
+                                className='rounded-full bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
                             />
                             <Dots />
                             <Dotted />
+                            <Bar />
+                            <Cursor />
+                            <Flower />
                         </div>
                     </div>
                 </section>
 
                 {/* Section #3 */}
-                <section ref={section3Ref} className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
+                <section ref={section3Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
                     <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px] font-Wobblezz">La Cime Ecohotel</h3>
-                                        <Badge text='freelance' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
+                                        <Badge text='portfolio' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-6 translate-y-6' />
                                     </div>
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
                                     <Button
@@ -243,10 +256,13 @@ const Work = () => {
                                 onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full w-[400px] h-[400px] border-2 border-dark object-cover'
+                                className='rounded-full bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
                             />
                             <Dots />
                             <Dotted />
+                            <Bar />
+                            <Cursor />
+                            <Flower />
                         </div>
                     </div>
                 </section>
@@ -257,21 +273,62 @@ const Work = () => {
 
 export default Work;
 
+export const Bar = () => {
+    return (
+        <div className='absolute left-0 sm:left-[20%] lg:left-[10%] 2xl:left-[20%] -top-20'>
+            <Image
+                src={bar}
+                alt='estrella'
+                width={300}
+            />
+        </div>
+    )
+}
+
+export const Cursor = () => {
+    return (
+        <div className='absolute right-0 sm:right-20 md:right-32 lg:right-0 xl:right-16 2xl:right-32 top-[40%]'>
+            <Image
+                src={cursor}
+                alt='estrella'
+                width={80}
+            />
+        </div>
+    )
+}
+
+export const Flower = () => {
+    return (
+        <div className='absolute left-36 bottom-[20%]'>
+            <Image
+                src={flower}
+                alt='estrella'
+                width={80}
+            />
+        </div>
+    )
+}
+
 export const Dots = () => {
     return (
-        <>
-            <div className='bg-accent rounded-full w-24 h-24 border-2 border-dark absolute bottom-16 right-[20%]'></div>
-            <div className='bg-accent rounded-full w-6 h-6 border-2 border-dark absolute bottom-40 right-[30%]'></div>
-            <div className='bg-accent rounded-full w-12 h-12 border-2 border-dark absolute bottom-4 right-[30%]'></div>
-        </>
+        <div className='absolute right-[25%] -bottom-[10%]'>
+            <Image
+                src={dots}
+                alt='estrella'
+                width={150}
+            />
+        </div>
     )
 }
 
 export const Dotted = () => {
     return (
-        <div className='absolute left-[23%] top-[40%]'>
-            <div className='bg-warning rounded-full w-12 h-12 border-2 border-dark absolute bottom-20 left-8'></div>
-            <div className='bg-transparent rounded-full w-24 h-24 border-2 border-dotted border-dark absolute bottom-14 left-2'></div>
+        <div className='absolute left-[20%] top-[10%]'>
+            <Image
+                src={dotted}
+                alt='estrella'
+                width={100}
+            />
         </div>
     )
 }
