@@ -25,8 +25,8 @@ const Portfolio = () => {
                 </section>
 
 
-                <section className="w-full bg-light py-48 -mt-24 flex flex-col gap-48 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
-                    <div className="container mx-auto flex flex-col lg:flex-row-reverse space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-0">
+                <section className="w-full bg-light px-4 2xl:px-0 py-24 lg:py-48 -mt-24 flex flex-col gap-24 lg:gap-48 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
+                    <div className="container mx-auto flex flex-col-reverse lg:flex-row-reverse space-y-8 space-y-reverse lg:space-y-0 space-x-0 lg:space-x-8 2xl:space-x-0">
                         <div className="flex-1 flex items-center">
                             <div className="w-full flex flex-col gap-8">
 
@@ -53,11 +53,11 @@ const Portfolio = () => {
                                 src={caseStudy1}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[400px] h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
                             />
                         </div>
                     </div>
-                    <div className="container mx-auto flex flex-col lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-0">
+                    <div className="container mx-auto flex flex-col-reverse lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-0">
                         <div className="flex-1 flex items-center">
                             <div className="w-full flex flex-col gap-8">
 
@@ -84,11 +84,11 @@ const Portfolio = () => {
                                 src={caseStudy1}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[400px] h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
                             />
                         </div>
                     </div>
-                    <div className="container mx-auto flex flex-col lg:flex-row-reverse space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-0">
+                    <div className="container mx-auto flex flex-col-reverse lg:flex-row-reverse space-y-8 space-y-reverse lg:space-y-0 space-x-0 lg:space-x-8 2xl:space-x-0">
                         <div className="flex-1 flex items-center">
                             <div className="w-full flex flex-col gap-8">
 
@@ -115,7 +115,7 @@ const Portfolio = () => {
                                 src={caseStudy1}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[400px] h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
                             />
                         </div>
                     </div>

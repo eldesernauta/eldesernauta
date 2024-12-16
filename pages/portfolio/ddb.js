@@ -1,7 +1,7 @@
 import Nav from "../../components/Nav/nav";
 import Layout from '../../components/Layout/layout';
 
-const Audi = () => {
+const Ddb = () => {
     return (
         <Layout>
             <Nav />
@@ -12,4 +12,4 @@ const Audi = () => {
     );
 }
 
-export default Audi;
+export default Ddb;

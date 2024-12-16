@@ -115,18 +115,18 @@ const Work = () => {
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        Goo Hub es una agencia de marketing digital
+                                        Goo Hub is a digital marketing agency where quality and good prices find themselves, they offer services such like UX/UI design, fullstack web development and digital marketing.
                                     </p>
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
+                                        From crafting unique logos to designing impactful websites, Goo was a really interesting project with a lot of interactivity and challenges.
                                     </p>
                                     <Button
                                         onClick={() => {
-                                            router.push('/portfolio/audi')
+                                            router.push('/portfolio/goo')
                                         }}
                                         className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
                                     >
-                                        View more
+                                        Take a look
                                     </Button>
                                     <Image
                                         src={star}
@@ -171,18 +171,18 @@ const Work = () => {
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
+                                        During my time on DDB Colombia I've worked with globaly known brands like Audi, Estée Lauder, Tom Ford and others, these have theached me a lot about the atention to details and new challenges.
                                     </p>
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
+                                        In these colaborations I have created landing pages, email campaigns and worked on several CMS's.
                                     </p>
                                     <Button
                                         onClick={() => {
-                                            router.push('/portfolio/audi')
+                                            router.push('/portfolio/ddb')
                                         }}
                                         className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
                                     >
-                                        View more
+                                        Take a look
                                     </Button>
                                     <Image
                                         src={star}
@@ -226,18 +226,18 @@ const Work = () => {
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
+                                        Incrustes is one of my coleagues who workes on UX/UI design, in this project I helped him to develop on React, Tailwind and GSAP the prototype he preaviously created on Figma.
                                     </p>
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
+                                        The final result was a highly interactive website with an impressive use of the color, typography and navigation. You have to take a look!
                                     </p>
                                     <Button
                                         onClick={() => {
-                                            router.push('/portfolio/audi')
+                                            router.push('/portfolio/incrustes')
                                         }}
                                         className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
                                     >
-                                        View more
+                                        Take a look
                                     </Button>
                                     <Image
                                         src={star}
@@ -256,7 +256,7 @@ const Work = () => {
                                 onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
+                                className='rounded-full bg-dark hover:rotate-45 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
                             />
                             <Dots />
                             <Dotted />

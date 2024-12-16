@@ -50,7 +50,7 @@ const Form = () => {
                 <div className='w-full lg:w-3/6'>
                     <Image
                         src={contactImg}
-                        className={`z-0 w-48 lg:w-[25%] block absolute -bottom-4 right-[10%]`}
+                        className={`z-0 w-32 sm:w-[25%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%] block absolute -bottom-4 sm:bottom-0 2xl:-bottom-4 -right-8 sm:right-0 md:right-8 xl:right-[10%]`}
                         alt="Portrait"
                     />
                 </div>

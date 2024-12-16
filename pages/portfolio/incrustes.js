@@ -1,7 +1,7 @@
 import Nav from "../../components/Nav/nav";
 import Layout from '../../components/Layout/layout';
 
-const Helpgo = () => {
+const Incrustes = () => {
     return (
         <Layout>
             <Nav />
@@ -12,4 +12,4 @@ const Helpgo = () => {
     );
 }
 
-export default Helpgo;
+export default Incrustes;

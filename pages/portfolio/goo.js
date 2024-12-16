@@ -1,7 +1,7 @@
 import Nav from "../../components/Nav/nav";
 import Layout from '../../components/Layout/layout';
 
-const LaCima = () => {
+const Goo = () => {
     return (
         <Layout>
             <Nav />
@@ -12,4 +12,4 @@ const LaCima = () => {
     );
 }
 
-export default LaCima;
+export default Goo;
