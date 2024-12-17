@@ -74,9 +74,7 @@ export default function Home() {
     <>
       <Nav />
       <Layout>
-        <section id="main" className="w-full h-auto lg:h-screen flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center bg-dark bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
-          <Hero />
-        </section>
+        <Hero />
 
         <section id='work' className="bg-primary min-h-auto md:min-h-screen 2xl:min-h-[80vh] py-24 rounded-tl-3xl lg:rounded-tl-[50px] 2xl:rounded-tl-[100px] rounded-tr-3xl lg:rounded-tr-[50px] 2xl:rounded-tr-[100px]">
           <Work />

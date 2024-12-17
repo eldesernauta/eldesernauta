@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCursor } from "../../context/CursorContext";
+import useDarkMode from '../utils/useDarkMode';
 
 const infoImg = require("../../src/img/info_img.svg");
 
@@ -13,6 +14,8 @@ export default function Nav() {
   const [isDrawerActive, setIsDrawerActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false); // Estado para manejar el fondo del navbar
   const path = usePathname();
+
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     function handleScroll() {
@@ -73,7 +76,7 @@ export default function Nav() {
             href={`${links[0].path}#contact`}
             onMouseEnter={availableEnter}
             onMouseLeave={availableLeave}
-            className={`${isScrolled ? 'text-primary' : 'text-light'} text-md font-Adam hidden sm:flex justify-center items-center`}
+            className={`${isScrolled ? 'text-primary' : 'text-dark'} text-md font-Adam hidden sm:flex justify-center items-center`}
           >
             AVAILABLE FOR WORK
           </Link>

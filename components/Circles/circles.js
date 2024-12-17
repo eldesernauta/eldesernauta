@@ -17,7 +17,7 @@ const Circles = () => {
 
             // Determinar color y configuración de animación
             const color = element.getAttribute("data-color");
-            const rotateDirection = color === "#b37dff" ? 90 : -90; // Derecha o izquierda
+            const rotateDirection = color === "#b37dff" ? 120 : -120; // Derecha o izquierda
             const duration = 5 + index * 2; // Velocidades diferentes según el índice
 
             // GSAP Animation

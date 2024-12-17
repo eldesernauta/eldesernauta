@@ -38,7 +38,7 @@ const HorizontalScrollCarousel = () => {
 
     const x = useTransform(scrollYProgress, [0, 1], ["0", endValue]);
     return (
-        <section ref={targetRef} className="relative h-[650vh] md:h-[400vh] w-[100vw] px-4 2xl:px-0">
+        <section ref={targetRef} className="relative h-[650vh] md:h-[400vh] w-[100vw] lg:w-full px-4 2xl:px-0">
             <div className="container mb-8 lg:mb-24 xl:mb-32 mt-24 flex flex-col items-center sm:items-start justify-end mx-auto">
                 <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light flex sm:hidden mb-8 w-full'>I provide world class service</h2>
                 <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light hidden sm:flex mb-8'>I provide world</h2>
