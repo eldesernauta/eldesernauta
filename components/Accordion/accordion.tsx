@@ -26,13 +26,13 @@ export default function Accordion({
   return (
     <div
       data-state={isActive ? "open" : "closed"}
-      className="w-full group rounded-xl hover:scale-105 transition-transform duration-100 hover:shadow-dark overflow-x-hidden border-2 border-dark dark:border-darkBorder shadow-dark dark:shadow-dark"
+      className="w-full group rounded-xl hover:shadow-dark overflow-x-hidden border-2 border-dark dark:border-darkBorder shadow-dark dark:shadow-dark"
     >
       <button
         role="button"
         aria-expanded={isActive}
         className={cn(
-          "flex w-full items-center text-text transition-[border-radius] justify-between border-b-0 group-data-[state=open]:border-b-2 border-b-border dark:border-b-darkBorder bg-main p-4 md:p-5 font-heading",
+          "flex w-full items-center text-lg transition-[border-radius] justify-between border-b-0 group-data-[state=open]:border-b-2 border-b-border dark:border-b-darkBorder bg-main p-4 md:p-5 font-heading",
           className
         )}
         onClick={onToggle}
@@ -47,7 +47,7 @@ export default function Accordion({
         }}
         className="overflow-hidden rounded-b-base bg-white dark:bg-secondaryBlack font-base transition-[height] ease-in-out"
       >
-        <p className="p-4 md:p-5 text-sm md:text-base leading-relaxed md:leading-relaxed">
+        <p className="p-4 md:p-5 text-lg leading-relaxed md:leading-relaxed">
           {answer}
         </p>
       </div>

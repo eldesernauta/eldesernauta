@@ -95,7 +95,7 @@ const Work = () => {
 
 
     return (
-        <div className="w-screen mx-auto lg:min-h-[800vh] relative px-5 2xl:px-0 pb-24 lg:pb-0" id="sticky" data-sticky-sections>
+        <div className="w-screen mx-auto lg:min-h-[800vh] relative px-5 2xl:px-0 pb-24 lg:pb-0 translate-y-[100px]" id="sticky" data-sticky-sections>
 
             <div className="relative lg:sticky lg:top-0 lg:min-h-screen space-y-16 lg:space-y-0 pb-24 ">
 
@@ -146,7 +146,7 @@ const Work = () => {
                                 onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
+                                className='rounded-full hover:-rotate-12 transition-all duration-1000 bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
                             />
                             <Dots />
                             <Dotted />
@@ -201,7 +201,7 @@ const Work = () => {
                                 onMouseLeave={contactLeave}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
+                                className='rounded-full bg-dark hover:scale-105 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
                             />
                             <Dots />
                             <Dotted />
