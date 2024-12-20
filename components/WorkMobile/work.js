@@ -1,9 +1,6 @@
-import { useEffect, useRef } from 'react';
+
 import { useCursor } from '../../context/CursorContext';
 import Image from 'next/image';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import MotionImage from '../MotionImage/motionImage';
 
 import Button from '../Button/button'
 import { useRouter } from 'next/navigation'
@@ -21,16 +18,11 @@ const bar = require('../../src/img/bar.svg')
 const cursor = require('../../src/img/cursor.svg')
 const flower = require('../../src/img/flower.svg')
 
-gsap.registerPlugin(ScrollTrigger);
 
-const Work = () => {
+const WorkMobile = () => {
     const { setCursorText, setCursorVariant } = useCursor();
 
     const router = useRouter()
-    const section1Ref = useRef(null);
-    const section2Ref = useRef(null);
-    const section3Ref = useRef(null);
-    const progressBarRef = useRef(null);
 
     function contactEnter() {
         setCursorText("👁️");
@@ -42,68 +34,15 @@ const Work = () => {
         setCursorVariant("default");
     }
 
-    useEffect(() => {
-        const section1 = section1Ref.current;
-        const section2 = section2Ref.current;
-        const section3 = section3Ref.current;
-        const progressBar = progressBarRef.current;
-
-        // Set initial opacity states
-        gsap.set([section2, section3], { x: 0, pointerEvents: 'none' });
-
-        // GSAP timeline
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: section1,
-                start: 'bottom 100px',
-                end: () => window.innerWidth * 4,
-                scrub: true,
-                onUpdate: self => {
-                    const progress = self.progress;
-                    progressBar.style.height = `${progress * 50}%`;
-
-                    // Control pointer events based on visibility
-                    if (progress < 0.33) {
-                        gsap.set(section1, { pointerEvents: 'auto' });
-                        gsap.set([section2, section3], { pointerEvents: 'none' });
-                    } else if (progress >= 0.33 && progress < 0.66) {
-                        gsap.set(section2, { pointerEvents: 'auto' });
-                        gsap.set([section1, section3], { pointerEvents: 'none' });
-                    } else {
-                        gsap.set(section3, { pointerEvents: 'auto' });
-                        gsap.set([section1, section2], { pointerEvents: 'none' });
-                    }
-                }
-            }
-        });
-
-        // Animate section 2 opacity
-        tl.to(section1, 200, { opacity: 0 })
-            .fromTo(section2, 1000, { y: -20, opacity: 0 }, { y: 0, opacity: 1 });
-
-
-
-        // Animate section 3 opacity
-        tl.to(section2, 200, { opacity: 0 })
-            .fromTo(section3, 1000, { y: -20, opacity: 0 }, { y: 0, opacity: 1 });
-
-
-        return () => {
-            tl.kill(); // Kill the timeline on unmount
-        };
-    }, []);
-
 
     return (
-        <div className="w-screen mx-auto lg:min-h-[800vh] relative px-5 2xl:px-0 pb-24 2xl:pb-0 translate-y-[100px]" id="sticky" data-sticky-sections>
+        <div className="w-screen mx-auto lg:min-h-[800vh] relative px-5 2xl:px-0 py-48 pb-24 lg:pb-0">
 
-            <div className="relative lg:sticky lg:top-0 lg:min-h-screen space-y-16 lg:space-y-0 pb-24 ">
+            <div className="relative lg:sticky lg:top-0 lg:min-h-screen flex flex-col gap-48 pb-24 ">
 
-                <div ref={progressBarRef} className="progress-bar absolute sm:right-0 md:right-12 lg:right-0 xl:right-0 2xl:right-32 top-0 w-1 bg-light-purple-goo z-900 translate-y-48 xl:translate-y-52 2xl:translate-y-56 rounded-xl hidden lg:block"></div>
-                <div className="absolute sm:right-0 md:right-12 lg:right-0 xl:right-0 2xl:right-32 h-[50%] top-0 w-1 bg-white-goo z-50 translate-y-48 xl:translate-y-52 2xl:translate-y-56 rounded-xl hidden lg:block"></div>
                 {/* Section #1 */}
-                <section ref={section1Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
-                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
+                <section className="relative">
+                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row gap-24">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
@@ -159,8 +98,8 @@ const Work = () => {
                 </section>
 
                 {/* Section #2 */}
-                <section ref={section2Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
-                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
+                <section className="relative">
+                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row gap-24">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
@@ -177,7 +116,6 @@ const Work = () => {
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         In these collaborations, I was responsible for designing landing pages, creating email campaigns, and managing projects across multiple CMS platforms, ensuring high-quality results at every step.
                                     </p>
-
                                     <Button
                                         onClick={() => {
                                             router.push('/portfolio/ddb')
@@ -215,8 +153,8 @@ const Work = () => {
                 </section>
 
                 {/* Section #3 */}
-                <section ref={section3Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
-                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">
+                <section className="relative">
+                    <div className="container mx-auto flex flex-col lg:h-full lg:flex-row gap-24">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
@@ -233,6 +171,7 @@ const Work = () => {
                                     <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
                                         The final result was a highly interactive website that stood out for its striking use of color, bold typography, and seamless navigation. It’s definitely worth checking out to see the impact of our combined efforts!
                                     </p>
+
                                     <Button
                                         onClick={() => {
                                             router.push('/portfolio/incrustes')
@@ -273,7 +212,7 @@ const Work = () => {
     );
 };
 
-export default Work;
+export default WorkMobile;
 
 export const Bar = () => {
     return (
@@ -289,7 +228,7 @@ export const Bar = () => {
 
 export const Cursor = () => {
     return (
-        <div className='absolute right-0 sm:right-20 md:right-32 lg:right-0 xl:right-16 2xl:right-32 top-[40%]'>
+        <div className='absolute right-0 sm:right-24 md:right-32 lg:right-0 xl:right-16 2xl:right-32 top-[40%]'>
             <Image
                 src={cursor}
                 alt='estrella'
@@ -301,7 +240,7 @@ export const Cursor = () => {
 
 export const Flower = () => {
     return (
-        <div className='absolute left-36 bottom-[20%]'>
+        <div className='absolute left-0 sm:left-24 md:left-36 bottom-[20%]'>
             <Image
                 src={flower}
                 alt='estrella'
@@ -313,11 +252,11 @@ export const Flower = () => {
 
 export const Dots = () => {
     return (
-        <div className='absolute right-[25%] -bottom-[10%]'>
+        <div className='absolute right-[10%] sm:right-20 md:right-48 -bottom-4 '>
             <Image
                 src={dots}
                 alt='estrella'
-                width={150}
+                width={100}
             />
         </div>
     )
@@ -325,11 +264,11 @@ export const Dots = () => {
 
 export const Dotted = () => {
     return (
-        <div className='absolute left-[20%] top-[10%]'>
+        <div className='absolute left-8 sm:left-20 md:left-40 top-0 md:top-10'>
             <Image
                 src={dotted}
                 alt='estrella'
-                width={100}
+                width={80}
             />
         </div>
     )

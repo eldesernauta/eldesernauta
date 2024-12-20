@@ -103,7 +103,7 @@ const Hero = () => {
 
             <Button
                 onClick={toggleDarkMode}
-                className={`absolute w-12 h-12 flex justify-center items-center bottom-[124px] outline-none right-8 px-4 py-2 text-xl rounded-full ${isDarkMode ? 'shadow-dark bg-light border-dark' : 'shadow-light bg-dark border-light'} hover:bg-primary transition-all`}
+                className={`absolute w-12 h-12 flex justify-center items-center bottom-8 lg:bottom-[124px] outline-none right-8 px-4 py-2 text-xl rounded-full ${isDarkMode ? 'shadow-dark bg-light border-dark' : 'shadow-light bg-dark border-light'} hover:bg-primary transition-all`}
             >
                 {isDarkMode ? '🌙' : '☀️'}
             </Button>

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Nav from '../components/Nav/nav';
 import Layout from '../components/Layout/layout';
 import Work from '../components/Work/work';
+import WorkMobile from '../components/WorkMobile/work';
 import Form from '../components/Form/form';
 import Footer from '../components/Footer/footer';
 import Hero from '../components/Hero/hero';
@@ -75,8 +76,13 @@ export default function Home() {
       <Layout>
         <Hero />
 
-        <section id='work' className="z-20  lg:-translate-y-[50px] 2xl:-translate-y-[100px] bg-primary min-h-auto md:min-h-screen 2xl:min-h-[80vh]py-24 rounded-tl-3xl lg:rounded-tl-[50px] 2xl:rounded-tl-[100px] rounded-tr-3xl lg:rounded-tr-[50px] 2xl:rounded-tr-[100px]">
+        <section id='work' className="hidden lg:block z-20 lg:-translate-y-[50px] 2xl:-translate-y-[100px] bg-primary min-h-auto md:min-h-screen 2xl:min-h-[80vh]py-24 rounded-tl-3xl lg:rounded-tl-[50px] 2xl:rounded-tl-[100px] rounded-tr-3xl lg:rounded-tr-[50px] 2xl:rounded-tr-[100px]">
           <Work />
+        </section>
+
+
+        <section className="block lg:hidden bg-primary min-h-auto rounded-tl-0 rounded-tr-0">
+          <WorkMobile />
         </section>
 
         <section className='max-w-full bg-primary overflow-visible -mt-[100px]'>
@@ -85,7 +91,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='w-full min-h-screen py-24 px-4 xl:px-0 flex flex-col justify-center items-center bg-dark'>
+        <section className='w-full min-h-screen pt-24 pb-0 md:pb-24 px-4 xl:px-0 flex flex-col justify-center items-center bg-dark'>
           <h2 className='font-Unbounded font-black text-center text-4xl xl:text-7xl text-white flex md:hidden'>Here's why you need me on the team</h2>
           <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-7xl text-white hidden md:flex'>Here's why you</h2>
           <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-7xl text-white hidden md:flex'><span className='px-0 lg:px-4 py-4 text-4xl lg:text-5xl xl:text-7xl text-light font-light bg-secondary hover:bg-primary scale-[90%] transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'><span className='border-2 border-dotted border-dark  rounded-full px-8 py-0'>need me</span></span>on the team</h2>
@@ -148,7 +154,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='w-full relative h-screen py-24 lg:py-0 px-5 lg:px-8 2xl:px-0  flex flex-col justify-center items-center bg-warning bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]'>
+        <section className='w-full relative h-auto lg:h-screen py-24 lg:py-0 px-5 lg:px-8 2xl:px-0  flex flex-col justify-center items-center bg-warning bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]'>
           <div className='absolute left-80 top-24 flex flex-col justify-center items-start'>
 
           </div>
