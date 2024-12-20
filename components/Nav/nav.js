@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Drawer from "../Drawer/drawer";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { usePathname } from "next/navigation";
 import { useCursor } from "../../context/CursorContext";
 import useDarkMode from '../utils/useDarkMode';
@@ -102,25 +104,89 @@ export default function Nav() {
         </button>
         <Drawer active={isDrawerActive} setActive={setIsDrawerActive}>
           <h1
-            className={`text-right break-word leading-8 text-3xl md:text-4xl xl:text-5xl 2xl:text-8xl`}
+            className={`text-right break-word leading-8 text-5xl 2xl:text-8xl`}
           >
-            OscarRojas
+            Oscar Rojas
+            <br />
           </h1>
-          <p className={`subtitle text-right text-sm md:text-base`}>
-            WebDeveloper / Photographer
+          <p className={`text-white font-bold text-right text-sm md:text-base`}>
+            Web developer / Film photographer
           </p>
-          <p
-            className={`z-10 w-[70%] block text-right max-xxs:text-xs text-sm md:text-base mt-3 text-neutral-100`}
-          >
-            Colombian-born publicist focused on development. Big sense of
-            responsibility, leadership oriented and really good communicative
-            skills that highlights my great team work. Not only that, my
-            artish background helps me to create pretty impressive layouts in
-            detail.
-          </p>
+          <div className="flex flex-col justify-end text-right items-end w-full xl:w-5/6 2xl:w:4/6 mt-3x">
+            <div className="py-2 hover:bg-transparent lg:hover:bg-[rgba(255,255,255,0.5)] hover:px-0 lg:hover:px-4 flex flex-col items-end hover:-translate-x-0 lg:hover:-translate-x-12 transition-all duration-300">
+              <h3 className="text-accent font-bold">FRONTEND DEVELOPER</h3>
+              <p className={`w-full md:w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right`}>
+                Building email campaigns using HTML5 + Braze, creating animated banners using Javascript libraries such as GSAP and continuous maintenance of a code that optimizes these processes.
+                <br />
+                (Spain client) - (Medellín, Antioquia - Colombia)
+              </p>
+              <h6 className={`text-warning text-sm font-semibold`}>
+                DDB Colombia
+                <br />
+                Jun. 2023 - Present
+              </h6>
+            </div>
+            <div className="py-2 hover:bg-transparent lg:hover:bg-[rgba(255,255,255,0.5)] hover:px-0 lg:hover:px-4 flex flex-col items-end hover:-translate-x-0 lg:hover:-translate-x-12 transition-all duration-300">
+              <h3 className="text-accent font-bold">WEB DEVELOPER</h3>
+              <p className={`w-full md:w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right`}>
+                Developing and integrating user interfaces using programming languages and new frontend technologies as HTML + CSS, Javascript, ReacJS, Tailwind, Webpack, AWS (S3, EC2, Cloudfront), Git and others.
+                <br />
+                (Bilingual) - (Austin, Texas - USA)
+              </p>
+              <h6 className={`text-warning text-sm font-semibold`}>
+                Howdy Inc.
+                <br />
+                Mar. 2022 - Jan. 2023
+              </h6>
+            </div>
+            <div className="py-2 hover:bg-transparent lg:hover:bg-[rgba(255,255,255,0.5)] hover:px-0 lg:hover:px-4 hidden sm:flex flex-col items-end hover:-translate-x-0 lg:hover:-translate-x-12 transition-all duration-300">
+              <h3 className="text-accent font-bold">FRONTEND DEVELOPER</h3>
+              <p className={`w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right`}>
+                Design, develop and manage companie's partnerships websites (33). Create and customize Wordpress plugins and themes. Building responsive layouts using Wordpress, HTML, CSS, Javascript, React, GIT and PHP.
+                <br />
+                (Bilingual) - (Medellin, Antioquia)
+              </p>
+              <h6 className={`text-warning text-sm font-semibold`}>
+                Solvo Global
+                <br />
+                Jul. 2020 - Mar. 2022
+              </h6>
+            </div>
+
+          </div>
+          <div className=" absolute bottom-8 right-8 w-full flex gap-8 justify-end items-center order-3">
+            <h6>Found me at:</h6>
+            <Link href="https://linkedin.com/in/eldesernauta" target="_blank">
+              <FontAwesomeIcon
+                onMouseEnter={linkEnter}
+                onMouseLeave={linkLeave}
+                icon={faLinkedin}
+                className="text-dark hover:text-accent transition-colors duration-700"
+                style={{ fontSize: 30 }}
+              />
+            </Link>
+            <Link href="https://github.com/eldesernauta" target="_blank">
+              <FontAwesomeIcon
+                onMouseEnter={linkEnter}
+                onMouseLeave={linkLeave}
+                icon={faGithub}
+                className="text-dark hover:text-accent transition-colors duration-700"
+                style={{ fontSize: 30 }}
+              />
+            </Link>
+            <Link href="https://instagram.com/eldesernauta" target="_blank">
+              <FontAwesomeIcon
+                onMouseEnter={linkEnter}
+                onMouseLeave={linkLeave}
+                icon={faInstagram}
+                className="text-dark hover:text-accent transition-colors duration-700"
+                style={{ fontSize: 30 }}
+              />
+            </Link>
+          </div>
           <Image
             src={infoImg}
-            className={`z-0 w-[35%] block absolute -bottom-0 left-2`}
+            className={`z-0 w-[35%] block absolute bottom-10 2xl:bottom-20 left-[30%] sm:left-0 xl:left-2`}
             alt="Portrait"
           />
         </Drawer>

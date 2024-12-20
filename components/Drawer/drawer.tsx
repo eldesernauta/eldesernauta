@@ -38,7 +38,7 @@ export default function Drawer({ active, setActive, children }: Props) {
     >
       <div
         onClick={closeDrawer}
-        className="z-10 h-[99vh] w-[95vw] lg:w-[50vw] flex flex-col justify-start items-end p-8 group-data-[visible=true]:translate-x-0 group-data-[visible=false]:translate-x-[50vw] bg-primary rounded-tl-xl rounded-bl-xl font-base transition-transform duration-500 ease-in-out shadow-[-2px_2px_0_rgba(33,33,33,1)]"
+        className="z-10 h-[99vh] w-[95vw] lg:w-[50vw] flex flex-col gap-4 justify-start items-end p-8 group-data-[visible=true]:translate-x-0 group-data-[visible=false]:translate-x-[50vw] bg-primary rounded-tl-xl rounded-bl-xl font-base transition-transform duration-500 ease-in-out shadow-[-2px_2px_0_rgba(33,33,33,1)]"
       >
         {children}
       </div>

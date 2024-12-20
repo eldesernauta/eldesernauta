@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { useCursor } from '../../context/CursorContext';
 import Link from "next/link";
 
@@ -74,6 +74,15 @@ const Footer = () => {
                             onMouseEnter={linkEnter}
                             onMouseLeave={linkLeave}
                             icon={faGithub}
+                            className="text-primary hover:text-accent transition-colors duration-700"
+                            style={{ fontSize: 30 }}
+                        />
+                    </Link>
+                    <Link href="https://instagram.com/eldesernauta" target="_blank">
+                        <FontAwesomeIcon
+                            onMouseEnter={linkEnter}
+                            onMouseLeave={linkLeave}
+                            icon={faInstagram}
                             className="text-primary hover:text-accent transition-colors duration-700"
                             style={{ fontSize: 30 }}
                         />
