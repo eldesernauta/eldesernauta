@@ -105,7 +105,7 @@ const WorkMobile = () => {
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Audi España</h3>
+                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Audi Spain</h3>
                                         <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
 

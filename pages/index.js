@@ -19,6 +19,8 @@ const audi = require('../src/img/audi_logo.svg')
 const ddb = require('../src/img/DDB_logo.svg')
 const lce = require('../src/img/lce_logo.svg')
 const vensure = require('../src/img/vensure_logo.svg')
+const goo = require('../src/img/goo_logo.svg')
+const spot = require('../src/img/spot_logo.svg')
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -128,6 +130,16 @@ export default function Home() {
                 alt='separador de textos'
               />
               <Image
+                src={goo}
+                className="self-center w-40 mx-20"
+                alt='separador de textos'
+              />
+              <Image
+                src={spot}
+                className="self-center w-40 mx-20"
+                alt='separador de textos'
+              />
+              <Image
                 src={audi}
                 className="self-center w-40 mx-20"
                 alt='separador de textos'
@@ -142,9 +154,18 @@ export default function Home() {
                 className="self-center w-40 mx-20"
                 alt='separador de textos'
               />
-
               <Image
                 src={vensure}
+                className="self-center w-40 mx-20"
+                alt='separador de textos'
+              />
+              <Image
+                src={goo}
+                className="self-center w-40 mx-20"
+                alt='separador de textos'
+              />
+              <Image
+                src={spot}
                 className="self-center w-40 mx-20"
                 alt='separador de textos'
               />

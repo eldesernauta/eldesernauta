@@ -8,6 +8,9 @@ import Image from "next/image";
 import Footer from "../components/Footer/footer";
 import HorizontalScroll from '../components/HorizontalScroll/horizontalScroll';
 
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const caseStudy1 = require('../src/img/lce_card.png');
 
 const Portfolio = () => {
@@ -24,8 +27,25 @@ const Portfolio = () => {
                     </div>
                 </section>
 
+                <section className='w-full bg-primary py-24 px-4 2xl:px-0'>
+                    <div className='container mx-auto text-center flex items-center'>
+                        <div className='w-8/12'>
+                            <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-2 lg:mb-4'>If you want to</h2>
+                            <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex'>
+                                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-warning hover:text-dark bg-dark hover:bg-warning transition-all duration-300 rounded-full border-2 border-dark -mt-3 mr-4'>
+                                    know me
+                                </span>
+                                better:
+                            </h2>
+                        </div>
+                        <div className='w-4/12 flex flex-col gap-8 justify-center items-center'>
+                            <span className='text-lg font-bold'>Download my CV!</span>
+                            <FontAwesomeIcon icon={faFilePdf} className="text-dark hover:text-accent max-xxs:text-3xl text-6xl lg:text-7xl 2xl:text-7xl translate-x-2 2xl:translate-x-5 transition duration-300" />
+                        </div>
+                    </div>
+                </section>
 
-                <section className="w-full bg-light px-4 2xl:px-0 py-24 lg:py-48 -mt-24 flex flex-col gap-24 lg:gap-48 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
+                <section className="w-full bg-light px-4 2xl:px-0 py-24 lg:py-48 flex flex-col gap-24 lg:gap-48 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
                     <div className="container mx-auto flex flex-col-reverse lg:flex-row-reverse space-y-8 space-y-reverse lg:space-y-0 space-x-0 lg:space-x-8 2xl:space-x-0">
                         <div className="flex-1 flex items-center">
                             <div className="w-full flex flex-col gap-8">
