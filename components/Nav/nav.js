@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import Drawer from "../Drawer/drawer";
 import Image from "next/image";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { usePathname } from "next/navigation";
 import { useCursor } from "../../context/CursorContext";
-import useDarkMode from '../utils/useDarkMode';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHomeAlt } from "@fortawesome/free-solid-svg-icons";
 
 const infoImg = require("../../src/img/info_img.svg");
 
@@ -16,8 +17,6 @@ export default function Nav() {
   const [isDrawerActive, setIsDrawerActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false); // Estado para manejar el fondo del navbar
   const path = usePathname();
-
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     function handleScroll() {
@@ -64,34 +63,39 @@ export default function Nav() {
       className={`fixed left-0 top-0 z-40 w-full h-20 sm:h-24 xl:h-28 2xl:h-32 flex justify-center items-center transition-colors duration-300 ${isScrolled ? "bg-dark" : "bg-transparent"}`}
     >
       <nav className="w-full h-full px-4 md:px-12 flex justify-between items-center">
-        <Link
-          onMouseEnter={linkEnter}
-          onMouseLeave={linkLeave}
-          href="portfolio"
-          className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
-        >
-          WORK
-        </Link>
 
+        {path == "/" && (
+          <Link
+            onMouseEnter={linkEnter}
+            onMouseLeave={linkLeave}
+            href="/portfolio"
+            className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
+          >
+            WORK
+          </Link>
+        )}
+        {path !== "/" && (
+          <Link
+            onMouseEnter={linkEnter}
+            onMouseLeave={linkLeave}
+            href="/"
+            className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
+          >
+            HOME
+          </Link>
+        )}
         <div className="flex flex-col items-center">
+
+
           <Link
             href={`${links[0].path}#contact`}
             onMouseEnter={availableEnter}
             onMouseLeave={availableLeave}
-            className={`${isScrolled ? 'text-primary' : 'text-dark'} text-md font-Adam hidden sm:flex justify-center items-center`}
+            className={`${isScrolled ? 'text-primary' : 'text-light'} text-md font-Adam hidden sm:flex justify-center items-center`}
           >
             AVAILABLE FOR WORK
           </Link>
-          {path !== "/" && (
-            <Link
-              href="/"
-              onMouseEnter={linkEnter}
-              onMouseLeave={linkLeave}
-              className="mt-2 text-primary font-bold hover:underline"
-            >
-              &#x27F5; Go Home
-            </Link>
-          )}
+
         </div>
 
         <button
