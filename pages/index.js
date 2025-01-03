@@ -37,7 +37,7 @@ export default function Home() {
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
     {
-      question: "Moreover, I've also studied other things...",
+      question: "Moreover, I've also studied...",
       answer: "I also explored the world of Cinematography at the Universidad Tecnológica de Pereira. This creative endeavor sharpened my eye for aesthetics, storytelling, and visual composition. These skills greatly enhance my ability to design visually stunning websites and create interactive user experiences that captivate and inspire.",
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
@@ -52,23 +52,23 @@ export default function Home() {
     {
       title: 'Efficient',
       imgUrl: icon1,
-      description: "I prioritize clean, optimized code to deliver fast, scalable, and reliable solutions. My focus on efficiency ensures every project I work on is streamlined and performs seamlessly under any conditions.",
+      description: "I deliver clean, optimized code for scalable, reliable solutions, ensuring streamlined projects that perform seamlessly under any conditions.",
       btnUrl: "https://www.example.com/url1",
-      bgColor: 'bg-primary'
+      bgColor: 'bg-primary hover:bg-accent'
     },
     {
       title: 'Smart',
       imgUrl: icon2,
-      description: "I approach challenges with innovative problem-solving and strategic thinking. By leveraging the latest technologies and best practices, I build smart, future-proof solutions tailored to your team's needs.",
+      description: "I solve challenges with innovation and strategy, using modern technologies to create smart, future-proof solutions tailored to your team's needs.",
       btnUrl: "https://www.example.com/url2",
-      bgColor: 'bg-warning'
+      bgColor: 'bg-warning hover:bg-accent'
     },
     {
       title: 'Dynamic',
       imgUrl: icon3,
-      description: "I adapt to changing requirements and thrive in fast-paced environments. My dynamic skill set allows me to handle everything from frontend interactivity to backend integrations with ease.",
+      description: "I adapt to changes and excel in fast-paced environments, handling everything from frontend interactivity to backend integrations with ease.",
       btnUrl: "https://www.example.com/url3",
-      bgColor: 'bg-accent'
+      bgColor: 'bg-primary hover:bg-accent'
     }
   ];
 
@@ -93,10 +93,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='w-full min-h-screen pt-24 pb-0 md:pb-24 px-4 xl:px-0 flex flex-col justify-center items-center bg-dark'>
+        <section className='w-full min-h-screen pt-24 pb-0 md:pb-24 px-4 xl:px-0 flex flex-col gap-8 justify-center items-center bg-dark'>
           <h2 className='font-Unbounded font-black text-center text-4xl xl:text-7xl text-white flex md:hidden'>Here's why you need me on the team</h2>
           <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-7xl text-white hidden md:flex'>Here's why you</h2>
-          <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-7xl text-white hidden md:flex'><span className='px-0 lg:px-4 py-4 text-4xl lg:text-5xl xl:text-7xl text-light font-light bg-secondary hover:bg-primary scale-[90%] transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'><span className='border-2 border-dotted border-dark  rounded-full px-8 py-0'>need me</span></span>on the team</h2>
+          <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-7xl text-white hidden md:flex'><span className='px-0 lg:px-4 py-4 text-4xl lg:text-5xl xl:text-7xl text-dark font-light bg-warning hover:bg-accent scale-[90%] transition-all duration-300 rounded-full border-2 border-light -mx-10 -rotate-12'><span className='border-2 border-dotted border-dark  rounded-full px-8 py-0'>need me</span></span>on the team</h2>
           <div className='container mx-auto mt-8 flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-24'>
 
             {itemsCards.map((item) => (
@@ -186,7 +186,7 @@ export default function Home() {
             <div className='w-full lg:w-3/6 flex flex-col gap-4 justify-center items-start'>
               <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-2 lg:mb-4'>What I have</h2>
               <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-8'>
-                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-warning bg-dark hover:bg-primary transition-all duration-300 rounded-full border-2 border-dark -mt-3 mr-4'>
+                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-warning bg-primary hover:bg-dark transition-all duration-300 rounded-full border-2 border-primary hover:border-dark -mt-3 mr-4'>
                   done
                 </span>
                 so far.

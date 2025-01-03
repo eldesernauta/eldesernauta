@@ -45,10 +45,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
 
@@ -76,10 +76,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
 
@@ -107,10 +107,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-accent' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
 

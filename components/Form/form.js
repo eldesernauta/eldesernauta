@@ -43,7 +43,7 @@ const Form = () => {
                     />
                     <Button
                         type='submit'
-                        className="w-48 mt-8 flex justify-center items-center bg-secondary hover:bg-accent shadow-dark border-dark">
+                        className="w-48 mt-8 flex justify-center items-center bg-accent hover:bg-primary shadow-dark border-dark">
                         Submit
                     </Button>
                 </div>

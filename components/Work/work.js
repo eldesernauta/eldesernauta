@@ -111,21 +111,18 @@ const Work = () => {
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
 
-                                        <Badge text='freelance' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='freelance' className='h-auto bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
+                                    <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
                                         Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
-                                    </p>
-                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        From crafting unique logos to designing impactful and functional websites, Goo was a fascinating project filled with interactivity, creativity, and technical challenges.
                                     </p>
 
                                     <Button
                                         onClick={() => {
                                             router.push('/portfolio/goo')
                                         }}
-                                        className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
+                                        className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
                                     >
                                         Take a look
                                     </Button>
@@ -167,22 +164,19 @@ const Work = () => {
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Audi Spain</h3>
-                                        <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='DDB Colombia' className='h-auto bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and prepared me to face complex challenges head-on.
-                                    </p>
-                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        In these collaborations, I was responsible for designing landing pages, creating email campaigns, and managing projects across multiple CMS platforms, ensuring high-quality results at every step.
+                                    <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
+                                        During my time at DDB Colombia, I've worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and prepared me to face complex challenges head-on.
                                     </p>
 
                                     <Button
                                         onClick={() => {
                                             router.push('/portfolio/ddb')
                                         }}
-                                        className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
+                                        className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
                                     >
                                         Take a look
                                     </Button>
@@ -223,21 +217,18 @@ const Work = () => {
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
-                                        <Badge text='portfolio' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-6 translate-y-6' />
+                                        <Badge text='portfolio' className='h-auto bg-warning border-dark -rotate-12 -translate-x-6 translate-y-6' />
                                     </div>
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
+                                    <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
                                         Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and GSAP, ensuring every element was faithfully implemented.
-                                    </p>
-                                    <p className="text-dark my-10 text-sm font-Unbounded font-light text-justify z-0">
-                                        The final result was a highly interactive website that stood out for its striking use of color, bold typography, and seamless navigation. It’s definitely worth checking out to see the impact of our combined efforts!
                                     </p>
                                     <Button
                                         onClick={() => {
                                             router.push('/portfolio/incrustes')
                                         }}
-                                        className="bg-accent hover:bg-secondary border-dark shadow-dark place-self-end"
+                                        className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
                                     >
                                         Take a look
                                     </Button>

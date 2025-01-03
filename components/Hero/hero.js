@@ -48,7 +48,7 @@ const Hero = () => {
         <section id="main" className={`w-full h-auto lg:h-[calc(100vh+50px)] 2xl:h-[calc(100vh+100px)] relative flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center ${isDarkMode ? 'bg-light' : 'bg-dark'} bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]`}>
             <div className='container relative mx-auto flex flex-col lg:flex-row gap-8 justify-center items-center -translate-y-[0px] lg:-translate-y-[50px]'>
                 <div className='w-full lg:w-3/6 flex flex-col gap-4 items-center lg:items-start relative'>
-                    <Badge text='Hey! I am' className={`z-10 bg-warning ${isDarkMode ? ' border-dark' : 'border-light'} -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4`} />
+                    <Badge text='Hey! I am' className={`z-10 font-Adam bg-warning ${isDarkMode ? ' border-dark' : 'border-light'} -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4`} />
                     <div
                         className="hoverable"
                         onMouseEnter={contactEnter}
@@ -60,7 +60,7 @@ const Hero = () => {
                             animate="visible"
                             transition={{ duration: 1 }}
                             variants={variants1}
-                            className="text-center lg:text-left z-0 text-7xl lg:text-9xl text-primary order-1"
+                            className="text-center font-France lg:text-left z-0 text-7xl lg:text-9xl text-primary order-1"
                         >
                             Oscar I.<br />
                             Rojas
@@ -73,14 +73,14 @@ const Hero = () => {
                             onMouseEnter={photoEnter}
                             onMouseLeave={photoLeave}
                             href={'https://ph.eldesernauta.com'} target='_blank'>
-                            <Badge text={`n' film photographer`} className={`hidden sm:block z-0 mt-2 lg:mt-0 bg-accent ${isDarkMode ? 'border-dark' : 'border-light'} rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4`} />
+                            <Badge text={`n' film photographer`} className={`hidden font-Adam sm:block z-0 mt-2 lg:mt-0 bg-accent ${isDarkMode ? 'border-dark' : 'border-light'} rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4`} />
                         </Link>
                     </div>
                     <Button
                         onClick={() => {
                             router.push('#work')
                         }}
-                        className={`hoverable bg-warning hover:bg-secondary ${isDarkMode ? 'shadow-dark border-dark' : 'shadow-light border-light'}`}
+                        className={`hoverable font-Adam bg-warning hover:bg-accent ${isDarkMode ? 'shadow-dark border-dark' : 'shadow-light border-light'}`}
                     >
                         Wanne see?
                     </Button>

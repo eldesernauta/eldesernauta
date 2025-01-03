@@ -32,7 +32,7 @@ export default function Accordion({
         role="button"
         aria-expanded={isActive}
         className={cn(
-          "flex w-full items-center text-lg transition-[border-radius] justify-between border-b-0 group-data-[state=open]:border-b-2 border-b-border dark:border-b-darkBorder bg-main p-4 md:p-5 font-heading",
+          "flex w-full items-center text-lg font-bold transition-[border-radius] justify-between border-b-0 group-data-[state=open]:border-b-2 border-b-border dark:border-b-darkBorder bg-main p-4 md:p-5 font-heading",
           className
         )}
         onClick={onToggle}

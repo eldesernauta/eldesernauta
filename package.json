@@ -1,4 +1,7 @@
 {
+  "name": "eldesernauta",
+  "version": "1.0",
+  "homepage": "https://eldesernauta.com",
   "private": true,
   "scripts": {
     "build": "next build",
