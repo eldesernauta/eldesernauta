@@ -28,7 +28,7 @@ const Portfolio = () => {
                     </div>
                 </section>
 
-                <section className="w-full bg-light px-4 2xl:px-0 py-24 lg:py-48 flex flex-col gap-24 lg:gap-48 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
+                <section className="w-full bg-light px-4 2xl:px-0 py-24 lg:py-48 flex flex-col gap-24 lg:gap-32 bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]">
                     <div className="container flex flex-col items-center justify-end mx-auto">
                         <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex sm:hidden mb-8 w-full'>More, but not least interesting projects</h2>
                         <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark hidden sm:flex mb-8'>More, but not</h2>
@@ -45,10 +45,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
 
@@ -65,7 +65,7 @@ const Portfolio = () => {
                             />
                         </div>
                     </div>
-                    <div className="container mx-auto flex flex-col-reverse lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-0">
+                    <div className="container mx-auto my-16 flex flex-col-reverse lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-0">
                         <div className="flex-1 flex items-center">
                             <div className="w-full flex flex-col gap-8">
 
@@ -76,10 +76,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
 
@@ -107,10 +107,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-accent' />
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         ¿Buscas una agencia de marketing digital en Colombia que te ofrezca soluciones de diseño excepcionales? En nuestra agencia, te ayudamos a <strong>transformar tu presencia</strong> en línea con un diseño innovador y efectivo.
                                     </p>
-                                    <p className="text-dark my-10 font-Montserrat text-justify z-0 font-bold">
+                                    <p className="text-dark my-10 font-Montserrat text-justify z-0">
                                         Desde la creación de logotipos hasta el diseño de sitios web, nuestro <strong>enfoque personalizado</strong> asegura que tu marca destaque. Descubre cómo nuestra experiencia como agencia de marketing en Colombia puede llevar tu negocio al siguiente nivel. ¡Contáctanos hoy y haz que tu marca brille!
                                     </p>
 

@@ -46,7 +46,7 @@ const HorizontalScrollCarousel = () => {
             <div className="container mb-8 mt-24 flex flex-col items-center sm:items-start justify-end mx-auto">
                 <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light flex sm:hidden mb-8 w-full'>The most interesting projects I've worked on</h2>
                 <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light hidden sm:flex mb-8'>The most interesting</h2>
-                <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light hidden sm:flex'>projects<span className='px-8 py-4 text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark bg-warning hover:bg-accent font-black transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'>I've</span>worked on</h2>
+                <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light hidden sm:flex'>projects<span className='px-12 py-4 text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark bg-warning hover:bg-accent font-bold transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'>I've</span>worked on</h2>
             </div>
             <div className="sticky container mx-auto top-36 md:top-48 flex flex-col gap-0 h-auto md:h-screen items-start">
 
@@ -67,7 +67,7 @@ function Lenis() {
 
             <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
 
-                <div className="flex bg-primary z-10 min-h-[500px] sm:min-h-[600px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
+                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[600px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
                         <div className="w-full flex justify-between items-start">
                             <Image
@@ -90,7 +90,7 @@ function Lenis() {
                                 onClick={() => {
                                     router.push('/portfolio/goo')
                                 }}
-                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-secondary shadow-dark border-dark`}
+                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
                             >
                                 Wanne see?
                             </Button>
@@ -101,7 +101,7 @@ function Lenis() {
 
             <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
 
-                <div className="flex bg-warning z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
+                <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
                         <div className="w-full flex justify-between items-start">
                             <Image
@@ -124,7 +124,7 @@ function Lenis() {
                                 onClick={() => {
                                     router.push('/portfolio/ddb')
                                 }}
-                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-secondary shadow-dark border-dark`}
+                                className={`w-80 text-center flex justify-center hoverable bg-primary hover:bg-warning shadow-dark border-dark`}
                             >
                                 Wanne see?
                             </Button>
@@ -135,7 +135,7 @@ function Lenis() {
 
             <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
 
-                <div className="flex bg-accent z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
+                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
                         <div className="w-full flex justify-between items-start">
                             <Image
@@ -158,7 +158,7 @@ function Lenis() {
                                 onClick={() => {
                                     router.push('/portfolio/incrustes')
                                 }}
-                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-secondary shadow-dark border-dark`}
+                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
                             >
                                 Wanne see?
                             </Button>
