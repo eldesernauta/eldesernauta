@@ -5,7 +5,7 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head>
-                <title>eldesernauta | portafolio</title>
+                <title>Oscar Rojas | Portfolio</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <body>

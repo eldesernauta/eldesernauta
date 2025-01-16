@@ -2,17 +2,19 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import { gsap } from "gsap";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Pagination } from 'swiper/modules';
 import Nav from "../../components/Nav/nav";
 
 import mainImg from '../../src/img/goo_card.jpg';
-import secondImg from '../../src/img/goo_card.png';
+import secondImg from '../../src/img/goo_challenge_1.jpg';
 import mainImgMobile from '../../src/img/goo_card.jpg';
 import Footer from "../../components/Footer/footer";
 import Link from "next/link";
 
-// import studyCaseImg2 from '../../src/img/goo-study_case-4.mp4'
-// import studyCaseImg1 from '../../src/img/goo-study_case-1.mp4'
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 let tabs = [
     { id: "desafio", label: "Challenge" },
@@ -20,22 +22,6 @@ let tabs = [
     { id: "solucion", label: "Solution" },
     { id: "resultado", label: "Result" },
 ];
-
-// import img1 from '../../src/img/la-cima-1.png'
-// import img2 from '../../src/img/la-cima-2.png'
-// import img3 from '../../src/img/la-cima-3.png'
-// import img4 from '../../src/img/la-cima-4.png'
-// import img5 from '../../src/img/la-cima-5.png'
-// import img6 from '../../src/img/la-cima-6.png'
-
-// const images = [
-//     { src: img1, alt: 'Image 1' },
-//     { src: img2, alt: 'Image 2' },
-//     { src: img3, alt: 'Image 3' },
-//     { src: img4, alt: 'Image 4' },
-//     { src: img5, alt: 'Image 5' },
-//     { src: img6, alt: 'Image 6' },
-// ]
 
 const Goo = () => {
     const section1Ref = useRef(null);
@@ -68,30 +54,6 @@ const Goo = () => {
         });
     };
 
-    // const studyCases = [
-    //     {
-    //         title: "Monarch Cleaning Group",
-    //         image: studyCaseImg1,
-    //         tags: ['Tag 1', 'Tag 2'],
-    //         description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de  ',
-    //         buttonText: 'Revisar',
-    //         buttonLink: '/portafolio/monarch-cleaning-group',
-    //         transform: 'translate-0 md:translate-y-24',
-    //         colorMode: 'light'
-    //     },
-    //     {
-    //         title: "Toro Handyman Services",
-    //         image: studyCaseImg2,
-    //         tags: ['Tag 4', 'Tag 5'],
-    //         description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de  ',
-    //         buttonText: 'Revisar',
-    //         buttonLink: '/portafolio/toro-handyman-services',
-    //         transform: 'translate-y-0',
-    //         colorMode: 'light'
-    //     }
-    // ];
-
-
     return (
         <>
             <Nav />
@@ -100,7 +62,7 @@ const Goo = () => {
                     <h1 className="text-dark font-Unbounded text-left text-4xl sm:text-5xl lg:text-6xl font-bold leading-[30px] md:leading-[60px] w-full">
                         Goo Hub case study
                     </h1>
-                    <h3 className="text-2xl font-bold text-dark">Revolutionizing Digital Marketing with Interactivity and Innovation</h3>
+                    <h3 className="text-2xl font-bold text-dark">Revolutionizing digital marketing with interactivity and innovation</h3>
                     <p className="text-black text-lg text-justify">Goo Hub, a digital marketing agency, needed a cutting-edge online presence to reflect its dynamic services, including UX/UI design, full-stack web development, and digital marketing strategies. From crafting unique logos to designing impactful websites, this project was built from scratch to deliver a fully interactive experience.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
@@ -152,12 +114,55 @@ const Goo = () => {
                             <p className="text-white text-center lg:text-justify text-lg"><strong>Goo Hub</strong> approached us with a vision to showcase their services in a way that stood out in the competitive digital marketing space. The challenge was to create a website that combined seamless interactivity with bold, modern visuals while maintaining excellent performance and usability.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            <Image
-                                src={secondImg}
-                                width={400}
-                                className=""
-                                alt='Goo Hub'
-                            />
+                            <Swiper
+                                direction="horizontal"
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                onSlideChange={() => console.log('slide change')}
+                                style={{
+                                    "--swiper-pagination-color": "#9735ED",
+                                    "--swiper-pagination-bullet-inactive-color": "#999999",
+                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                    "--swiper-pagination-bullet-size": "10px",
+                                    "--swiper-pagination-bullet-horizontal-gap": "6px",
+                                    "--swiper-pagination-bullet-cursor": 'none'
+                                }}
+                            >
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={secondImg}
+                                        width={400}
+                                        className="mx-auto"
+                                        alt='astronauta'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={secondImg}
+                                        width={400}
+                                        className="mx-auto"
+                                        alt='astronauta'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={secondImg}
+                                        width={400}
+                                        className="mx-auto"
+                                        alt='astronauta'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={secondImg}
+                                        width={400}
+                                        className="mx-auto"
+                                        alt='astronauta'
+                                    />
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </motion.div>
                     <motion.div
@@ -170,7 +175,7 @@ const Goo = () => {
                                 <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Conceptualization: </strong>
                                     We started by analyzing Goo Hub’s unique selling points and crafting a design that reflected their innovative approach to digital marketing.</li>
                                 <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Tools and Technologies: </strong>
-                                    The project utilized Next.js for server-rendered performance, Tailwind CSS for responsive design, and GSAP alongside Framer Motion to bring dynamic animations to life. Spline and Matter.js were employed to create interactive 3D elements and physics-based interactions.</li>
+                                    The project utilized <strong>Next.js</strong> for server-rendered performance, <strong>Tailwind CSS</strong> for responsive design, and <strong>GSAP</strong> alongside <strong>Framer Motion</strong> to bring dynamic animations to life. <strong>Splin</strong>e and <strong>Matter.js</strong> were employed to create interactive 3D elements and physics-based interactions.</li>
                                 <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Prototyping: </strong>
                                     Detailed wireframes and prototypes were developed to align the design with Goo Hub's goals, ensuring a user-friendly interface.</li>
                                 <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Development: </strong>
@@ -225,10 +230,13 @@ const Goo = () => {
 
                 </div>
             </section>
-            <section className="w-full max-w-full bg-dark flex flex-col py-24">
-                <div className="container mx-auto z-10 flex justify-end items-center">
-                    <Link href={'/portfolio/ddb'} className="font-Unbounded text-4xl text-primary md:text-7xl font-bold leading-tight md:leading-snug">
-                        Next case &#8594;
+            <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 py-24">
+                <div className="container mx-auto z-10 flex justify-between items-center">
+                    <Link href={'/portfolio/'} className="font-France uppercase text-4xl sm:text-5xl text-primary md:text-7xl">
+                        All cases
+                    </Link>
+                    <Link href={'/portfolio/ddb'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                        &#8594;
                     </Link>
                 </div>
             </section>

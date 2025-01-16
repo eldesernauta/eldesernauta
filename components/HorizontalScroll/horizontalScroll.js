@@ -44,7 +44,6 @@ const HorizontalScrollCarousel = () => {
     return (
         <section ref={targetRef} className="relative h-[650vh] md:h-[400vh] w-[100vw] lg:w-full px-4 2xl:px-0">
             <div className="container mb-8 mt-24 flex flex-col items-center sm:items-start justify-end mx-auto">
-                <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light flex sm:hidden mb-8 w-full'>The most interesting projects I've worked on</h2>
                 <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light hidden sm:flex mb-8'>The most interesting</h2>
                 <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light hidden sm:flex'>projects<span className='px-12 py-4 text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark bg-warning hover:bg-accent font-bold transition-all duration-300 rounded-full border-2 border-light -mx-4 -rotate-12'>I've</span>worked on</h2>
             </div>
@@ -67,7 +66,7 @@ function Lenis() {
 
             <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
 
-                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[600px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
+                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[500px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
                         <div className="w-full flex justify-between items-start">
                             <Image
@@ -78,11 +77,11 @@ function Lenis() {
                             />
                             <h2 className='text-dark font-Unbounded text-5xl font-bold uppercase'>01</h2>
                         </div>
-                        <div className="w-full flex justify-between items-end">
+                        <div className="w-full flex flex-col 2xl:flex-row justify-between items-end">
 
-                            <div className="w-full lg:w-[50%] flex flex-col items-start justify-start">
+                            <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
                                 <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Goo Hub:</h3>
-                                <p className="text-lg font-bold w-full">
+                                <p className="mt-4 font-Unbounded w-full">
                                     Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
                                 </p>
                             </div>
@@ -90,7 +89,7 @@ function Lenis() {
                                 onClick={() => {
                                     router.push('/portfolio/goo')
                                 }}
-                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
+                                className={`w-full 2xl:w-80 mt-8 2xl:mt-0 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
                             >
                                 Wanne see?
                             </Button>
@@ -101,7 +100,7 @@ function Lenis() {
 
             <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
 
-                <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
+                <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[500px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
                         <div className="w-full flex justify-between items-start">
                             <Image
@@ -112,11 +111,11 @@ function Lenis() {
                             />
                             <h2 className='text-dark font-Unbounded text-5xl font-bold uppercase'>02</h2>
                         </div>
-                        <div className="w-full flex justify-between items-end">
+                        <div className="w-full flex flex-col 2xl:flex-row justify-between items-end">
 
-                            <div className="w-full lg:w-[50%] flex flex-col items-start justify-start">
-                                <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Audi Spain:</h3>
-                                <p className="text-lg font-bold w-full">
+                            <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
+                                <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">DDB Colombia:</h3>
+                                <p className="mt-4 font-Unbounded w-full">
                                     During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and,,,
                                 </p>
                             </div>
@@ -124,7 +123,7 @@ function Lenis() {
                                 onClick={() => {
                                     router.push('/portfolio/ddb')
                                 }}
-                                className={`w-80 text-center flex justify-center hoverable bg-primary hover:bg-warning shadow-dark border-dark`}
+                                className={`w-full 2xl:w-80 mt-8 2xl:mt-0 text-center flex justify-center hoverable bg-primary hover:bg-warning shadow-dark border-dark`}
                             >
                                 Wanne see?
                             </Button>
@@ -135,7 +134,7 @@ function Lenis() {
 
             <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
 
-                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[450px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
+                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[500px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
                         <div className="w-full flex justify-between items-start">
                             <Image
@@ -146,11 +145,11 @@ function Lenis() {
                             />
                             <h2 className='text-dark font-Unbounded text-5xl font-bold uppercase'>03</h2>
                         </div>
-                        <div className="w-full flex justify-between items-end">
+                        <div className="w-full flex flex-col 2xl:flex-row justify-between items-end">
 
-                            <div className="w-full lg:w-[50%] flex flex-col items-start justify-start">
+                            <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
                                 <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Incrustes:</h3>
-                                <p className="text-lg font-bold w-full">
+                                <p className="mt-4 font-Unbounded w-full">
                                     Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and...
                                 </p>
                             </div>
@@ -158,7 +157,7 @@ function Lenis() {
                                 onClick={() => {
                                     router.push('/portfolio/incrustes')
                                 }}
-                                className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
+                                className={`w-full 2xl:w-80 mt-8 2xl:mt-0 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
                             >
                                 Wanne see?
                             </Button>

@@ -48,7 +48,7 @@ const WorkMobile = () => {
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
+                                        <h3 className="text-3xl md:text-6xl leading-tight text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
 
                                         <Badge text='freelance' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
@@ -105,7 +105,7 @@ const WorkMobile = () => {
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Audi Spain</h3>
+                                        <h3 className="text-3xl md:text-6xl leading-tight text-dark font-bold leading-[100px] font-Wobblezz">DDB Colombia</h3>
                                         <Badge text='DDB Colombia' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
 
@@ -160,7 +160,7 @@ const WorkMobile = () => {
 
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
+                                        <h3 className="text-3xl md:text-6xl leading-tight text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
                                         <Badge text='portfolio' className='h-auto bg-secondary border-dark -rotate-12 -translate-x-6 translate-y-6' />
                                     </div>
 

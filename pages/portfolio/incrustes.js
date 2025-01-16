@@ -100,8 +100,8 @@ const Incrustes = () => {
                     <h1 className="text-dark font-Unbounded text-left text-4xl sm:text-5xl lg:text-6xl font-bold leading-[30px] md:leading-[60px] w-full">
                         Incrustes case study
                     </h1>
-                    <h3 className="text-2xl font-bold text-dark">Revolutionizing Digital Marketing with Interactivity and Innovation</h3>
-                    <p className="text-black text-lg text-justify">Goo Hub, a digital marketing agency, needed a cutting-edge online presence to reflect its dynamic services, including UX/UI design, full-stack web development, and digital marketing strategies. From crafting unique logos to designing impactful websites, this project was built from scratch to deliver a fully interactive experience.</p>
+                    <h3 className="text-2xl font-bold text-dark">Transforming vision into interactive excellence</h3>
+                    <p className="text-black text-lg text-justify">In collaboration with <strong>Incrustes</strong> (Andres Sanchez), a talented UX/UI designer, I developed a website that flawlessly captured the bold and creative essence of his Figma prototype. Utilizing <strong>React, Tailwind, GSAP</strong>, and <strong>Framer Motion</strong>, we created an immersive and highly interactive site that stands out for its sleek functionality and thoughtful design elements.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
                     <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
@@ -149,7 +149,7 @@ const Incrustes = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Challenge</h3>
-                            <p className="text-white text-center lg:text-justify text-lg"><strong>Goo Hub</strong> approached us with a vision to showcase their services in a way that stood out in the competitive digital marketing space. The challenge was to create a website that combined seamless interactivity with bold, modern visuals while maintaining excellent performance and usability.</p>
+                            <p className="text-white text-center lg:text-justify text-lg">The primary challenge for this project was implementing a <strong>horizontal scroll cards section</strong> that relied on natural scroll interactions. The goal was to ensure smooth functionality across devices while maintaining a fully responsive design. Additionally, the project required unique features such as a <strong>custom pointer, stylized text selection</strong>, a <strong>custom scroll bar</strong>, a creative <strong>404 page</strong>, and seamless integration of a form powered by the EmailJS API.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
@@ -167,14 +167,19 @@ const Incrustes = () => {
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Process</h3>
                             <ol className="list-decimal">
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Conceptualization: </strong>
-                                    We started by analyzing Goo Hub’s unique selling points and crafting a design that reflected their innovative approach to digital marketing.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Tools and Technologies: </strong>
-                                    The project utilized Next.js for server-rendered performance, Tailwind CSS for responsive design, and GSAP alongside Framer Motion to bring dynamic animations to life. Spline and Matter.js were employed to create interactive 3D elements and physics-based interactions.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Prototyping: </strong>
-                                    Detailed wireframes and prototypes were developed to align the design with Goo Hub's goals, ensuring a user-friendly interface.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Development: </strong>
-                                    Every line of code was meticulously written, implementing the designs and animations to deliver a flawless experience across all devices.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Prototype analysis: </strong>
+                                    I meticulously reviewed the Figma prototype, paying close attention to the interactive elements, animations, and stylistic details.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Core technologies: </strong>
+                                    <ul className="list-disc">
+                                        <li><strong>&#8729; React</strong> was chosen for its component-based architecture and reusability.</li>
+                                        <li><strong>&#8729; Tailwind CSS</strong> ensured a streamlined styling process with a utility-first approach.</li>
+                                        <li><strong>&#8729; GSAP</strong> and <strong>Framer Motion</strong> powered the animations, providing smooth transitions and engaging interactions.</li>
+                                    </ul>
+                                </li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Horizontal scroll implementation: </strong>
+                                    The horizontal scroll cards section was built using a combination of CSS and JavaScript, carefully optimized to deliver a smooth scrolling experience.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Custom features: </strong>
+                                    Elements like the text selection, scroll bar, and custom pointer were designed to enhance the overall experience, aligning perfectly with the project’s creative vision.</li>
                             </ol>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
@@ -193,7 +198,7 @@ const Incrustes = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Solution</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">We addressed the challenge by integrating advanced interactive elements such as 3D models and smooth, immersive animations. Matter.js was used for physics-based interactions, ensuring a playful yet professional feel. GSAP and Framer Motion brought life to transitions, making every user interaction intuitive and engaging.</p>
+                            <p className="text-white text-center lg:text-justify text-lg">By leveraging a robust tech stack and adhering to meticulous design principles, I successfully implemented the horizontal scroll section and stylized features. The EmailJS API was integrated seamlessly into the form, ensuring efficient and reliable communication. Every detail, from animations to navigation, was optimized for a responsive and immersive user experience.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image
@@ -211,7 +216,7 @@ const Incrustes = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Result</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">The final product was a visually stunning and highly interactive website that not only captured Goo Hub's brand essence but also elevated the user experience. With seamless navigation, responsive design, and bold animations, the site now serves as a testament to Goo Hub's creativity and commitment to quality.</p>
+                            <p className="text-white text-center lg:text-justify text-lg">The final product is a visually striking, interactive website that highlights <strong>Incrustes</strong>’ creative vision. The horizontal scroll section works flawlessly, and the additional design touches, such as the custom pointer and 404 page, elevate the site’s uniqueness. This project stands as a testament to the power of collaboration and attention to detail.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image
@@ -225,10 +230,13 @@ const Incrustes = () => {
 
                 </div>
             </section>
-            <section className="w-full max-w-full bg-dark flex flex-col py-24">
-                <div className="container mx-auto z-10 flex justify-start items-center">
-                    <Link href={'/portfolio/ddb'} className="font-Unbounded text-4xl text-primary md:text-7xl font-bold leading-tight md:leading-snug">
-                        &#8592; Previous case
+            <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 py-24">
+                <div className="container mx-auto z-10 flex justify-between items-center">
+                    <Link href={'/portfolio/ddb'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                        &#8592;
+                    </Link>
+                    <Link href={'/portfolio/'} className="font-France uppercase text-4xl sm:text-5xl text-primary md:text-7xl">
+                        All cases
                     </Link>
                 </div>
             </section>

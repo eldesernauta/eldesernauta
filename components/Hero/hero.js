@@ -68,7 +68,7 @@ const Hero = () => {
 
                     </div>
                     <div className='w-full flex flex-col lg:flex-row items-center lg:items-start relative'>
-                        <h2 className={`${isDarkMode ? 'text-dark' : 'text-light'} text-center lg:text-left font-Adam uppercase text-xl lg:text-2xl z-10`}>Frontend Developer</h2>
+                        <h2 className={`${isDarkMode ? 'text-dark' : 'text-light'} text-center lg:text-left font-Unbounded uppercase text-xl lg:text-2xl z-10`}>Frontend Developer</h2>
                         <Link
                             onMouseEnter={photoEnter}
                             onMouseLeave={photoLeave}
@@ -88,7 +88,7 @@ const Hero = () => {
                         src={arrow}
                         width={'100'}
                         alt='hero arrow'
-                        className={`hidden lg:block absolute -right-4 xl:right-[15%] 2xl:right-[35%] top-[35%] ${isDarkMode ? 'britness-0' : 'brightness-100'}`}
+                        className={`hidden lg:block absolute -right-4 xl:right-[15%] 2xl:right-[35%] top-[35%] ${isDarkMode ? 'brightness-0' : 'brightness-100'}`}
                     />
                 </div>
                 <div className='w-full lg:w-3/6 flex justify-center items-center scale-x-[-1]'>

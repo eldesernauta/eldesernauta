@@ -44,9 +44,9 @@ export default function Home() {
   ];
 
 
-  const icon1 = require('../src/img/icon1.svg')
-  const icon2 = require('../src/img/icon2.svg')
-  const icon3 = require('../src/img/icon3.svg')
+  const icon1 = '🚀'
+  const icon2 = '💡'
+  const icon3 = '♻️'
 
   const itemsCards = [
     {

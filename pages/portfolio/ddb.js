@@ -100,8 +100,8 @@ const DDB = () => {
                     <h1 className="text-dark font-Unbounded text-left text-4xl sm:text-5xl lg:text-6xl font-bold leading-[30px] md:leading-[60px] w-full">
                         DDB Colombia case study
                     </h1>
-                    <h3 className="text-2xl font-bold text-dark">Revolutionizing Digital Marketing with Interactivity and Innovation</h3>
-                    <p className="text-black text-lg text-justify">Goo Hub, a digital marketing agency, needed a cutting-edge online presence to reflect its dynamic services, including UX/UI design, full-stack web development, and digital marketing strategies. From crafting unique logos to designing impactful websites, this project was built from scratch to deliver a fully interactive experience.</p>
+                    <h3 className="text-2xl font-bold text-dark">Crafting innovation for globally recognized brands</h3>
+                    <p className="text-black text-lg text-justify">During my time at <strong>DDB Colombia</strong>, I had the privilege of working with iconic brands like Audi, Estée Lauder, and Tom Ford. These experiences sharpened my attention to detail and equipped me to tackle complex challenges in the fast-paced world of advertising. One standout project was developing DDB Colombia's main landing page—a showcase of creativity and precision.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
                     <iframe src="https://ddbcol.com.co" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
@@ -149,7 +149,7 @@ const DDB = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Challenge</h3>
-                            <p className="text-white text-center lg:text-justify text-lg"><strong>Goo Hub</strong> approached us with a vision to showcase their services in a way that stood out in the competitive digital marketing space. The challenge was to create a website that combined seamless interactivity with bold, modern visuals while maintaining excellent performance and usability.</p>
+                            <p className="text-white text-center lg:text-justify text-lg">DDB Colombia needed a sleek, scroll-free landing page to serve as a bold statement of their brand. The design, provided as a Figma prototype, featured a full-screen layout divided into three interactive sections. Each section revealed its content on hover, creating a dynamic and immersive user experience. The challenge was to bring this vision to life using only <strong>HTML, CSS</strong>, and <strong>vanilla JavaScript</strong>, ensuring flawless interactivity and performance.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
@@ -167,14 +167,14 @@ const DDB = () => {
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Process</h3>
                             <ol className="list-decimal">
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Conceptualization: </strong>
-                                    We started by analyzing Goo Hub’s unique selling points and crafting a design that reflected their innovative approach to digital marketing.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Tools and Technologies: </strong>
-                                    The project utilized Next.js for server-rendered performance, Tailwind CSS for responsive design, and GSAP alongside Framer Motion to bring dynamic animations to life. Spline and Matter.js were employed to create interactive 3D elements and physics-based interactions.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Prototyping: </strong>
-                                    Detailed wireframes and prototypes were developed to align the design with Goo Hub's goals, ensuring a user-friendly interface.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Development: </strong>
-                                    Every line of code was meticulously written, implementing the designs and animations to deliver a flawless experience across all devices.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Design Analysis: </strong>
+                                    The Figma prototype was carefully analyzed to understand the desired layout, animations, and interactions.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Development Framework: </strong>
+                                    Without the support of frameworks or libraries, I structured the page using semantic <strong>HTML</strong>, styled it with modular <strong>CSS</strong>, and implemented hover-based interactions with <strong>vanilla JavaScript</strong>.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Interactive Elements: </strong>
+                                    Each section was crafted to react to user interactions seamlessly, with transitions and animations enhancing the experience while maintaining simplicity.</li>
+                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Testing: </strong>
+                                    Rigorous testing was conducted across multiple devices and browsers to ensure consistent functionality and performance.</li>
                             </ol>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
@@ -193,7 +193,7 @@ const DDB = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Solution</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">We addressed the challenge by integrating advanced interactive elements such as 3D models and smooth, immersive animations. Matter.js was used for physics-based interactions, ensuring a playful yet professional feel. GSAP and Framer Motion brought life to transitions, making every user interaction intuitive and engaging.</p>
+                            <p className="text-white text-center lg:text-justify text-lg">By leveraging a deep understanding of core web technologies, I developed a landing page that stayed true to the Figma prototype’s vision. The hover interactions were crafted to be smooth and intuitive, offering users an engaging way to explore DDB Colombia’s message without overwhelming complexity.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image
@@ -211,7 +211,7 @@ const DDB = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Result</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">The final product was a visually stunning and highly interactive website that not only captured Goo Hub's brand essence but also elevated the user experience. With seamless navigation, responsive design, and bold animations, the site now serves as a testament to Goo Hub's creativity and commitment to quality.</p>
+                            <p className="text-white text-center lg:text-justify text-lg">The final landing page was a testament to DDB Colombia’s bold and innovative approach to advertising. With its immersive design and flawless interactivity, the site captured the essence of the agency’s global reputation, leaving a lasting impression on its visitors.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image
@@ -225,13 +225,16 @@ const DDB = () => {
 
                 </div>
             </section>
-            <section className="w-full max-w-full bg-dark flex flex-col py-24">
-                <div className="container mx-auto z-10 flex justify-between items-center">
-                    <Link href={'/portfolio/goo'} className="font-Unbounded text-4xl text-primary md:text-7xl font-bold leading-tight md:leading-snug">
-                        &#8592; Previous case
+            <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 py-24">
+                <div className="container mx-auto z-10 flex gap-8 lg:gap-0 justify-between items-center">
+                    <Link href={'/portfolio/goo'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                        &#8592;
                     </Link>
-                    <Link href={'/portfolio/incrustes'} className="font-Unbounded text-4xl text-primary md:text-7xl font-bold leading-tight md:leading-snug">
-                        Next case &#8594;
+                    <Link href={'/portfolio/'} className="font-France uppercase text-center text-4xl sm:text-5xl text-primary md:text-7xl">
+                        All cases
+                    </Link>
+                    <Link href={'/portfolio/incrustes'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                        &#8594;
                     </Link>
                 </div>
             </section>

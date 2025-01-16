@@ -19,8 +19,8 @@ export default function App({ Component, pageProps, router }) {
 
     const ref = useRef(null);
     const mouse = useMouse(ref, {
-        enterDelay: 100,
-        leaveDelay: 100
+        enterDelay: 0,
+        leaveDelay: 0
     });
 
     let mouseXPosition = 0;
