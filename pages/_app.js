@@ -11,8 +11,8 @@ const France = localFont({
 const Adam = localFont({
     src: [
         {
-            path: '../src/fonts/Adam/Adam-Light.ttf',
-            weight: '300'
+            path: '../src/fonts/Adam/Adam-Medium.ttf',
+            weight: '400'
         },
         {
             path: '../src/fonts/Adam/Adam-Medium.ttf',

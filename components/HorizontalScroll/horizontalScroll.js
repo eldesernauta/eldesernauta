@@ -81,7 +81,7 @@ function Lenis() {
 
                             <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
                                 <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Goo Hub:</h3>
-                                <p className="mt-4 font-Unbounded w-full">
+                                <p className="mt-4 font-Unbounded font-Light w-full">
                                     Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
                                 </p>
                             </div>
@@ -115,7 +115,7 @@ function Lenis() {
 
                             <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
                                 <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">DDB Colombia:</h3>
-                                <p className="mt-4 font-Unbounded w-full">
+                                <p className="mt-4 font-Unbounded font-Light w-full">
                                     During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and,,,
                                 </p>
                             </div>
@@ -149,7 +149,7 @@ function Lenis() {
 
                             <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
                                 <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Incrustes:</h3>
-                                <p className="mt-4 font-Unbounded w-full">
+                                <p className="mt-4 font-Unbounded font-Light w-full">
                                     Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and...
                                 </p>
                             </div>

@@ -28,7 +28,7 @@ export default function Home() {
   const itemsAccordion = [
     {
       question: "I studied this out of context career...",
-      answer: "Studying Advertising may seem out of context for a frontend developer, but it provides a unique perspective. It taught me how to understand user behavior, design compelling visuals, and create engaging narratives—skills that perfectly complement the technical aspects of web development. This background helps me craft not just functional websites but experiences that truly connect with users.",
+      answer: "Studying advertising may seem out of context for a frontend developer, but it provides a unique perspective. It taught me how to understand user behavior, design compelling visuals, and create engaging narratives—skills that perfectly complement the technical aspects of web development. This background helps me craft not just functional websites but experiences that truly connect with users.",
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
     {
@@ -210,7 +210,7 @@ export default function Home() {
           <div className='container mx-auto'>
             <Card width='w-full bg-primary hover:bg-warning transition-all duration-700' className='w-full mb-12 bg-primary'>
               <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl'>Put in touch!</h2>
-              <p className='w-full text-lg lg:w-3/6 mt-4 mb-8'>Are you looking for a freelance or a full time web developer? Just send me a message and I'll hit you up ASAP!</p>
+              <p className='w-full font-Adam text-lg lg:w-3/6 mt-4 mb-8'>Are you looking for a freelance or a full time web developer? Just send me a message and I'll hit you up ASAP!</p>
               <Form />
             </Card>
           </div>

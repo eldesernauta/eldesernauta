@@ -48,7 +48,7 @@ const Footer = () => {
                 <Fragment>
                     <div className="w-full lg:w-2/6 text-center lg:text-left text-white order-2 lg:order-1">
                         {/* ... other code ... */}
-                        <p>{` ${year} © eldesernauta`}</p>
+                        <p className="font-Adam">{` ${year} © eldesernauta`}</p>
                         {/* ... other code ... */}
                     </div>
                 </Fragment>
@@ -56,7 +56,7 @@ const Footer = () => {
                     onClick={jumpToTop}
                     onMouseEnter={contactEnter}
                     onMouseLeave={contactLeave}
-                    className="w-full lg:w-2/6 text-white text-center order-1 lg:order-2">
+                    className="w-full font-Adam lg:w-2/6 text-white text-center order-1 lg:order-2">
                     Back to Top
                 </span>
                 <div className="w-full lg:w-2/6 flex gap-8 justify-center lg:justify-end items-center order-3">

@@ -101,7 +101,7 @@ const DDB = () => {
                         DDB Colombia case study
                     </h1>
                     <h3 className="text-2xl font-bold text-dark">Crafting innovation for globally recognized brands</h3>
-                    <p className="text-black text-lg text-justify">During my time at <strong>DDB Colombia</strong>, I had the privilege of working with iconic brands like Audi, Estée Lauder, and Tom Ford. These experiences sharpened my attention to detail and equipped me to tackle complex challenges in the fast-paced world of advertising. One standout project was developing DDB Colombia's main landing page—a showcase of creativity and precision.</p>
+                    <p className="text-black text-lg text-justify font-Adam">During my time at <strong>DDB Colombia</strong>, I had the privilege of working with iconic brands like Audi, Estée Lauder, and Tom Ford. These experiences sharpened my attention to detail and equipped me to tackle complex challenges in the fast-paced world of advertising. One standout project was developing DDB Colombia's main landing page—a showcase of creativity and precision.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
                     <iframe src="https://ddbcol.com.co" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
@@ -126,7 +126,7 @@ const DDB = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => handleTabChange(tab.id)}
-                                className={`${activeTab === tab.id ? "" : "hover:text-white/60"} relative rounded-full px-3 py-1.5 text-xs md:text-sm font-medium text-white font-Montserrat outline-sky-400 transition focus-visible:outline-2`}
+                                className={`${activeTab === tab.id ? "" : "hover:text-white/60"} relative font-Adam font-Medium rounded-full px-3 py-1.5 text-xs md:text-sm font-medium text-white font-Montserrat outline-sky-400 transition focus-visible:outline-2`}
                                 style={{ WebkitTapHighlightColor: "transparent" }}
                             >
                                 {activeTab === tab.id && (
@@ -149,7 +149,7 @@ const DDB = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Challenge</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">DDB Colombia needed a sleek, scroll-free landing page to serve as a bold statement of their brand. The design, provided as a Figma prototype, featured a full-screen layout divided into three interactive sections. Each section revealed its content on hover, creating a dynamic and immersive user experience. The challenge was to bring this vision to life using only <strong>HTML, CSS</strong>, and <strong>vanilla JavaScript</strong>, ensuring flawless interactivity and performance.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">DDB Colombia needed a sleek, scroll-free landing page to serve as a bold statement of their brand. The design, provided as a Figma prototype, featured a full-screen layout divided into three interactive sections. Each section revealed its content on hover, creating a dynamic and immersive user experience. The challenge was to bring this vision to life using only <strong>HTML, CSS</strong>, and <strong>vanilla JavaScript</strong>, ensuring flawless interactivity and performance.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
@@ -167,13 +167,13 @@ const DDB = () => {
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Process</h3>
                             <ol className="list-decimal">
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Design Analysis: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Design Analysis: </strong>
                                     The Figma prototype was carefully analyzed to understand the desired layout, animations, and interactions.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Development Framework: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Development Framework: </strong>
                                     Without the support of frameworks or libraries, I structured the page using semantic <strong>HTML</strong>, styled it with modular <strong>CSS</strong>, and implemented hover-based interactions with <strong>vanilla JavaScript</strong>.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Interactive Elements: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Interactive Elements: </strong>
                                     Each section was crafted to react to user interactions seamlessly, with transitions and animations enhancing the experience while maintaining simplicity.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Testing: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Testing: </strong>
                                     Rigorous testing was conducted across multiple devices and browsers to ensure consistent functionality and performance.</li>
                             </ol>
                         </div>
@@ -193,7 +193,7 @@ const DDB = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Solution</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">By leveraging a deep understanding of core web technologies, I developed a landing page that stayed true to the Figma prototype’s vision. The hover interactions were crafted to be smooth and intuitive, offering users an engaging way to explore DDB Colombia’s message without overwhelming complexity.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">By leveraging a deep understanding of core web technologies, I developed a landing page that stayed true to the Figma prototype’s vision. The hover interactions were crafted to be smooth and intuitive, offering users an engaging way to explore DDB Colombia’s message without overwhelming complexity.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image
@@ -211,7 +211,7 @@ const DDB = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Result</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">The final landing page was a testament to DDB Colombia’s bold and innovative approach to advertising. With its immersive design and flawless interactivity, the site captured the essence of the agency’s global reputation, leaving a lasting impression on its visitors.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">The final landing page was a testament to DDB Colombia’s bold and innovative approach to advertising. With its immersive design and flawless interactivity, the site captured the essence of the agency’s global reputation, leaving a lasting impression on its visitors.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image

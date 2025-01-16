@@ -45,7 +45,7 @@ export default function Accordion({
         }}
         className="overflow-hidden rounded-b-base bg-white dark:bg-secondaryBlack font-base transition-[height] ease-in-out"
       >
-        <p className="p-4 md:p-5 text-lg leading-relaxed md:leading-relaxed">
+        <p className="p-4 md:p-5 text-lg font-Adam leading-relaxed md:leading-relaxed">
           {answer}
         </p>
       </div>

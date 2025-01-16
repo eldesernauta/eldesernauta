@@ -48,7 +48,7 @@ const Hero = () => {
         <section id="main" className={`w-full h-auto lg:h-[calc(100vh+50px)] 2xl:h-[calc(100vh+100px)] relative flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center ${isDarkMode ? 'bg-light' : 'bg-dark'} bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]`}>
             <div className='container relative mx-auto flex flex-col lg:flex-row gap-8 justify-center items-center -translate-y-[0px] lg:-translate-y-[50px]'>
                 <div className='w-full lg:w-3/6 flex flex-col gap-4 items-center lg:items-start relative'>
-                    <Badge text='Hey! I am' className={`z-10 font-Adam font-light bg-warning ${isDarkMode ? ' border-dark' : 'border-light'} -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4`} />
+                    <Badge text='Hey! I am' className={`z-10 font-Adam font-Medium bg-warning ${isDarkMode ? ' border-dark' : 'border-light'} -rotate-12 -translate-x-24 lg:-translate-x-6 translate-y-4`} />
                     <div
                         className="hoverable"
                         onMouseEnter={contactEnter}
@@ -73,7 +73,7 @@ const Hero = () => {
                             onMouseEnter={photoEnter}
                             onMouseLeave={photoLeave}
                             href={'https://ph.eldesernauta.com'} target='_blank'>
-                            <Badge text={`n' film photographer`} className={`hidden font-Adam font-light sm:block z-0 mt-2 lg:mt-0 bg-accent ${isDarkMode ? 'border-dark' : 'border-light'} rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4`} />
+                            <Badge text={`n' film photographer`} className={`hidden font-Adam font-Medium sm:block z-0 mt-2 lg:mt-0 bg-accent ${isDarkMode ? 'border-dark' : 'border-light'} rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4`} />
                         </Link>
                     </div>
                     <Button

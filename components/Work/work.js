@@ -111,7 +111,7 @@ const Work = () => {
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
 
-                                        <Badge text='freelance' className='h-auto bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='freelance' className='h-auto font-Adam font-Medium bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
@@ -164,7 +164,7 @@ const Work = () => {
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">DDB Colombia</h3>
-                                        <Badge text='DDB Colombia' className='h-auto bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        {/* <Badge text='DDB Colombia' className='h-auto font-Adam font-Medium bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' /> */}
                                     </div>
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
@@ -217,7 +217,7 @@ const Work = () => {
                                 <Card width="w-auto bg-light relative">
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
-                                        <Badge text='portfolio' className='h-auto bg-warning border-dark -rotate-12 -translate-x-6 translate-y-6' />
+                                        <Badge text='portfolio' className='h-auto font-Adam font-Medium bg-warning border-dark -rotate-12 -translate-x-6 translate-y-6' />
                                     </div>
 
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />

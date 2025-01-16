@@ -158,7 +158,7 @@ export default function Nav() {
 
           </div>
           <div className=" absolute bottom-8 right-8 w-full flex gap-8 justify-end items-center order-3">
-            <h6>Found me at:</h6>
+            <h6 className="font-Adam">Found me at:</h6>
             <Link href="https://linkedin.com/in/eldesernauta" target="_blank">
               <FontAwesomeIcon
                 onMouseEnter={linkEnter}

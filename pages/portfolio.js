@@ -163,10 +163,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Unbounded text-justify z-0">
-                                        <strong>La Cima Ecohotel</strong> in Buenavista, Quindío, offers a glamping experience with stunning views. The site’s carousels and galleries were designed to showcase these vistas, embodying the brand’s concept of being at the peak.
+                                    <p className="text-dark my-10 font-Adam text-lg text-justify z-0">
+                                        <strong>La Cima Ecohotel</strong> in Buenavista, Quindio, offers a glamping experience with stunning views. The site’s carousels and galleries were designed to showcase these vistas, embodying the brand’s concept of being at the peak.
                                     </p>
-                                    <p className="text-dark hidden 2xl:block my-10 font-Unbounded text-justify z-0">
+                                    <p className="text-dark hidden 2xl:block my-10 font-Adam text-lg text-justify z-0">
                                         Developed with <strong>WordPress</strong> and <strong>Elementor</strong>, the website was based on a Figma prototype, using tailored color palettes and design kits to create an intuitive and visually striking user experience.
                                     </p>
 
@@ -186,10 +186,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 font-Unbounded text-justify z-0">
+                                    <p className="text-dark my-10 font-Adam text-lg text-justify z-0">
                                         <strong>Toro Handyman</strong>, based in Bastrop, TX, needed a website to attract new clients. A key feature was a custom quotation calculator, simplifying the process for potential customers to estimate project costs.
                                     </p>
-                                    <p className="text-dark hidden 2xl:block my-10 font-Unbounded text-justify z-0">
+                                    <p className="text-dark hidden 2xl:block my-10 font-Adam text-lg text-justify z-0">
                                         Built with <strong>WordPress</strong> and <strong>Elementor</strong>, the site used the Calculated Fields Form plugin to implement the calculator, ensuring functionality and ease of use while maintaining a professional and clean design.
                                     </p>
 
@@ -225,10 +225,10 @@ const Portfolio = () => {
                                         <Badge text='Wordpress' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-accent' />
-                                    <p className="text-dark my-10 font-Unbounded text-justify z-0">
+                                    <p className="text-dark my-10 font-Adam text-lg text-justify z-0">
                                         <strong>Monarch Cleaning Group</strong>, a cleaning company in Bastrop, TX, needed a simple yet elegant website to showcase their services and values. The site effectively highlights their commitment to professionalism and quality.
                                     </p>
-                                    <p className="text-dark hidden 2xl:block my-10 font-Unbounded text-justify z-0">
+                                    <p className="text-dark hidden 2xl:block my-10 font-Adam text-lg text-justify z-0">
                                         Developed with <strong>WordPress</strong> and <strong>Elementor</strong>, the design emphasizes clarity and aesthetics, creating a seamless user experience that reflects the company’s clean and organized approach.
                                     </p>
 
@@ -254,7 +254,7 @@ const Portfolio = () => {
                         <Link
                             href='https://drive.google.com/file/d/1MDwNo-uwx6M1yOkkOnsgjZtCK6pj0rYP/view?usp=sharing'
                             target="_blank"
-                            className={`w-80 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase  transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none`}
+                            className={`w-80 text-center font-Adam flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase  transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none`}
                         >
                             Download my CV <FontAwesomeIcon icon={faFileAlt} style={{ fontSize: 20 }} className="text-dark translate-x-2 2xl:translate-x-5 transition duration-300" />
                         </Link>

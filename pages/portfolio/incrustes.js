@@ -101,7 +101,7 @@ const Incrustes = () => {
                         Incrustes case study
                     </h1>
                     <h3 className="text-2xl font-bold text-dark">Transforming vision into interactive excellence</h3>
-                    <p className="text-black text-lg text-justify">In collaboration with <strong>Incrustes</strong> (Andres Sanchez), a talented UX/UI designer, I developed a website that flawlessly captured the bold and creative essence of his Figma prototype. Utilizing <strong>React, Tailwind, GSAP</strong>, and <strong>Framer Motion</strong>, we created an immersive and highly interactive site that stands out for its sleek functionality and thoughtful design elements.</p>
+                    <p className="text-black text-lg text-justify font-Adam">In collaboration with <strong>Incrustes</strong> (Andres Sanchez), a talented UX/UI designer, I developed a website that flawlessly captured the bold and creative essence of his Figma prototype. Utilizing <strong>React, Tailwind, GSAP</strong>, and <strong>Framer Motion</strong>, we created an immersive and highly interactive site that stands out for its sleek functionality and thoughtful design elements.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
                     <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
@@ -126,7 +126,7 @@ const Incrustes = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => handleTabChange(tab.id)}
-                                className={`${activeTab === tab.id ? "" : "hover:text-white/60"} relative rounded-full px-3 py-1.5 text-xs md:text-sm font-medium text-white font-Montserrat outline-sky-400 transition focus-visible:outline-2`}
+                                className={`${activeTab === tab.id ? "" : "hover:text-white/60"} relative font-Adam font-Medium rounded-full px-3 py-1.5 text-xs md:text-sm font-medium text-white font-Montserrat outline-sky-400 transition focus-visible:outline-2`}
                                 style={{ WebkitTapHighlightColor: "transparent" }}
                             >
                                 {activeTab === tab.id && (
@@ -149,7 +149,7 @@ const Incrustes = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Challenge</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">The primary challenge for this project was implementing a <strong>horizontal scroll cards section</strong> that relied on natural scroll interactions. The goal was to ensure smooth functionality across devices while maintaining a fully responsive design. Additionally, the project required unique features such as a <strong>custom pointer, stylized text selection</strong>, a <strong>custom scroll bar</strong>, a creative <strong>404 page</strong>, and seamless integration of a form powered by the EmailJS API.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">The primary challenge for this project was implementing a <strong>horizontal scroll cards section</strong> that relied on natural scroll interactions. The goal was to ensure smooth functionality across devices while maintaining a fully responsive design. Additionally, the project required unique features such as a <strong>custom pointer, stylized text selection</strong>, a <strong>custom scroll bar</strong>, a creative <strong>404 page</strong>, and seamless integration of a form powered by the EmailJS API.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
@@ -167,18 +167,18 @@ const Incrustes = () => {
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Process</h3>
                             <ol className="list-decimal">
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Prototype analysis: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Prototype analysis: </strong>
                                     I meticulously reviewed the Figma prototype, paying close attention to the interactive elements, animations, and stylistic details.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Core technologies: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Core technologies: </strong>
                                     <ul className="list-disc">
                                         <li><strong>&#8729; React</strong> was chosen for its component-based architecture and reusability.</li>
                                         <li><strong>&#8729; Tailwind CSS</strong> ensured a streamlined styling process with a utility-first approach.</li>
                                         <li><strong>&#8729; GSAP</strong> and <strong>Framer Motion</strong> powered the animations, providing smooth transitions and engaging interactions.</li>
                                     </ul>
                                 </li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Horizontal scroll implementation: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Horizontal scroll implementation: </strong>
                                     The horizontal scroll cards section was built using a combination of CSS and JavaScript, carefully optimized to deliver a smooth scrolling experience.</li>
-                                <li className="text-white text-center lg:text-justify text-lg my-2"><strong>Custom features: </strong>
+                                <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Custom features: </strong>
                                     Elements like the text selection, scroll bar, and custom pointer were designed to enhance the overall experience, aligning perfectly with the project’s creative vision.</li>
                             </ol>
                         </div>
@@ -198,7 +198,7 @@ const Incrustes = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Solution</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">By leveraging a robust tech stack and adhering to meticulous design principles, I successfully implemented the horizontal scroll section and stylized features. The EmailJS API was integrated seamlessly into the form, ensuring efficient and reliable communication. Every detail, from animations to navigation, was optimized for a responsive and immersive user experience.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">By leveraging a robust tech stack and adhering to meticulous design principles, I successfully implemented the horizontal scroll section and stylized features. The EmailJS API was integrated seamlessly into the form, ensuring efficient and reliable communication. Every detail, from animations to navigation, was optimized for a responsive and immersive user experience.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image
@@ -216,7 +216,7 @@ const Incrustes = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Result</h3>
-                            <p className="text-white text-center lg:text-justify text-lg">The final product is a visually striking, interactive website that highlights <strong>Incrustes</strong>’ creative vision. The horizontal scroll section works flawlessly, and the additional design touches, such as the custom pointer and 404 page, elevate the site’s uniqueness. This project stands as a testament to the power of collaboration and attention to detail.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">The final product is a visually striking, interactive website that highlights <strong>Incrustes</strong>’ creative vision. The horizontal scroll section works flawlessly, and the additional design touches, such as the custom pointer and 404 page, elevate the site’s uniqueness. This project stands as a testament to the power of collaboration and attention to detail.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             {/* <Image

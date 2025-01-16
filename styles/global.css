@@ -78,7 +78,7 @@
   }
 
   body {
-    font-family: "Adam", sans-serif;
+    font-family: "Adam", sans-serif !important;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
