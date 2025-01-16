@@ -34,7 +34,7 @@ const LockedCard = ({ bgColor, imgUrl, title, description, btnUrl }) => {
                 {imgUrl}
             </span>
             <h3 className="text-3xl font-bold my-4">{title}</h3>
-            <p className="h-4/6 text-lg flex justify-center font-bold mb-4 text-center">{description}</p>
+            <p className="h-4/6 text-lg flex justify-center font-Adam mb-4 text-center">{description}</p>
             {/* <Button
                 className="px-4 py-2 rounded-full bg-primary hover:bg-secondary transition shadow-dark border-dark"
                 onClick={() => window.open({ btnUrl }, "_blank")}

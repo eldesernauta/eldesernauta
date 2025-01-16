@@ -23,8 +23,7 @@ module.exports = {
                 Adam: ['Adam', 'sans-serif'],
                 Unbounded: ['Unbounded', 'sans-serif'],
                 France: ['France', 'sans-serif'],
-                Roboto: ['Roboto Mono', 'sans-serif'],
-                sans: ['var(--font-adam)'],
+                Roboto: ['Roboto Mono', 'sans-serif']
             },
             zIndex: {
                 '900': '900',

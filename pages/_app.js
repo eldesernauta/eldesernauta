@@ -11,20 +11,21 @@ const France = localFont({
 const Adam = localFont({
     src: [
         {
-            src: '../src/fonts/Adam/Adam-Light.ttf',
-            weight: 'light'
+            path: '../src/fonts/Adam/Adam-Light.ttf',
+            weight: '200'
         },
         {
-            src: '../src/fonts/Adam/Adam-Medium.ttf',
-            weight: 'medium'
+            path: '../src/fonts/Adam/Adam-Medium.ttf',
+            weight: '500'
         },
         {
-            src: '../src/fonts/Adam/Adam-Bold.ttf',
-            weight: 'bold'
+            path: '../src/fonts/Adam/Adam-Bold.ttf',
+            weight: '700'
         }
     ],
     variable: '--font-adam'
 })
+
 import { motion, useTransform, AnimatePresence } from "framer-motion";
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
@@ -121,7 +122,7 @@ export default function App({ Component, pageProps, router }) {
         damping: 28
     };
     return (
-        <div ref={ref} className={`${France.className} font-sans ${Adam.className}`}>
+        <div ref={ref} className={`${France.className + Adam.className} font-sans`}>
             <MyContext.Provider value={{ state: gooInSession, setState: setGooInSession }}>
                 <CursorProvider
                     cursorText={cursorText}

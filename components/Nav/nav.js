@@ -112,13 +112,13 @@ export default function Nav() {
             Oscar Rojas
             <br />
           </h1>
-          <p className={`text-white font-bold text-right text-sm md:text-base`}>
+          <p className={`text-white text-right text-sm md:text-base font-Adam font-bold`}>
             Web developer / Film photographer
           </p>
           <div className="flex flex-col justify-end text-right items-end w-full xl:w-5/6 2xl:w:4/6 mt-3x">
             <div className="py-2 hover:bg-transparent lg:hover:bg-[rgba(255,255,255,0.5)] hover:px-0 lg:hover:px-4 flex flex-col items-end hover:-translate-x-0 lg:hover:-translate-x-12 transition-all duration-300">
               <h3 className="text-accent font-bold">FRONTEND DEVELOPER</h3>
-              <p className={`w-full md:w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right font-bold`}>
+              <p className={`w-full md:w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right font-Adam font-bold`}>
                 Building email campaigns using HTML5 + Braze, creating animated banners using Javascript libraries such as GSAP and continuous maintenance of a code that optimizes these processes.
                 <br />
                 (Spain client) - (Medellín, Antioquia - Colombia)
@@ -131,7 +131,7 @@ export default function Nav() {
             </div>
             <div className="py-2 hover:bg-transparent lg:hover:bg-[rgba(255,255,255,0.5)] hover:px-0 lg:hover:px-4 flex flex-col items-end hover:-translate-x-0 lg:hover:-translate-x-12 transition-all duration-300">
               <h3 className="text-accent font-bold">WEB DEVELOPER</h3>
-              <p className={`w-full md:w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right font-bold`}>
+              <p className={`w-full md:w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right font-Adam font-bold`}>
                 Developing and integrating user interfaces using programming languages and new frontend technologies as HTML + CSS, Javascript, ReacJS, Tailwind, Webpack, AWS (S3, EC2, Cloudfront), Git and others.
                 <br />
                 (Bilingual) - (Austin, Texas - USA)
@@ -144,7 +144,7 @@ export default function Nav() {
             </div>
             <div className="py-2 hover:bg-transparent lg:hover:bg-[rgba(255,255,255,0.5)] hover:px-0 lg:hover:px-4 hidden sm:flex flex-col items-end hover:-translate-x-0 lg:hover:-translate-x-12 transition-all duration-300">
               <h3 className="text-accent font-bold">FRONTEND DEVELOPER</h3>
-              <p className={`w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right font-bold`}>
+              <p className={`w-5/6 2xl:w-4/6 text-sm my-1 md:my-2 text-right font-Adam font-bold`}>
                 Design, develop and manage companie's partnerships websites (33). Create and customize Wordpress plugins and themes. Building responsive layouts using Wordpress, HTML, CSS, Javascript, React, GIT and PHP.
                 <br />
                 (Bilingual) - (Medellin, Antioquia)
