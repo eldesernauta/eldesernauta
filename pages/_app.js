@@ -26,6 +26,19 @@ const Adam = localFont({
     variable: '--font-adam'
 })
 
+const Unbounded = localFont({
+    src: [
+        {
+            path: '../src/fonts/Unbounded/Unbounded-ExtraLight.ttf',
+            weight: '200'
+        },
+        {
+            path: '../src/fonts/Unbounded/Unbounded-Black.ttf',
+            weight: '800'
+        }
+    ],
+    variable: '--font-unbounded'
+})
 import { motion, useTransform, AnimatePresence } from "framer-motion";
 
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
@@ -122,7 +135,7 @@ export default function App({ Component, pageProps, router }) {
         damping: 28
     };
     return (
-        <div ref={ref} className={`${France.className + Adam.className} font-sans`}>
+        <div ref={ref} className={`${France.className + Adam.className + Unbounded.className} font-sans`}>
             <MyContext.Provider value={{ state: gooInSession, setState: setGooInSession }}>
                 <CursorProvider
                     cursorText={cursorText}
