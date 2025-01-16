@@ -1,5 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import useMouse from "@react-hook/mouse-position";
+import localFont from 'next/font/local'
+
+const France = localFont({
+    src: '../src/fonts/France/France.ttf',
+    weight: '400',
+    variable: '--font-france'
+})
 
 import { motion, useTransform, AnimatePresence } from "framer-motion";
 
@@ -97,7 +104,7 @@ export default function App({ Component, pageProps, router }) {
         damping: 28
     };
     return (
-        <div ref={ref}>
+        <div ref={ref} className={`${France.className} font-sans`}>
             <MyContext.Provider value={{ state: gooInSession, setState: setGooInSession }}>
                 <CursorProvider
                     cursorText={cursorText}
