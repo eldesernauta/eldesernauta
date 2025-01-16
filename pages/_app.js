@@ -12,7 +12,7 @@ const Adam = localFont({
     src: [
         {
             path: '../src/fonts/Adam/Adam-Light.ttf',
-            weight: '200'
+            weight: '300'
         },
         {
             path: '../src/fonts/Adam/Adam-Medium.ttf',

@@ -90,7 +90,7 @@ export default function Nav() {
             href={`${links[0].path}#contact`}
             onMouseEnter={availableEnter}
             onMouseLeave={availableLeave}
-            className={`${isScrolled ? 'text-primary' : 'text-light'} text-md font-Adam hidden sm:flex justify-center items-center`}
+            className={`${isScrolled ? 'text-primary' : 'text-light'} text-md font-Adam font-light hidden sm:flex justify-center items-center`}
           >
             AVAILABLE FOR WORK
           </Link>
