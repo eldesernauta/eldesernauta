@@ -24,6 +24,7 @@ module.exports = {
                 Unbounded: ['Unbounded', 'sans-serif'],
                 France: ['France', 'sans-serif'],
                 Roboto: ['Roboto Mono', 'sans-serif'],
+                sans: ['var(--font-adam)'],
             },
             zIndex: {
                 '900': '900',
