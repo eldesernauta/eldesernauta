@@ -20,9 +20,9 @@ module.exports = {
                 dark: '#212121'
             },
             fontFamily: {
-                Adam: ['Adam', 'serif'],
-                Unbounded: ['Unbounded', 'serif'],
-                France: ['France', 'serif'],
+                Adam: ['Adam', 'sans-serif'],
+                Unbounded: ['Unbounded', 'sans-serif'],
+                France: ['France', 'sans-serif'],
                 Roboto: ['Roboto Mono', 'sans-serif'],
             },
             zIndex: {

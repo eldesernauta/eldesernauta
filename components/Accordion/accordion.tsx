@@ -1,5 +1,3 @@
-"use client";
-
 import { ClassValue } from "clsx";
 import { ChevronDown } from "lucide-react";
 

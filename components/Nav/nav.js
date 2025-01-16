@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import Drawer from "../Drawer/drawer";
 import Image from "next/image";

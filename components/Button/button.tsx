@@ -1,5 +1,3 @@
-"use client";
-
 import { ClassValue } from "clsx";
 import { useCursor } from "../../context/CursorContext";
 import { cn } from "../../lib/utils";
