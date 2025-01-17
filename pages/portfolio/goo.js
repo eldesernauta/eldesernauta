@@ -12,7 +12,22 @@ import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
 import mainImg from '../../src/img/goo_card.jpg';
-import secondImg from '../../src/img/goo_challenge_1.jpg';
+
+import challenge1 from '../../src/img/goo_challenge_1.jpg';
+import challenge2 from '../../src/img/goo_challenge_2.jpg';
+import challenge3 from '../../src/img/goo_challenge_3.jpg';
+import challenge4 from '../../src/img/goo_challenge_4.jpg';
+
+import process1 from '../../src/img/goo_process_1.jpg';
+import process2 from '../../src/img/goo_process_2.jpg';
+import process3 from '../../src/img/goo_process_3.jpg';
+
+import result1 from '../../src/img/goo_result_1.jpg';
+import result2 from '../../src/img/goo_result_2.jpg';
+import result3 from '../../src/img/goo_result_3.jpg';
+import result4 from '../../src/img/goo_result_4.jpg';
+
+import solution from '../../src/img/goo_solution.jpg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -46,7 +61,7 @@ const Goo = () => {
         setCursorText("");
         setCursorVariant("default");
     }
-    
+
     function handleClick() {
         setCursorText("");
         setCursorVariant("default");
@@ -109,7 +124,7 @@ const Goo = () => {
 
             <div className="w-full h-[50vh] lg:h-[60vh] bg-[#8E32E3] -mt-[40vh] lg:-mt-[50vh]"></div>
 
-            <section className="bg-dark transition-colors duration-300 w-full flex flex-col justify-center items-center py-12 2xl:py-24 px-5 2xl:px-0 gap-24 ">
+            <section className="h-[70vh] bg-dark transition-colors duration-300 w-full flex flex-col justify-start items-center py-12 2xl:py-24 px-5 2xl:px-0 gap-24 ">
                 <div className="container mx-auto flex flex-col justify-center items-center text-center z-10">
                     <div className="w-auto px-2 md:px-12 py-2 rounded-full flex justify-center items-center gap-2 md:gap-12 border md:border-2 bg-dark  border-white">
                         {tabs.map((tab) => (
@@ -162,34 +177,30 @@ const Goo = () => {
                             >
                                 <SwiperSlide className="flex justify-center items-center pb-12">
                                     <Image
-                                        src={secondImg}
-                                        width={400}
+                                        src={challenge1}
                                         className="mx-auto"
-                                        alt='astronauta'
+                                        alt='challenge'
                                     />
                                 </SwiperSlide>
                                 <SwiperSlide className="flex justify-center items-center pb-12">
                                     <Image
-                                        src={secondImg}
-                                        width={400}
+                                        src={challenge2}
                                         className="mx-auto"
-                                        alt='astronauta'
+                                        alt='challenge'
                                     />
                                 </SwiperSlide>
                                 <SwiperSlide className="flex justify-center items-center pb-12">
                                     <Image
-                                        src={secondImg}
-                                        width={400}
+                                        src={challenge3}
                                         className="mx-auto"
-                                        alt='astronauta'
+                                        alt='challenge'
                                     />
                                 </SwiperSlide>
                                 <SwiperSlide className="flex justify-center items-center pb-12">
                                     <Image
-                                        src={secondImg}
-                                        width={400}
+                                        src={challenge4}
                                         className="mx-auto"
-                                        alt='astronauta'
+                                        alt='challenge'
                                     />
                                 </SwiperSlide>
                             </Swiper>
@@ -213,12 +224,44 @@ const Goo = () => {
                             </ol>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
-                                className=""
-                                alt='astronauta'
-                            /> */}
+                            <Swiper
+                                direction="horizontal"
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                onSlideChange={() => console.log('slide change')}
+                                style={{
+                                    "--swiper-pagination-color": "#9735ED",
+                                    "--swiper-pagination-bullet-inactive-color": "#999999",
+                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                    "--swiper-pagination-bullet-size": "10px",
+                                    "--swiper-pagination-bullet-horizontal-gap": "6px",
+                                    "--swiper-pagination-bullet-cursor": 'none'
+                                }}
+                            >
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={process1}
+                                        className="mx-auto"
+                                        alt='process'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={process2}
+                                        className="mx-auto"
+                                        alt='process'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={process3}
+                                        className="mx-auto"
+                                        alt='process'
+                                    />
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </motion.div>
 
@@ -231,12 +274,11 @@ const Goo = () => {
                             <p className="text-white text-center lg:text-justify text-lg font-Adam">We addressed the challenge by integrating advanced interactive elements such as 3D models and smooth, immersive animations. Matter.js was used for physics-based interactions, ensuring a playful yet professional feel. GSAP and Framer Motion brought life to transitions, making every user interaction intuitive and engaging.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
+                            <Image
+                                src={solution}
                                 className=""
-                                alt='astronauta'
-                            /> */}
+                                alt='solution'
+                            />
                         </div>
                     </motion.div>
 
@@ -249,12 +291,51 @@ const Goo = () => {
                             <p className="text-white text-center lg:text-justify text-lg font-Adam">The final product was a visually stunning and highly interactive website that not only captured Goo Hub's brand essence but also elevated the user experience. With seamless navigation, responsive design, and bold animations, the site now serves as a testament to Goo Hub's creativity and commitment to quality.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
-                                className=""
-                                alt='astronauta'
-                            /> */}
+                            <Swiper
+                                direction="horizontal"
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                onSlideChange={() => console.log('slide change')}
+                                style={{
+                                    "--swiper-pagination-color": "#9735ED",
+                                    "--swiper-pagination-bullet-inactive-color": "#999999",
+                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                    "--swiper-pagination-bullet-size": "10px",
+                                    "--swiper-pagination-bullet-horizontal-gap": "6px",
+                                    "--swiper-pagination-bullet-cursor": 'none'
+                                }}
+                            >
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result1}
+                                        className="mx-auto"
+                                        alt='result'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result2}
+                                        className="mx-auto"
+                                        alt='result'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result3}
+                                        className="mx-auto"
+                                        alt='result'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result4}
+                                        className="mx-auto"
+                                        alt='result'
+                                    />
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </motion.div>
 

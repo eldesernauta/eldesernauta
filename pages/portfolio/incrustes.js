@@ -12,7 +12,10 @@ import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
 import mainImg from '../../src/img/incrustes_case.png';
-import secondImg from '../../src/img/incrustes_card.png';
+import challenge from '../../src/img/incrustes_challenge.jpg';
+import process from '../../src/img/incrustes_process.jpg';
+import solution from '../../src/img/incrustes_solution.png';
+import result from '../../src/img/incrustes_result.png';
 
 let tabs = [
     { id: "desafio", label: "Challenge" },
@@ -141,10 +144,9 @@ const Incrustes = () => {
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
-                                src={secondImg}
-                                width={400}
+                                src={challenge}
                                 className=""
-                                alt='Goo Hub'
+                                alt='challenge'
                             />
                         </div>
                     </motion.div>
@@ -171,12 +173,11 @@ const Incrustes = () => {
                             </ol>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
+                            <Image
+                                src={process}
                                 className=""
-                                alt='astronauta'
-                            /> */}
+                                alt='process'
+                            />
                         </div>
                     </motion.div>
 
@@ -189,12 +190,11 @@ const Incrustes = () => {
                             <p className="text-white text-center lg:text-justify text-lg font-Adam">By leveraging a robust tech stack and adhering to meticulous design principles, I successfully implemented the horizontal scroll section and stylized features. The EmailJS API was integrated seamlessly into the form, ensuring efficient and reliable communication. Every detail, from animations to navigation, was optimized for a responsive and immersive user experience.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
+                            <Image
+                                src={solution}
                                 className=""
-                                alt='astronauta'
-                            /> */}
+                                alt='solution'
+                            />
                         </div>
                     </motion.div>
 
@@ -207,12 +207,11 @@ const Incrustes = () => {
                             <p className="text-white text-center lg:text-justify text-lg font-Adam">The final product is a visually striking, interactive website that highlights <strong>Incrustes</strong>’ creative vision. The horizontal scroll section works flawlessly, and the additional design touches, such as the custom pointer and 404 page, elevate the site’s uniqueness. This project stands as a testament to the power of collaboration and attention to detail.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
+                            <Image
+                                src={result}
                                 className=""
-                                alt='astronauta'
-                            /> */}
+                                alt='result'
+                            />
                         </div>
                     </motion.div>
 

@@ -12,7 +12,13 @@ import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
 import mainImg from '../../src/img/ddb_card.png';
-import secondImg from '../../src/img/ddb_logo.png';
+
+import challenge from '../../src/img/ddb_challenge.jpg';
+import process from '../../src/img/ddb_process.png';
+import solution from '../../src/img/ddb_solution.jpg';
+import result1 from '../../src/img/ddb_result_1.jpg';
+import result2 from '../../src/img/ddb_result_2.jpg';
+import result3 from '../../src/img/ddb_result_3.jpg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -119,7 +125,7 @@ const DDB = () => {
 
             <div className="w-full h-[50vh] lg:h-[60vh] bg-[#ffd81e] -mt-[40vh] lg:-mt-[50vh]"></div>
 
-            <section className="bg-dark transition-colors duration-300 w-full flex flex-col justify-center items-center py-12 2xl:py-24 px-5 2xl:px-0 gap-24 ">
+            <section className="h-[70vh] bg-dark transition-colors duration-300 w-full flex flex-col justify-start items-center py-12 2xl:py-24 px-5 2xl:px-0 gap-24 ">
                 <div className="container mx-auto flex flex-col justify-center items-center text-center z-10">
                     <div className="w-auto px-2 md:px-12 py-2 rounded-full flex justify-center items-center gap-2 md:gap-12 border md:border-2 bg-dark  border-white">
                         {tabs.map((tab) => (
@@ -155,8 +161,7 @@ const DDB = () => {
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
-                                src={secondImg}
-                                width={200}
+                                src={challenge}
                                 className=""
                                 alt='Goo Hub'
                             />
@@ -180,12 +185,11 @@ const DDB = () => {
                             </ol>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
+                            <Image
+                                src={process}
                                 className=""
-                                alt='astronauta'
-                            /> */}
+                                alt='process'
+                            />
                         </div>
                     </motion.div>
 
@@ -198,12 +202,11 @@ const DDB = () => {
                             <p className="text-white text-center lg:text-justify text-lg font-Adam">By leveraging a deep understanding of core web technologies, I developed a landing page that stayed true to the Figma prototype’s vision. The hover interactions were crafted to be smooth and intuitive, offering users an engaging way to explore DDB Colombia’s message without overwhelming complexity.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
+                            <Image
+                                src={solution}
                                 className=""
-                                alt='astronauta'
-                            /> */}
+                                alt='solution'
+                            />
                         </div>
                     </motion.div>
 
@@ -216,12 +219,44 @@ const DDB = () => {
                             <p className="text-white text-center lg:text-justify text-lg font-Adam">The final landing page was a testament to DDB Colombia’s bold and innovative approach to advertising. With its immersive design and flawless interactivity, the site captured the essence of the agency’s global reputation, leaving a lasting impression on its visitors.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
-                            {/* <Image
-                                src={astronauta}
-                                width={400}
-                                className=""
-                                alt='astronauta'
-                            /> */}
+                            <Swiper
+                                direction="horizontal"
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                onSlideChange={() => console.log('slide change')}
+                                style={{
+                                    "--swiper-pagination-color": "#9735ED",
+                                    "--swiper-pagination-bullet-inactive-color": "#999999",
+                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                    "--swiper-pagination-bullet-size": "10px",
+                                    "--swiper-pagination-bullet-horizontal-gap": "6px",
+                                    "--swiper-pagination-bullet-cursor": 'none'
+                                }}
+                            >
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result1}
+                                        className="mx-auto"
+                                        alt='process'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result2}
+                                        className="mx-auto"
+                                        alt='process'
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide className="flex justify-center items-center pb-12">
+                                    <Image
+                                        src={result3}
+                                        className="mx-auto"
+                                        alt='process'
+                                    />
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </motion.div>
 
