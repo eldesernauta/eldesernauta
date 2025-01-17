@@ -119,8 +119,10 @@ export default function Nav() {
         <button
           onMouseEnter={linkEnter}
           onMouseLeave={linkLeave}
-          onClick={handleClick}
-          onClick={() => setIsDrawerActive(true)}
+          onClick={() => {
+            setIsDrawerActive(true)
+            handleClick
+          }}
           className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
         >
           INFO
