@@ -96,19 +96,20 @@ const Incrustes = () => {
                     <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
                 </div>
                 <div className="block lg:hidden container mx-auto z-10 p-0 px-5 pb-0">
-                    <Image
+                    <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" allowFullScreen className="h-[600px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
+                    {/* <Image
                         src={mainImg}
                         autoPlay
                         muted
                         loop
                         className="w-full h-[600px] mx-auto rounded-2xl"
-                    />
+                    /> */}
                 </div>
             </section>
 
             <div className="w-full h-[50vh] lg:h-[60vh] bg-[#BDFA03] -mt-[40vh] lg:-mt-[50vh]"></div>
 
-            <section className="bg-dark transition-colors duration-300 w-full flex flex-col justify-center items-center py-12 2xl:py-24 px-5 2xl:px-0 gap-24 ">
+            <section className="h-auto min-h-[80vh] bg-dark transition-colors duration-300 w-full flex flex-col justify-start items-center py-12 lg:py-24 2xl:py-40 px-5 2xl:px-0 gap-24 ">
                 <div className="container mx-auto flex flex-col justify-center items-center text-center z-10">
                     <div className="w-auto px-2 md:px-12 py-2 rounded-full flex justify-center items-center gap-2 md:gap-12 border md:border-2 bg-dark  border-white">
                         {tabs.map((tab) => (
@@ -217,7 +218,7 @@ const Incrustes = () => {
 
                 </div>
             </section>
-            <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 py-24">
+            <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 pt-12">
                 <div className="container mx-auto z-10 flex justify-between items-center">
                     <Link
                         onMouseEnter={prevEnter}

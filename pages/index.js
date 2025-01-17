@@ -78,10 +78,6 @@ export default function Home() {
       <Layout>
         <Hero />
 
-        <section id='work' className="hidden lg:block z-20 lg:-translate-y-[50px] 2xl:-translate-y-[100px] bg-primary min-h-auto md:min-h-screen 2xl:min-h-[80vh]py-24 rounded-tl-3xl lg:rounded-tl-[50px] 2xl:rounded-tl-[100px] rounded-tr-3xl lg:rounded-tr-[50px] 2xl:rounded-tr-[100px]">
-          <Work />
-        </section>
-
 
         <section className="block lg:hidden bg-primary min-h-auto rounded-tl-0 rounded-tr-0">
           <WorkMobile />

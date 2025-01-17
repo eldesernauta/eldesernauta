@@ -36,6 +36,19 @@ module.exports = {
                 dark: '8px 8px 0px 0px #000',
                 darkInput: '4px 4px 0px 0px #000',
             },
+            keyframes: {
+                animatedgradient: {
+                    '0%': { backgroundPosition: '0% 50%' },
+                    '50%': { backgroundPosition: '100% 50%' },
+                    '100%': { backgroundPosition: '0% 50%' },
+                },
+            },
+            backgroundSize: {
+                '300%': '300%',
+            },
+            animation: {
+                gradient: 'animatedgradient 6s ease infinite alternate',
+            },
         },
     },
     darkMode: 'class',

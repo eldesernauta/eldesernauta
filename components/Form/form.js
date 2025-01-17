@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import emailjs from 'emailjs-com';
 
@@ -7,6 +8,7 @@ import { useCursor } from "../../context/CursorContext";
 const contactImg = require('../../src/img/contact_img.svg')
 
 const Form = () => {
+    const router = useRouter()
     const [formData, setFormData] = useState({
         name: '',
         phone: '',

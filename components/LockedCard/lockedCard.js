@@ -1,9 +1,5 @@
-import { useEffect, useRef } from 'react';
 import { useCursor } from '../../context/CursorContext';
 import { motion } from "framer-motion";
-import Button from "../Button/button";
-import Image from "next/image";
-import gsap from "gsap";
 
 const LockedCard = ({ bgColor, imgUrl, title, description, btnUrl }) => {
 
@@ -35,12 +31,7 @@ const LockedCard = ({ bgColor, imgUrl, title, description, btnUrl }) => {
             </span>
             <h3 className="text-3xl font-bold my-4">{title}</h3>
             <p className="h-4/6 text-lg flex justify-center font-Adam mb-4 text-center">{description}</p>
-            {/* <Button
-                className="px-4 py-2 rounded-full bg-primary hover:bg-secondary transition shadow-dark border-dark"
-                onClick={() => window.open({ btnUrl }, "_blank")}
-            >
-                Learn More
-            </Button> */}
+
         </motion.div>
     );
 }
