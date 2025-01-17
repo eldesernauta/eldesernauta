@@ -26,7 +26,7 @@ const Form = () => {
             'service_bt75nio',
             'template_83sggic',
             formData,
-            'ttalDMNz0wIJllO6DgNCa'
+            '7a-MiWPvlF67gvfzK'
         ).then((response) => {
             console.log('SUCCESS!', response.status, response.text);
             setErrorMessage('Tu mensaje se envió correctamente'); // Clear error message on success
