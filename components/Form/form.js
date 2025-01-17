@@ -1,20 +1,41 @@
 import { useState } from 'react'
 import Image from 'next/image'
+import emailjs from 'emailjs-com';
 
 import { useCursor } from "../../context/CursorContext";
-
-import Input from '../Input/input'
-import Textarea from '../Textarea/textarea'
-import Button from '../Button/button'
 
 const contactImg = require('../../src/img/contact_img.svg')
 
 const Form = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+    });
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.send(
+            'service_bt75nio',
+            'template_83sggic',
+            formData,
+            'ttalDMNz0wIJllO6DgNCa'
+        ).then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            setErrorMessage('Tu mensaje se envió correctamente'); // Clear error message on success
+        }).catch((err) => {
+            console.log('FAILED...', err);
+            setErrorMessage('Error al enviar el formulario. Intente nuevamente.'); // Set error message on failure
+        });
+    };
     const { setCursorText, setCursorVariant } = useCursor();
-    const [name, setName] = useState('')
-    const [phone, setPhone] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
 
     function formEnter() {
         setCursorText("✍️");
@@ -29,38 +50,46 @@ const Form = () => {
     return (
         <>
             <div className='container mx-auto flex flex-col lg:flex-row gap-8 relative'>
-                <div className='flex flex-col gap-6 w-full lg:w-3/6'>
-                    <Input
-                        value={name}
-                        setValue={setName}
+                <form onSubmit={handleSubmit} className='flex flex-col gap-6 w-full lg:w-3/6'>
+                    <input
+                        value={formData.name}
+                        name="name"
+                        id="name"
                         placeholder="Name"
-                        className="border-dark outline-none rounded-xl shadow-darkInput font-Adam"
+                        onChange={handleChange}
+                        className="border-2 border-dark h-12 px-4 outline-none rounded-xl shadow-darkInput font-Adam"
                     />
-                    <Input
-                        value={phone}
-                        setValue={setPhone}
+                    <input
+                        value={formData.phone}
+                        name="phone"
+                        id="phone"
                         placeholder="Phone"
-                        className="border-dark outline-none rounded-xl shadow-darkInput font-Adam"
+                        onChange={handleChange}
+                        className="border-2 border-dark h-12 px-4 outline-none rounded-xl shadow-darkInput font-Adam"
                     />
-                    <Input
-                        value={email}
-                        setValue={setEmail}
+                    <input
+                        value={formData.email}
+                        name="email"
+                        id="email"
                         placeholder="Email"
-                        className="border-dark outline-none rounded-xl shadow-darkInput font-Adam"
+                        onChange={handleChange}
+                        className="border-2 border-dark h-12 px-4 outline-none rounded-xl shadow-darkInput font-Adam"
                     />
-                    <Textarea
-                        value={message}
-                        setValue={setMessage}
+                    <textarea
+                        value={formData.message}
+                        name="message"
+                        id="message"
                         placeholder="Message"
-                        className="w-full border-dark outline-none rounded-xl shadow-darkInput font-Adam"
+                        onChange={handleChange}
+                        className="w-full border-2 border-dark h-48 px-4 py-4 outline-none rounded-xl shadow-darkInput font-Adam"
                         row
                     />
-                    <Button
+                    <button
                         type='submit'
-                        className="w-48 mt-8 flex justify-center items-center bg-accent hover:bg-primary shadow-dark border-dark">
+                        className="w-48 py-4 rounded-full border-2 uppercase font-Adam font-bold mt-8 flex justify-center items-center bg-accent hover:bg-primary shadow-dark border-dark">
                         Submit
-                    </Button>
-                </div>
+                    </button>
+                </form>
                 <div className='w-full lg:w-3/6'>
                     <Image
                         src={contactImg}
