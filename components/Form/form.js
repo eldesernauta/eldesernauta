@@ -29,10 +29,10 @@ const Form = () => {
             '7a-MiWPvlF67gvfzK'
         ).then((response) => {
             console.log('SUCCESS!', response.status, response.text);
-            setErrorMessage('Tu mensaje se envió correctamente'); // Clear error message on success
+            router.push('/thank-you'); // Redirige a la página de Thank You
         }).catch((err) => {
             console.log('FAILED...', err);
-            setErrorMessage('Error al enviar el formulario. Intente nuevamente.'); // Set error message on failure
+            setErrorMessage('Error al enviar el formulario. Intente nuevamente.');
         });
     };
     const { setCursorText, setCursorVariant } = useCursor();
