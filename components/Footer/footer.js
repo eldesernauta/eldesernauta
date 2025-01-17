@@ -4,9 +4,21 @@ import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-
 import { useCursor } from '../../context/CursorContext';
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = (props) => {
     const [year, setYear] = useState(new Date().getFullYear());
     const { setCursorText, setCursorVariant } = useCursor();
+
+    const [color, setColor] = useState('')
+
+    useEffect(() => {
+        if (props.mode === 'light') {
+            setColor('bg-light')
+        } else {
+            setColor('bg-dark')
+        }
+
+    }, [])
+
 
     function contactEnter() {
         setCursorText("↑");
@@ -43,10 +55,10 @@ const Footer = () => {
     }, []);
 
     return (
-        <section className="w-full px-5 lg:px-8 2xl:px-0 bg-dark flex">
+        <section className={`${color} w-full px-5 lg:px-8 2xl:px-0 lex`}>
             <div className="container mx-auto h-auto lg:h-24 py-12 lg:py-0 flex flex-col lg:flex-row gap-4 lg:gap-0 justify-center lg:justify-between items-center">
                 <Fragment>
-                    <div className="w-full lg:w-2/6 text-center lg:text-left text-white order-2 lg:order-1">
+                    <div className={`${color === 'light' ? 'text-light' : 'text-dark'} w-full lg:w-2/6 text-center lg:text-left  order-2 lg:order-1`}>
                         {/* ... other code ... */}
                         <p className="font-Adam">{` ${year} © eldesernauta`}</p>
                         {/* ... other code ... */}
@@ -56,7 +68,7 @@ const Footer = () => {
                     onClick={jumpToTop}
                     onMouseEnter={contactEnter}
                     onMouseLeave={contactLeave}
-                    className="w-full font-Adam lg:w-2/6 text-white text-center order-1 lg:order-2">
+                    className={`${color === 'light' ? 'text-light' : 'text-dark'} w-full font-Adam lg:w-2/6 text-center order-1 lg:order-2`}>
                     Back to Top
                 </span>
                 <div className="w-full lg:w-2/6 flex gap-8 justify-center lg:justify-end items-center order-3">
