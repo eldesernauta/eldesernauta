@@ -62,6 +62,11 @@ export default function Nav() {
     setCursorVariant("default");
   }
 
+  function handleClick() {
+    setCursorText("");
+    setCursorVariant("default");
+  }
+
   const links = [
     {
       path: "/",
@@ -79,6 +84,7 @@ export default function Nav() {
           <Link
             onMouseEnter={linkEnter}
             onMouseLeave={linkLeave}
+            onClick={handleClick}
             href="/portfolio"
             className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
           >
@@ -89,6 +95,7 @@ export default function Nav() {
           <Link
             onMouseEnter={linkEnter}
             onMouseLeave={linkLeave}
+            onClick={handleClick}
             href="/"
             className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
           >
@@ -112,6 +119,7 @@ export default function Nav() {
         <button
           onMouseEnter={linkEnter}
           onMouseLeave={linkLeave}
+          onClick={handleClick}
           onClick={() => setIsDrawerActive(true)}
           className="text-4xl sm:text-5xl xl:text-7xl font-France text-primary"
         >

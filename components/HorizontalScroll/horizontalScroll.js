@@ -69,7 +69,12 @@ function Lenis() {
         setCursorVariant("contact");
     }
 
-    function casetLeave() {
+    function caseLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
+    function handleClick() {
         setCursorText("");
         setCursorVariant("default");
     }
@@ -83,7 +88,8 @@ function Lenis() {
 
                 <Link
                     onMouseEnter={caseEnter}
-                    onMouseLeave={casetLeave}
+                    onMouseLeave={caseLeave}
+                    onClick={handleClick}
                     href={'/portfolio/goo'}>
                     <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[500px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                         <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
@@ -122,7 +128,8 @@ function Lenis() {
 
                 <Link
                     onMouseEnter={caseEnter}
-                    onMouseLeave={casetLeave}
+                    onMouseLeave={caseLeave}
+                    onClick={handleClick}
                     href={'/portfolio/ddb'}>
                     <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[500px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                         <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
@@ -161,7 +168,8 @@ function Lenis() {
 
                 <Link
                     onMouseEnter={caseEnter}
-                    onMouseLeave={casetLeave}
+                    onMouseLeave={caseLeave}
+                    onClick={handleClick}
                     href={'/portfolio/incrustes'}>
                     <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] sm:min-h-[700px] md:min-h-[600px] lg:min-h-[500px] 2xl:min-h-[500px] min-w-[80vw] md:min-w-[50vw] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-12">
                         <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>

@@ -38,7 +38,12 @@ const Work = () => {
         setCursorVariant("contact");
     }
 
-    function casetLeave() {
+    function caseLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
+    function handleClick() {
         setCursorText("");
         setCursorVariant("default");
     }
@@ -110,7 +115,8 @@ const Work = () => {
 
                                 <Link
                                     onMouseEnter={caseEnter}
-                                    onMouseLeave={casetLeave}
+                                    onMouseLeave={caseLeave}
+                                    onClick={handleClick}
                                     href={'/portfolio/goo'}>
                                     <Card width="w-auto bg-light relative">
                                         <div className='w-full flex justify-start items-center'>
@@ -145,12 +151,13 @@ const Work = () => {
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
                             <Link
                                 onMouseEnter={caseEnter}
-                                onMouseLeave={casetLeave}
+                                onMouseLeave={caseLeave}
+                                onClick={handleClick}
                                 href={'/portfolio/goo'}>
                                 <Image
                                     src={caseStudy1}
                                     onMouseEnter={caseEnter}
-                                    onMouseLeave={casetLeave}
+                                    onMouseLeave={caseLeave}
                                     alt='case study1'
                                     objectFit='cover'
                                     className='rounded-full hover:-rotate-12 transition-all duration-1000 bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
@@ -173,7 +180,8 @@ const Work = () => {
 
                                 <Link
                                     onMouseEnter={caseEnter}
-                                    onMouseLeave={casetLeave}
+                                    onMouseLeave={caseLeave}
+                                    onClick={handleClick}
                                     href={'/portfolio/ddb'}>
                                     <Card width="w-auto bg-light relative">
                                         <div className='w-full flex justify-start items-center'>
@@ -208,12 +216,13 @@ const Work = () => {
 
                             <Link
                                 onMouseEnter={caseEnter}
-                                onMouseLeave={casetLeave}
+                                onMouseLeave={caseLeave}
+                                onClick={handleClick}
                                 href={'/portfolio/ddb'}>
                                 <Image
                                     src={caseStudy2}
                                     onMouseEnter={caseEnter}
-                                    onMouseLeave={casetLeave}
+                                    onMouseLeave={caseLeave}
                                     alt='case study1'
                                     objectFit='cover'
                                     className='rounded-full bg-dark hover:scale-105 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
@@ -236,7 +245,8 @@ const Work = () => {
 
                                 <Link
                                     onMouseEnter={caseEnter}
-                                    onMouseLeave={casetLeave}
+                                    onMouseLeave={caseLeave}
+                                    onClick={handleClick}
                                     href={'/portfolio/incrustes'}>
                                     <Card width="w-auto bg-light relative">
                                         <div className='w-full flex justify-start items-center'>
@@ -269,12 +279,13 @@ const Work = () => {
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
                             <Link
                                 onMouseEnter={caseEnter}
-                                onMouseLeave={casetLeave}
+                                onMouseLeave={caseLeave}
+                                onClick={handleClick}
                                 href={'/portfolio/incrustes'}>
                                 <Image
                                     src={caseStudy3}
                                     onMouseEnter={caseEnter}
-                                    onMouseLeave={casetLeave}
+                                    onMouseLeave={caseLeave}
                                     alt='case study1'
                                     objectFit='cover'
                                     className='rounded-full bg-dark hover:rotate-45 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'

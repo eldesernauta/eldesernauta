@@ -63,6 +63,11 @@ const DDB = () => {
         setCursorVariant("default");
     }
 
+    function handleClick() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
     const handleTabChange = (tabId) => {
         setActiveTab(tabId);
 
@@ -227,18 +232,21 @@ const DDB = () => {
                     <Link
                         onMouseEnter={prevEnter}
                         onMouseLeave={prevLeave}
+                        onClick={handleClick}
                         href={'/portfolio/goo'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
                         &#8592;
                     </Link>
                     <Link
                         onMouseEnter={sectionEnter}
                         onMouseLeave={sectionLeave}
+                        onClick={handleClick}
                         href={'/portfolio/'} className="font-France uppercase text-center text-4xl sm:text-5xl text-primary md:text-7xl">
                         All cases
                     </Link>
                     <Link
                         onMouseEnter={nextEnter}
                         onMouseLeave={nextLeave}
+                        onClick={handleClick}
                         href={'/portfolio/incrustes'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
                         &#8594;
                     </Link>
