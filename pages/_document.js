@@ -13,7 +13,7 @@ export default function Document() {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Oscar Rojas | Portfolio" />
                 <meta property="og:description" content="Web developer focused on high-level and interactive frontend development." />
-                <meta property="og:image" content="https://res.cloudinary.com/de9uql5fm/image/upload/v1737130671/og_meta_pehipk.png" />
+                <meta property="og:image" content="https://res.cloudinary.com/de9uql5fm/image/upload/v1737132934/og_meta_img_wsakyv.png" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:url" content="https://www.eldesenauta.com" />
@@ -23,7 +23,7 @@ export default function Document() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Oscar Rojas | Portfolio" />
                 <meta name="twitter:description" content="Web developer focused on high-level and interactive frontend development." />
-                <meta name="twitter:image" content="https://res.cloudinary.com/de9uql5fm/image/upload/v1737130671/og_meta_pehipk.png" />
+                <meta name="twitter:image" content="https://res.cloudinary.com/de9uql5fm/image/upload/v1737132934/og_meta_img_wsakyv.png" />
 
             </Head>
             <body>
