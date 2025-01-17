@@ -50,7 +50,7 @@ const Circles = () => {
             <div
                 onMouseEnter={objectEnter}
                 onMouseLeave={objectLeave}
-                className="transform-bubbles relative bg-accent rounded-full">
+                className="transform-bubbles relative bg-primary rounded-full">
                 <Circle ref={circleRefs[0]} className="" color="#b37dff" />
                 <Circle ref={circleRefs[1]} className="absolute top-0 scale-[75%] invert" color="#212121" />
                 <Circle ref={circleRefs[2]} className="absolute top-0 scale-[56%] " color="#b37dff" />

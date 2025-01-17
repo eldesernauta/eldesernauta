@@ -186,7 +186,7 @@ export default function Home() {
             <div className='w-full lg:w-3/6 flex flex-col gap-4 justify-center items-start'>
               <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-2 lg:mb-4'>What I have</h2>
               <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-8'>
-                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-warning bg-primary hover:bg-dark transition-all duration-300 rounded-full border-2 border-primary hover:border-dark -mt-3 mr-4'>
+                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-dark hover:text-warning bg-accent hover:bg-dark transition-all duration-300 rounded-full border-2 border-accent hover:border-dark -mt-3 mr-4'>
                   done
                 </span>
                 so far.
