@@ -1,6 +1,5 @@
-import ReactDom from "react-dom";
-
 import { useEffect, useState } from "react";
+import ReactDom from "react-dom";
 
 type Props = {
   active: boolean;

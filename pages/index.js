@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       question: "Moreover, I've also studied...",
-      answer: "I also explored the world of Cinematography at the Universidad Tecnológica de Pereira. This creative endeavor sharpened my eye for aesthetics, storytelling, and visual composition. These skills greatly enhance my ability to design visually stunning websites and create interactive user experiences that captivate and inspire.",
+      answer: "I also explored the world of Cinematography at the Universidad Tecnologica de Pereira. This creative endeavor sharpened my eye for aesthetics, storytelling, and visual composition. These skills greatly enhance my ability to design visually stunning websites and create interactive user experiences that captivate and inspire.",
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
   ];

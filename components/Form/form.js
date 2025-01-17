@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
+
+import { useCursor } from "../../context/CursorContext";
+
 import Input from '../Input/input'
 import Textarea from '../Textarea/textarea'
 import Button from '../Button/button'
@@ -7,10 +10,21 @@ import Button from '../Button/button'
 const contactImg = require('../../src/img/contact_img.svg')
 
 const Form = () => {
+    const { setCursorText, setCursorVariant } = useCursor();
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+
+    function formEnter() {
+        setCursorText("✍️");
+        setCursorVariant("draw");
+    }
+
+    function formLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
 
     return (
         <>
@@ -20,25 +34,25 @@ const Form = () => {
                         value={name}
                         setValue={setName}
                         placeholder="Name"
-                        className="border-dark outline-none rounded-xl shadow-darkInput"
+                        className="border-dark outline-none rounded-xl shadow-darkInput font-Adam"
                     />
                     <Input
                         value={phone}
                         setValue={setPhone}
                         placeholder="Phone"
-                        className="border-dark outline-none rounded-xl shadow-darkInput"
+                        className="border-dark outline-none rounded-xl shadow-darkInput font-Adam"
                     />
                     <Input
                         value={email}
                         setValue={setEmail}
                         placeholder="Email"
-                        className="border-dark outline-none rounded-xl shadow-darkInput"
+                        className="border-dark outline-none rounded-xl shadow-darkInput font-Adam"
                     />
                     <Textarea
                         value={message}
                         setValue={setMessage}
                         placeholder="Message"
-                        className="w-full border-dark outline-none rounded-xl shadow-darkInput"
+                        className="w-full border-dark outline-none rounded-xl shadow-darkInput font-Adam"
                         row
                     />
                     <Button
@@ -50,6 +64,8 @@ const Form = () => {
                 <div className='w-full lg:w-3/6'>
                     <Image
                         src={contactImg}
+                        onMouseEnter={formEnter}
+                        onMouseLeave={formLeave}
                         className={`z-0 w-32 sm:w-[25%] lg:w-[35%] xl:w-[30%] 2xl:w-[25%] block absolute -bottom-4 sm:bottom-0 2xl:-bottom-4 -right-8 sm:right-0 md:right-8 xl:right-[10%]`}
                         alt="Portrait"
                     />

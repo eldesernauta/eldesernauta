@@ -1,23 +1,36 @@
+import { useRouter } from 'next/navigation'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import Image from "next/image";
+
+import { useCursor } from '../context/CursorContext';
+
 import Nav from "../components/Nav/nav";
 import Layout from '../components/Layout/layout';
 import Card from "../components/Card/card";
 import Badge from "../components/Badge/badge";
 import Button from "../components/Button/button";
-import Image from "next/image";
 import Footer from "../components/Footer/footer";
 import HorizontalScroll from '../components/HorizontalScroll/horizontalScroll';
-
-import Link from "next/link";
-import { useRouter } from 'next/navigation'
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const caseStudy1 = require('../src/img/lce_card.png');
 const caseStudy2 = require('../src/img/toro_card.png');
 const caseStudy3 = require('../src/img/monarch_card.png');
 
 const Portfolio = () => {
+    const { setCursorText, setCursorVariant } = useCursor()
+
+    function caseEnter() {
+        setCursorText("");
+        setCursorVariant("hoverable");
+    }
+
+    function casetLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
     const router = useRouter()
     return (
         <Layout>
@@ -147,6 +160,8 @@ const Portfolio = () => {
 
                         <div className="w-full lg:w-3/6 flex items-center justify-center transition duration-300 relative self-center px-4 overflow-hidden">
                             <Image
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
                                 src={caseStudy1}
                                 alt='case study1'
                                 objectFit='cover'
@@ -160,7 +175,7 @@ const Portfolio = () => {
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px]">La Cima</h3>
 
-                                        <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='Wordpress' className='h-auto font-Adam font-medium bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 font-Adam text-lg text-justify z-0">
@@ -183,7 +198,7 @@ const Portfolio = () => {
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px]">Toro</h3>
 
-                                        <Badge text='Wordpress' className='h-auto bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='Wordpress' className='h-auto font-Adam font-medium bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                     <p className="text-dark my-10 font-Adam text-lg text-justify z-0">
@@ -199,6 +214,8 @@ const Portfolio = () => {
                         </div>
                         <div className="w-full lg:w-3/6 flex items-center justify-center transition duration-300 relative self-center px-4 overflow-hidden">
                             <Image
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
                                 src={caseStudy2}
                                 alt='case study1'
                                 objectFit='cover'
@@ -209,6 +226,8 @@ const Portfolio = () => {
                     <div className="container mx-auto flex flex-col lg:flex-row gap-8">
                         <div className="w-full lg:w-3/6 flex items-center justify-center transition duration-300 relative self-center px-4 overflow-hidden">
                             <Image
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
                                 src={caseStudy3}
                                 alt='case study1'
                                 objectFit='cover'
@@ -222,7 +241,7 @@ const Portfolio = () => {
                                     <div className='w-full flex justify-start items-center'>
                                         <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px]">Monarch</h3>
 
-                                        <Badge text='Wordpress' className='h-auto bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='Wordpress' className='h-auto font-Adam font-medium bg-accent border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 bg-accent' />
                                     <p className="text-dark my-10 font-Adam text-lg text-justify z-0">
@@ -252,6 +271,8 @@ const Portfolio = () => {
                             </h2>
                         </div>
                         <Link
+                            onMouseEnter={caseEnter}
+                            onMouseLeave={casetLeave}
                             href='https://drive.google.com/file/d/1MDwNo-uwx6M1yOkkOnsgjZtCK6pj0rYP/view?usp=sharing'
                             target="_blank"
                             className={`w-80 text-center font-Adam flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase  transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none`}

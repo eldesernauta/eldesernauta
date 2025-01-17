@@ -1,17 +1,18 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import { Pagination } from 'swiper/modules';
+import Link from "next/link";
+import Image from "next/image";
+
+import { useCursor } from "../../context/CursorContext";
+
 import Nav from "../../components/Nav/nav";
+import Footer from "../../components/Footer/footer";
 
 import mainImg from '../../src/img/goo_card.jpg';
 import secondImg from '../../src/img/goo_challenge_1.jpg';
-import mainImgMobile from '../../src/img/goo_card.jpg';
-import Footer from "../../components/Footer/footer";
-import Link from "next/link";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -24,12 +25,34 @@ let tabs = [
 ];
 
 const Goo = () => {
+    const { setCursorText, setCursorVariant } = useCursor();
+
+    function sectionEnter() {
+        setCursorText("");
+        setCursorVariant("hoverable");
+    }
+
+    function sectionLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
+    function nextEnter() {
+        setCursorText("Next");
+        setCursorVariant("cases");
+    }
+
+    function nextLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
+    const [activeTab, setActiveTab] = useState(tabs[0].id);
     const section1Ref = useRef(null);
     const section2Ref = useRef(null);
     const section3Ref = useRef(null);
     const section4Ref = useRef(null);
 
-    const [activeTab, setActiveTab] = useState(tabs[0].id);
 
     const handleTabChange = (tabId) => {
         setActiveTab(tabId);
@@ -88,6 +111,8 @@ const Goo = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => handleTabChange(tab.id)}
+                                onMouseEnter={sectionEnter}
+                                onMouseLeave={sectionLeave}
                                 className={`${activeTab === tab.id ? "" : "hover:text-white/60"} relative font-Adam font-Medium rounded-full px-3 py-1.5 text-xs md:text-sm font-medium text-white font-Montserrat outline-sky-400 transition focus-visible:outline-2`}
                                 style={{ WebkitTapHighlightColor: "transparent" }}
                             >
@@ -232,10 +257,18 @@ const Goo = () => {
             </section>
             <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 py-24">
                 <div className="container mx-auto z-10 flex justify-between items-center">
-                    <Link href={'/portfolio/'} className="font-France uppercase text-4xl sm:text-5xl text-primary md:text-7xl">
+                    <Link
+                        onMouseEnter={sectionEnter}
+                        onMouseLeave={sectionLeave}
+                        href={'/portfolio/'}
+                        className="font-France uppercase text-4xl sm:text-5xl text-primary md:text-7xl">
                         All cases
                     </Link>
-                    <Link href={'/portfolio/ddb'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                    <Link
+                        onMouseEnter={nextEnter}
+                        onMouseLeave={nextLeave}
+                        href={'/portfolio/ddb'}
+                        className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
                         &#8594;
                     </Link>
                 </div>

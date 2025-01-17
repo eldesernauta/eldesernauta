@@ -1,6 +1,15 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import useMouse from "@react-hook/mouse-position";
 import localFont from 'next/font/local'
+
+import { CursorProvider } from "../context/CursorContext";
+
+import MyContext from "../context/myContext"
+import SmoothScrolling from "../components/SmoothScrolling/smoothScrolling";
+
+import "../styles/global.css";
+import "tailwindcss/tailwind.css";
 
 const France = localFont({
     src: '../src/fonts/France/France.ttf',
@@ -39,23 +48,13 @@ const Unbounded = localFont({
     ],
     variable: '--font-unbounded'
 })
-import { motion, useTransform, AnimatePresence } from "framer-motion";
-
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-
-import "../styles/global.css";
-import "tailwindcss/tailwind.css";
-import SmoothScrolling from "../components/SmoothScrolling/smoothScrolling";
-
-import MyContext from "../context/myContext"
-import { CursorProvider } from "../context/CursorContext";
 
 export default function App({ Component, pageProps, router }) {
     const [gooInSession, setGooInSession] = useState({ id: "" })
     const [cursorText, setCursorText] = useState("");
     const [cursorVariant, setCursorVariant] = useState("default");
-
     const ref = useRef(null);
+
     const mouse = useMouse(ref, {
         enterDelay: 0,
         leaveDelay: 0
@@ -89,13 +88,17 @@ export default function App({ Component, pageProps, router }) {
         hoverable: {
             opacity: 1,
             // backgroundColor: "rgba(255, 255, 255, 0.6)",
-            backgroundColor: "#b37dff",
+            backgroundColor: "#ff5454",
             color: "#fff001",
             height: 20,
             width: 20,
             fontSize: "18px",
             x: mouseXPosition - 15,
-            y: mouseYPosition - 15
+            y: mouseYPosition - 15,
+            transition: {
+                type: "spring",
+                mass: 0.5
+            }
         },
         hoverableAlt: {
             opacity: 1,
@@ -126,6 +129,28 @@ export default function App({ Component, pageProps, router }) {
             fontSize: "32px",
             x: mouseXPosition - 48,
             y: mouseYPosition - 48
+        },
+
+        draw: {
+            opacity: 1,
+            backgroundColor: "#ffe959",
+            color: "#000",
+            height: 64,
+            width: 64,
+            fontSize: "32px",
+            x: mouseXPosition - 48,
+            y: mouseYPosition - 48
+        },
+
+        cases: {
+            opacity: 1,
+            backgroundColor: "#ffe959",
+            color: "#000",
+            height: 64,
+            width: 64,
+            fontSize: "16px",
+            x: mouseXPosition - 48,
+            y: mouseYPosition - 48
         }
     };
 
@@ -134,6 +159,7 @@ export default function App({ Component, pageProps, router }) {
         stiffness: 500,
         damping: 28
     };
+
     return (
         <div ref={ref} className={`${France.className + Adam.className + Unbounded.className} font-sans`}>
             <MyContext.Provider value={{ state: gooInSession, setState: setGooInSession }}>

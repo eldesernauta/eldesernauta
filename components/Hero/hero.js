@@ -43,6 +43,15 @@ const Hero = () => {
         setCursorVariant("default");
     }
 
+    function drawEnter() {
+        setCursorText("👨🏻‍🎨");
+        setCursorVariant("draw");
+    }
+
+    function drawLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
 
     return (
         <section id="main" className={`w-full h-auto lg:h-[calc(100vh+50px)] 2xl:h-[calc(100vh+100px)] relative flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center ${isDarkMode ? 'bg-light' : 'bg-dark'} bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]`}>
@@ -97,6 +106,8 @@ const Hero = () => {
                         width={'700'}
                         alt='hero image'
                         className="hero-img "
+                        onMouseEnter={drawEnter}
+                        onMouseLeave={drawLeave}
                     />
                 </div>
             </div>

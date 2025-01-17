@@ -1,7 +1,8 @@
+import { useRef } from "react";
 import { ClassValue } from "clsx";
 import { ChevronDown } from "lucide-react";
 
-import { useEffect, useRef } from "react";
+import { useCursor } from "../../context/CursorContext";
 import { cn } from "../../lib/utils";
 
 type Props = {
@@ -19,7 +20,19 @@ export default function Accordion({
   isActive,
   onToggle,
 }: Props) {
+  const { setCursorText, setCursorVariant } = useCursor();
+
   const contentRef = useRef<HTMLDivElement>(null);
+
+  function linkEnter() {
+    setCursorText("");
+    setCursorVariant("hoverable");
+  }
+
+  function linkLeave() {
+    setCursorText("");
+    setCursorVariant("default");
+  }
 
   return (
     <div
@@ -34,6 +47,8 @@ export default function Accordion({
           className
         )}
         onClick={onToggle}
+        onMouseEnter={linkEnter}
+        onMouseLeave={linkLeave}
       >
         {question}
         <ChevronDown className="sm:ml-4 ml-3 sm:min-h-[24px] sm:min-w-[24px] group-data-[state=open]:rotate-180 group-data-[state=closed]:0 min-h-[18px] min-w-[18px] transition-transform ease-in-out" />

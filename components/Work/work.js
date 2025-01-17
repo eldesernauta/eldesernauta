@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
-import { useCursor } from '../../context/CursorContext';
-import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import MotionImage from '../MotionImage/motionImage';
+import { useRouter } from 'next/navigation'
+import Image from 'next/image';
+import Link from 'next/link'
+    ;
+import { useCursor } from '../../context/CursorContext';
 
 import Button from '../Button/button'
-import { useRouter } from 'next/navigation'
 import Badge from '../Badge/badge';
 import Card from '../Card/card'
 
@@ -32,12 +33,12 @@ const Work = () => {
     const section3Ref = useRef(null);
     const progressBarRef = useRef(null);
 
-    function contactEnter() {
+    function caseEnter() {
         setCursorText("👁️");
         setCursorVariant("contact");
     }
 
-    function contactLeave() {
+    function casetLeave() {
         setCursorText("");
         setCursorVariant("default");
     }
@@ -107,50 +108,59 @@ const Work = () => {
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
-                                <Card width="w-auto bg-light relative">
-                                    <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
+                                <Link
+                                    onMouseEnter={caseEnter}
+                                    onMouseLeave={casetLeave}
+                                    href={'/portfolio/goo'}>
+                                    <Card width="w-auto bg-light relative">
+                                        <div className='w-full flex justify-start items-center'>
+                                            <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Goo Hub</h3>
 
-                                        <Badge text='freelance' className='h-auto font-Adam font-Medium bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
-                                    </div>
-                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
-                                        Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
-                                    </p>
+                                            <Badge text='freelance' className='h-auto font-Adam  bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        </div>
+                                        <hr className='w-3/6 mt-6 h-2 bg-primary' />
+                                        <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
+                                            Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
+                                        </p>
 
-                                    <Button
-                                        onClick={() => {
-                                            router.push('/portfolio/goo')
-                                        }}
-                                        className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
-                                    >
-                                        Take a look
-                                    </Button>
-                                    <Image
-                                        src={star}
-                                        alt='estrella'
-                                        width={50}
-                                        className='absolute top-8 right-8'
-                                    />
-                                </Card>
-
+                                        <Button
+                                            onClick={() => {
+                                                router.push('/portfolio/goo')
+                                            }}
+                                            className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
+                                        >
+                                            Take a look
+                                        </Button>
+                                        <Image
+                                            src={star}
+                                            alt='estrella'
+                                            width={50}
+                                            className='absolute top-8 right-8'
+                                        />
+                                    </Card>
+                                </Link>
                             </div>
                         </div>
 
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
-                            <Image
-                                src={caseStudy1}
-                                onMouseEnter={contactEnter}
-                                onMouseLeave={contactLeave}
-                                alt='case study1'
-                                objectFit='cover'
-                                className='rounded-full hover:-rotate-12 transition-all duration-1000 bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
-                            />
-                            <Dots />
-                            <Dotted />
-                            <Bar />
-                            <Cursor />
-                            <Flower />
+                            <Link
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
+                                href={'/portfolio/goo'}>
+                                <Image
+                                    src={caseStudy1}
+                                    onMouseEnter={caseEnter}
+                                    onMouseLeave={casetLeave}
+                                    alt='case study1'
+                                    objectFit='cover'
+                                    className='rounded-full hover:-rotate-12 transition-all duration-1000 bg-dark w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
+                                />
+                                <Dots />
+                                <Dotted />
+                                <Bar />
+                                <Cursor />
+                                <Flower />
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -161,49 +171,59 @@ const Work = () => {
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
-                                <Card width="w-auto bg-light relative">
-                                    <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">DDB Colombia</h3>
-                                        {/* <Badge text='DDB Colombia' className='h-auto font-Adam font-Medium bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' /> */}
-                                    </div>
+                                <Link
+                                    onMouseEnter={caseEnter}
+                                    onMouseLeave={casetLeave}
+                                    href={'/portfolio/ddb'}>
+                                    <Card width="w-auto bg-light relative">
+                                        <div className='w-full flex justify-start items-center'>
+                                            <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">DDB Colombia</h3>
+                                            {/* <Badge text='DDB Colombia' className='h-auto font-Adam  bg-warning border-dark -rotate-12 -translate-x-12 translate-y-6' /> */}
+                                        </div>
 
-                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
-                                        During my time at DDB Colombia, I've worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and prepared me to face complex challenges head-on.
-                                    </p>
+                                        <hr className='w-3/6 mt-6 h-2 bg-primary' />
+                                        <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
+                                            During my time at DDB Colombia, I've worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and prepared me to face complex challenges head-on.
+                                        </p>
 
-                                    <Button
-                                        onClick={() => {
-                                            router.push('/portfolio/ddb')
-                                        }}
-                                        className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
-                                    >
-                                        Take a look
-                                    </Button>
-                                    <Image
-                                        src={star}
-                                        alt='estrella'
-                                        width={50}
-                                        className='absolute top-8 right-8'
-                                    />
-                                </Card>
-
+                                        <Button
+                                            onClick={() => {
+                                                router.push('/portfolio/ddb')
+                                            }}
+                                            className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
+                                        >
+                                            Take a look
+                                        </Button>
+                                        <Image
+                                            src={star}
+                                            alt='estrella'
+                                            width={50}
+                                            className='absolute top-8 right-8'
+                                        />
+                                    </Card>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
-                            <Image
-                                src={caseStudy2}
-                                onMouseEnter={contactEnter}
-                                onMouseLeave={contactLeave}
-                                alt='case study1'
-                                objectFit='cover'
-                                className='rounded-full bg-dark hover:scale-105 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
-                            />
-                            <Dots />
-                            <Dotted />
-                            <Bar />
-                            <Cursor />
-                            <Flower />
+
+                            <Link
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
+                                href={'/portfolio/ddb'}>
+                                <Image
+                                    src={caseStudy2}
+                                    onMouseEnter={caseEnter}
+                                    onMouseLeave={casetLeave}
+                                    alt='case study1'
+                                    objectFit='cover'
+                                    className='rounded-full bg-dark hover:scale-105 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
+                                />
+                                <Dots />
+                                <Dotted />
+                                <Bar />
+                                <Cursor />
+                                <Flower />
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -214,48 +234,57 @@ const Work = () => {
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                             <div className="w-full flex flex-col gap-8">
 
-                                <Card width="w-auto bg-light relative">
-                                    <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
-                                        <Badge text='portfolio' className='h-auto font-Adam font-Medium bg-warning border-dark -rotate-12 -translate-x-6 translate-y-6' />
-                                    </div>
+                                <Link
+                                    onMouseEnter={caseEnter}
+                                    onMouseLeave={casetLeave}
+                                    href={'/portfolio/incrustes'}>
+                                    <Card width="w-auto bg-light relative">
+                                        <div className='w-full flex justify-start items-center'>
+                                            <h3 className="text-3xl md:text-6xl text-dark font-bold leading-[100px] font-Wobblezz">Incrustes</h3>
+                                            <Badge text='portfolio' className='h-auto font-Adam  bg-warning border-dark -rotate-12 -translate-x-6 translate-y-6' />
+                                        </div>
 
-                                    <hr className='w-3/6 mt-6 h-2 bg-primary' />
-                                    <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
-                                        Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and GSAP, ensuring every element was faithfully implemented.
-                                    </p>
-                                    <Button
-                                        onClick={() => {
-                                            router.push('/portfolio/incrustes')
-                                        }}
-                                        className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
-                                    >
-                                        Take a look
-                                    </Button>
-                                    <Image
-                                        src={star}
-                                        alt='estrella'
-                                        width={50}
-                                        className='absolute top-8 right-8'
-                                    />
-                                </Card>
-
+                                        <hr className='w-3/6 mt-6 h-2 bg-primary' />
+                                        <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
+                                            Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and GSAP, ensuring every element was faithfully implemented.
+                                        </p>
+                                        <Button
+                                            onClick={() => {
+                                                router.push('/portfolio/incrustes')
+                                            }}
+                                            className="bg-accent hover:bg-warning border-dark shadow-dark place-self-end"
+                                        >
+                                            Take a look
+                                        </Button>
+                                        <Image
+                                            src={star}
+                                            alt='estrella'
+                                            width={50}
+                                            className='absolute top-8 right-8'
+                                        />
+                                    </Card>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full flex-1 flex items-center justify-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 relative self-center">
-                            <Image
-                                src={caseStudy3}
-                                onMouseEnter={contactEnter}
-                                onMouseLeave={contactLeave}
-                                alt='case study1'
-                                objectFit='cover'
-                                className='rounded-full bg-dark hover:rotate-45 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
-                            />
-                            <Dots />
-                            <Dotted />
-                            <Bar />
-                            <Cursor />
-                            <Flower />
+                            <Link
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
+                                href={'/portfolio/incrustes'}>
+                                <Image
+                                    src={caseStudy3}
+                                    onMouseEnter={caseEnter}
+                                    onMouseLeave={casetLeave}
+                                    alt='case study1'
+                                    objectFit='cover'
+                                    className='rounded-full bg-dark hover:rotate-45 transition-all duration-1000 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] border-2 border-dark object-contain'
+                                />
+                                <Dots />
+                                <Dotted />
+                                <Bar />
+                                <Cursor />
+                                <Flower />
+                            </Link>
                         </div>
                     </div>
                 </section>

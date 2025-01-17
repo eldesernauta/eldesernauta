@@ -1,18 +1,21 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import { gsap } from "gsap";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import Link from "next/link";
+import Image from "next/image";
+
+import { useCursor } from "../../context/CursorContext";
 
 import Nav from "../../components/Nav/nav";
+import Footer from "../../components/Footer/footer";
 
 import mainImg from '../../src/img/ddb_card.png';
 import secondImg from '../../src/img/ddb_logo.png';
-import mainImgMobile from '../../src/img/goo_card.jpg';
-import Footer from "../../components/Footer/footer";
-import Link from "next/link";
 
-// import studyCaseImg2 from '../../src/img/goo-study_case-4.mp4'
-// import studyCaseImg1 from '../../src/img/goo-study_case-1.mp4'
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 let tabs = [
     { id: "desafio", label: "Challenge" },
@@ -21,29 +24,44 @@ let tabs = [
     { id: "resultado", label: "Result" },
 ];
 
-// import img1 from '../../src/img/la-cima-1.png'
-// import img2 from '../../src/img/la-cima-2.png'
-// import img3 from '../../src/img/la-cima-3.png'
-// import img4 from '../../src/img/la-cima-4.png'
-// import img5 from '../../src/img/la-cima-5.png'
-// import img6 from '../../src/img/la-cima-6.png'
-
-// const images = [
-//     { src: img1, alt: 'Image 1' },
-//     { src: img2, alt: 'Image 2' },
-//     { src: img3, alt: 'Image 3' },
-//     { src: img4, alt: 'Image 4' },
-//     { src: img5, alt: 'Image 5' },
-//     { src: img6, alt: 'Image 6' },
-// ]
-
 const DDB = () => {
+    const { setCursorText, setCursorVariant } = useCursor();
+    const [activeTab, setActiveTab] = useState(tabs[0].id);
+
     const section1Ref = useRef(null);
     const section2Ref = useRef(null);
     const section3Ref = useRef(null);
     const section4Ref = useRef(null);
 
-    const [activeTab, setActiveTab] = useState(tabs[0].id);
+    function sectionEnter() {
+        setCursorText("");
+        setCursorVariant("hoverable");
+    }
+
+    function sectionLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
+    function nextEnter() {
+        setCursorText("Next");
+        setCursorVariant("cases");
+    }
+
+    function nextLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
+
+    function prevEnter() {
+        setCursorText("Prev");
+        setCursorVariant("cases");
+    }
+
+    function prevLeave() {
+        setCursorText("");
+        setCursorVariant("default");
+    }
 
     const handleTabChange = (tabId) => {
         setActiveTab(tabId);
@@ -67,29 +85,6 @@ const DDB = () => {
             }
         });
     };
-
-    // const studyCases = [
-    //     {
-    //         title: "Monarch Cleaning Group",
-    //         image: studyCaseImg1,
-    //         tags: ['Tag 1', 'Tag 2'],
-    //         description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de  ',
-    //         buttonText: 'Revisar',
-    //         buttonLink: '/portafolio/monarch-cleaning-group',
-    //         transform: 'translate-0 md:translate-y-24',
-    //         colorMode: 'light'
-    //     },
-    //     {
-    //         title: "Toro Handyman Services",
-    //         image: studyCaseImg2,
-    //         tags: ['Tag 4', 'Tag 5'],
-    //         description: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de  ',
-    //         buttonText: 'Revisar',
-    //         buttonLink: '/portafolio/toro-handyman-services',
-    //         transform: 'translate-y-0',
-    //         colorMode: 'light'
-    //     }
-    // ];
 
 
     return (
@@ -125,6 +120,8 @@ const DDB = () => {
                         {tabs.map((tab) => (
                             <button
                                 key={tab.id}
+                                onMouseEnter={sectionEnter}
+                                onMouseLeave={sectionLeave}
                                 onClick={() => handleTabChange(tab.id)}
                                 className={`${activeTab === tab.id ? "" : "hover:text-white/60"} relative font-Adam font-Medium rounded-full px-3 py-1.5 text-xs md:text-sm font-medium text-white font-Montserrat outline-sky-400 transition focus-visible:outline-2`}
                                 style={{ WebkitTapHighlightColor: "transparent" }}
@@ -227,13 +224,22 @@ const DDB = () => {
             </section>
             <section className="w-full max-w-full bg-dark flex flex-col px-4 2xl:px-0 py-24">
                 <div className="container mx-auto z-10 flex gap-8 lg:gap-0 justify-between items-center">
-                    <Link href={'/portfolio/goo'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                    <Link
+                        onMouseEnter={prevEnter}
+                        onMouseLeave={prevLeave}
+                        href={'/portfolio/goo'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
                         &#8592;
                     </Link>
-                    <Link href={'/portfolio/'} className="font-France uppercase text-center text-4xl sm:text-5xl text-primary md:text-7xl">
+                    <Link
+                        onMouseEnter={sectionEnter}
+                        onMouseLeave={sectionLeave}
+                        href={'/portfolio/'} className="font-France uppercase text-center text-4xl sm:text-5xl text-primary md:text-7xl">
                         All cases
                     </Link>
-                    <Link href={'/portfolio/incrustes'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
+                    <Link
+                        onMouseEnter={nextEnter}
+                        onMouseLeave={nextLeave}
+                        href={'/portfolio/incrustes'} className="w-16 sm:w-24 h-16 sm:h-24 bg-primary rounded-full flex justify-center items-center text-2xl text-dark md:text-4xl">
                         &#8594;
                     </Link>
                 </div>
