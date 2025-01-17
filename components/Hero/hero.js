@@ -91,7 +91,7 @@ const Hero = () => {
                         </div>
                         <Link
                             href='#work'
-                            className={`scroll-smooth flex text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase shadow-light dark:shadow-dark transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none hoverable font-Adam ${isDarkMode ? 'shadow-dark border-dark bg-accent hover:bg-primary' : 'bg-warning hover:bg-accent shadow-light border-light'}`}
+                            className={`scroll-smooth hidden lg:flex text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase shadow-light dark:shadow-dark transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none hoverable font-Adam ${isDarkMode ? 'shadow-dark border-dark bg-accent hover:bg-primary' : 'bg-warning hover:bg-accent shadow-light border-light'}`}
                         >
                             Wanne see?
                         </Link>
