@@ -28,8 +28,8 @@ export default function Button({ className, children, onClick }: Props) {
       onMouseLeave={linkLeave}
       aria-label="Click to perform an action"
       onClick={() => {
-        sendGAEvent({ event: "buttonClicked", value: "component" });
         onClick;
+        sendGAEvent({ event: "buttonClicked", value: "originComponent" });
       }}
       className={cn(
         "flex text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-Adam font-bold uppercase shadow-light dark:shadow-dark transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none",

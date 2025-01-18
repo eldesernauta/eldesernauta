@@ -89,10 +89,6 @@
     scroll-snap-type: y mandatory;
   }
 
-  html a,
-  html button {
-    scroll-behavior: smooth;
-  }
 
   h1 {
     font-family: "France", sans-serif;

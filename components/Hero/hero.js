@@ -1,6 +1,5 @@
 import { useCursor } from '../../context/CursorContext';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation'
 import Button from '../Button/button';
 import Badge from '../Badge/badge'
 import Link from 'next/link';
@@ -15,7 +14,6 @@ const heroImg = require('../../src/img/hero_img.svg')
 const arrow = require('../../src/img/curl_arrow.svg')
 
 const Hero = () => {
-    const router = useRouter()
     const { setCursorText, setCursorVariant } = useCursor();
 
     const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -91,6 +89,7 @@ const Hero = () => {
                         </div>
                         <Link
                             href='#work'
+                            id='smooth'
                             className={`scroll-smooth hidden lg:flex text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase shadow-light dark:shadow-dark transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none hoverable font-Adam ${isDarkMode ? 'shadow-dark border-dark bg-accent hover:bg-primary' : 'bg-warning hover:bg-accent shadow-light border-light'}`}
                         >
                             Wanne see?
@@ -114,12 +113,12 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <Button
+                <button
                     onClick={toggleDarkMode}
-                    className={`absolute w-12 h-12 flex justify-center items-center bottom-8 lg:bottom-[124px] outline-none right-8 px-4 py-2 text-xl rounded-full ${isDarkMode ? 'shadow-dark bg-light border-dark' : 'shadow-light bg-dark border-light'} hover:bg-primary transition-all`}
+                    className={`absolute border-2 w-12 h-12 flex justify-center items-center bottom-8 lg:bottom-[124px] outline-none right-8 px-4 py-2 text-xl rounded-full ${isDarkMode ? 'shadow-dark bg-light border-dark' : 'shadow-light bg-dark border-light'} hover:bg-primary transition-all`}
                 >
                     {isDarkMode ? '🌙' : '☀️'}
-                </Button>
+                </button>
 
             </section>
 
