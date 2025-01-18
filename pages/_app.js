@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import useMouse from "@react-hook/mouse-position";
 import localFont from 'next/font/local'
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 import { CursorProvider } from "../context/CursorContext";
 
@@ -182,14 +181,11 @@ export default function App({ Component, pageProps, router }) {
                     <AnimatePresence mode="popLayout" initial={false}>
                         <SmoothScrolling>
                             <div id="drawer"></div>
-
-                            <GoogleReCaptchaProvider reCaptchaKey="6Ld_7boqAAAAAN9L4D2QwOJiO3R6osqGP9o704T9">
-                                <Component {...pageProps} key={router.asPath} />
-                            </GoogleReCaptchaProvider>
+                            <Component {...pageProps} key={router.asPath} />
                         </SmoothScrolling>
                     </AnimatePresence>
                 </CursorProvider>
             </MyContext.Provider>
-        </div >
+        </div>
     );
 }

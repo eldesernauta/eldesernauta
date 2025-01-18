@@ -1,17 +1,14 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import axios from 'axios';
+
 import emailjs from 'emailjs-com';
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 import { useCursor } from "../../context/CursorContext";
 
 const contactImg = require('../../src/img/contact_img.svg')
 
 const Form = () => {
-    const { executeRecaptcha } = useGoogleReCaptcha();
-    const [submitStatus, setSubmitStatus] = useState('');
     const router = useRouter()
     const [formData, setFormData] = useState({
         name: '',
@@ -26,11 +23,8 @@ const Form = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-
-        setSubmitStatus('');
-
         emailjs.send(
             'service_bt75nio',
             'template_83sggic',
@@ -43,37 +37,6 @@ const Form = () => {
             console.log('FAILED...', err);
             setErrorMessage('Error al enviar el formulario. Intente nuevamente.');
         });
-
-        if (!executeRecaptcha) {
-            console.error('ReCAPTCHA not available');
-            return;
-        }
-
-        const gRecaptchaToken = await executeRecaptcha('registerSubmit');
-
-        try {
-            const response = await axios.post(
-                '/api/recaptchaVerify',
-                { gRecaptchaToken },
-                {
-                    headers: {
-                        Accept: 'application/json',
-                        'Content-Type': 'application/json',
-                    },
-                }
-            );
-
-            if (response.data.success) {
-                console.log(`Registration success with score: ${response.data.score}`);
-                setSubmitStatus('Registration Successful. Welcome!');
-            } else {
-                console.error(`Registration failure with score: ${response.data.score}`);
-                setSubmitStatus('Registration Failed. Please try again.');
-            }
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            setSubmitStatus('An error occurred. Please try again.');
-        }
     };
     const { setCursorText, setCursorVariant } = useCursor();
 
