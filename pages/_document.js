@@ -23,7 +23,7 @@ export default function Document() {
                 <meta name="twitter:title" content="Oscar Rojas | Portfolio" />
                 <meta name="twitter:description" content="Web developer focused on high-level and interactive frontend development." />
                 <meta name="twitter:image" content="https://res.cloudinary.com/de9uql5fm/image/upload/v1737132934/og_meta_img_wsakyv.png" />
-
+                <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld_7boqAAAAAN9L4D2QwOJiO3R6osqGP9o704T9"></script>
             </Head>
             <body>
                 <Main />
