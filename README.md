@@ -52,6 +52,7 @@ The design embraces **bold, raw, and unapologetic elements**, showcasing:
 - **Next.js**: Framework for server-side rendering and static site generation.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI design.
 - **Framer Motion**: Library for animations and transitions.
+- **GSAP**: Library for animations and transitions.
 - **Custom SVGs**: Designed for the neobrutalist aesthetic.
 
 ---
@@ -61,8 +62,8 @@ The design embraces **bold, raw, and unapologetic elements**, showcasing:
 Clone the repository and install dependencies:
 
 ```bash
-$ git clone https://github.com/username/portfolio-neobrutalism.git
-$ cd portfolio-neobrutalism
+$ git clone https://github.com/eldesernauta/eldesernauta.git
+$ cd eldesernauta
 $ npm install
 ```
 
@@ -91,21 +92,51 @@ Visit the live site: [eldesernauta.com](https://eldesernauta.com)
 ## 📂 Project Structure
 
 ```
-/src
-  /components
-    Badge/
-    Button/
-    Hero/
-    Work/
-  /context
-    CursorContext.js
-  /img
-    hero_img.svg
-    curl_arrow.svg
-  /utils
-    useDarkMode.js
+
+/components
+ Accordion/
+ Badge/
+ Button/
+ Card/
+ Circles/
+ CustomMarquee/
+ Drawer/
+ Footer/
+ Hero/
+ HorizontalScroll/
+ Input/
+ Layout/
+ LockedCard/
+ Nav/
+ SmoothScrolling/
+ Textarea/
+ utils/
+ Values/
+ Work/
+ WorkMobile/
+/context
+ CursorContext.js
+ myContext.js
+
 pages/
-  index.js
+   portfolio/
+      ddb.js
+      goo.js
+      incrustes.js
+   about.js
+   index.js
+   portfolio.js
+   thank-you.js
+/src
+   img/
+      ...
+   fonts/
+      France/
+      Adam/
+      Unbounded/
+styles/
+   globals.js
+     
 ```
 
 ---
@@ -121,8 +152,8 @@ Deployed using **Vercel**, ensuring fast load times and global availability.
 **Oscar I. Rojas**
 
 - [Portfolio](https://eldesernauta.com)
-- [LinkedIn](https://www.linkedin.com/in/username)
-- [GitHub](https://github.com/username)
+- [LinkedIn](https://www.linkedin.com/in/eldesernauta)
+- [GitHub](https://github.com/eldesernauta)
 
 ---
 
