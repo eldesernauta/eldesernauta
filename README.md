@@ -117,7 +117,6 @@ Visit the live site: [eldesernauta.com](https://eldesernauta.com)
 /context
  CursorContext.js
  myContext.js
-
 pages/
    portfolio/
       ddb.js
