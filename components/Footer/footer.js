@@ -58,7 +58,7 @@ const Footer = (props) => {
         <section className={`${color} w-full px-5 lg:px-8 2xl:px-0 lex`}>
             <div className="container mx-auto h-auto lg:h-24 py-12 lg:py-0 flex flex-col lg:flex-row gap-4 lg:gap-0 justify-center lg:justify-between items-center">
                 <Fragment>
-                    <div className={`${color === 'bg-light' ? 'text-dark' : 'text-light'} w-full lg:w-2/6 text-center lg:text-left order-2 lg:order-1`}>
+                    <div className={`${color === 'bg-light' ? 'text-dark' : 'text-light'} w-full lg:w-2/6 text-center lg:text-left order-3 lg:order-1`}>
                         {/* ... other code ... */}
                         <p className="font-Adam">{` ${year} © eldesernauta`}</p>
                         {/* ... other code ... */}
@@ -71,7 +71,7 @@ const Footer = (props) => {
                     className={`${color === 'bg-light' ? 'text-dark' : 'text-light'} w-full font-Adam lg:w-2/6 text-center order-1 lg:order-2`}>
                     Back to Top
                 </span>
-                <div className="w-full lg:w-2/6 flex gap-8 justify-center lg:justify-end items-center order-3">
+                <div className="w-full lg:w-2/6 flex gap-8 justify-center lg:justify-end items-center order-2 lg:order-3">
                     <Link href="https://linkedin.com/in/eldesernauta" target="_blank">
                         <FontAwesomeIcon
                             onMouseEnter={linkEnter}
