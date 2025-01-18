@@ -107,7 +107,7 @@ const Hero = () => {
                             src={heroImg}
                             width={'700'}
                             alt='hero image'
-                            className="hero-img "
+                            className="hero-img"
                             onMouseEnter={drawEnter}
                             onMouseLeave={drawLeave}
                         />

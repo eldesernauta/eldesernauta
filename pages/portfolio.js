@@ -17,6 +17,7 @@ import HorizontalScroll from '../components/HorizontalScroll/horizontalScroll';
 const caseStudy1 = require('../src/img/lce_card.png');
 const caseStudy2 = require('../src/img/toro_card.png');
 const caseStudy3 = require('../src/img/monarch_card.png');
+const caseStudy4 = require('../src/img/audi_card.png');
 
 const Portfolio = () => {
     const { setCursorText, setCursorVariant } = useCursor()
@@ -156,6 +157,39 @@ const Portfolio = () => {
                         <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark hidden sm:flex mb-8'>More, but not</h2>
                         <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark hidden sm:flex'>least<span className='px-8 py-4 text-4xl lg:text-5xl xl:text-6xl text-light bg-primary hover:bg-accent font-black transition-all duration-300 rounded-full border-2 border-dark -mx-4 -rotate-12'>interesting</span>projects</h2>
                     </div>
+                    <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+                        <div className="w-full lg:w-3/6 flex items-center">
+                            <div className="w-full flex flex-col gap-8">
+
+                                <Card width="w-auto bg-secondary relative">
+                                    <div className='w-full flex justify-start items-center'>
+                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px]">Audi Spain</h3>
+
+                                        <Badge text='AEM' className='h-auto font-Adam font-medium bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                    </div>
+                                    <hr className='w-3/6 mt-6 h-2 border-none bg-primary' />
+                                    <p className="text-light my-10 font-Adam text-lg text-justify z-0">
+                                        During my tyme at <strong>DDB Colombia</strong>, I had the opportunity to work with large companies like <strong>Audi, Estee Lauder, Tom Ford, MAC</strong> and much other companies that improved my attention to the detail.
+                                    </p>
+                                    <p className="text-light hidden 2xl:block my-10 font-Adam text-lg text-justify z-0">
+                                        Not only developing but also working with several CMS, creating email campaings, HTML layouts or a bunch of other cool jobs that teached me a lot.
+                                    </p>
+
+                                </Card>
+
+                            </div>
+                        </div>
+                        <div className="w-full lg:w-3/6 flex items-center justify-center transition duration-300 relative self-center px-4 overflow-hidden">
+                            <Image
+                                onMouseEnter={caseEnter}
+                                onMouseLeave={casetLeave}
+                                src={caseStudy4}
+                                alt='case study1'
+                                objectFit='contain'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-contain border-2 hover:border-0 border-dark object-cover'
+                            />
+                        </div>
+                    </div>
                     <div className="container mx-auto flex flex-col lg:flex-row gap-8 -mb-12">
 
                         <div className="w-full lg:w-3/6 flex items-center justify-center transition duration-300 relative self-center px-4 overflow-hidden">
@@ -165,7 +199,7 @@ const Portfolio = () => {
                                 src={caseStudy1}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-contain border-2 hover:border-0 border-dark object-cover'
                             />
                         </div>
                         <div className="w-full lg:w-3/6 flex items-center">
@@ -219,7 +253,7 @@ const Portfolio = () => {
                                 src={caseStudy2}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-contain border-2 hover:border-0 border-dark object-cover'
                             />
                         </div>
                     </div>
@@ -231,7 +265,7 @@ const Portfolio = () => {
                                 src={caseStudy3}
                                 alt='case study1'
                                 objectFit='cover'
-                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-cover border-2 hover:border-0 border-dark object-cover'
+                                className='rounded-full hover:rounded-xl transition-all duration-300 ease-in-out w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] hover:w-[100%] hover:h-[450px] hover:object-contain border-2 hover:border-0 border-dark object-cover'
                             />
                         </div>
                         <div className="w-full lg:w-3/6 flex items-center">

@@ -9,7 +9,7 @@ import { useCursor } from '../../context/CursorContext';
 import Button from "../Button/button";
 
 const logo1 = require('../../src/img/goo_logo.svg')
-const logo2 = require('../../src/img/audi_logo.svg')
+const logo2 = require('../../src/img/DDB_logo_b.svg')
 const logo3 = require('../../src/img/incrustes_card.png')
 
 const HorizontalScroll = () => {

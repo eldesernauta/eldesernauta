@@ -220,7 +220,7 @@ so that it is smooth among other more minor things */
   }
 
   .hero-img {
-    animation: hero 1.75s infinite ease-6-out;
+    animation: hero 1.75s infinite ease-in-out;
   }
 
   .hero-img:hover {

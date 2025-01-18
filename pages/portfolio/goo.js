@@ -109,10 +109,10 @@ const Goo = () => {
                     <p className="text-black font-Adam text-lg text-justify">Goo Hub, a digital marketing agency, needed a cutting-edge online presence to reflect its dynamic services, including UX/UI design, full-stack web development, and digital marketing strategies. From crafting unique logos to designing impactful websites, this project was built from scratch to deliver a fully interactive experience.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
-                    <iframe src="https://dev.goohub.digital" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
+                    <iframe src="https://dev.goohub.digital/servicios" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
                 </div>
                 <div className="block lg:hidden container mx-auto z-10 p-0 px-5 pb-0">
-                    <iframe src="https://dev.goohub.digital" frameBorder="0" width="100%" allowFullScreen className="h-[700px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
+                    <iframe src="https://dev.goohub.digital/servicios" frameBorder="0" width="100%" allowFullScreen className="h-[700px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
                     {/* <Image
                         src={mainImg}
                         autoPlay
