@@ -1,6 +1,7 @@
 import { ClassValue } from "clsx";
 import { useCursor } from "../../context/CursorContext";
 import { cn } from "../../lib/utils";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type Props = {
   className?: ClassValue;
@@ -26,7 +27,10 @@ export default function Button({ className, children, onClick }: Props) {
       onMouseEnter={linkEnter}
       onMouseLeave={linkLeave}
       aria-label="Click to perform an action"
-      onClick={onClick}
+      onClick={() => {
+        sendGAEvent({ event: "buttonClicked", value: "component" });
+        onClick;
+      }}
       className={cn(
         "flex text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-Adam font-bold uppercase shadow-light dark:shadow-dark transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none",
         className

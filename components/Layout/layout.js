@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const Layout = ({ children }) => (
     <motion.div
@@ -12,6 +13,8 @@ const Layout = ({ children }) => (
         }}
     >
         {children}
+
+        <GoogleAnalytics gaId="G-Z9404XF3PJ" />
     </motion.div>
 );
 export default Layout;
