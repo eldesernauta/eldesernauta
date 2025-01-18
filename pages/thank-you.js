@@ -9,6 +9,7 @@ const contactImg = require('../src/img/contact_img.svg')
 
 const ThankYou = () => {
     const router = useRouter()
+
     return (
         <div className='bg-light bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]'>
             <Nav />
