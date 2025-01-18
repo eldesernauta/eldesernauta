@@ -15,12 +15,7 @@ const nextConfig = {
     },
     output: 'export', // Utilizado en Next.js 13 y posteriores para exportar un sitio estático
     trailingSlash: true,
-    api: {
-        bodyParser: {
-            sizeLimit: '1mb', // Ajusta el tamaño máximo permitido para el cuerpo
-        },
-    },
-    //useFileSystemPublicRoutes: false,
+
 }
 
 module.exports = nextConfig
