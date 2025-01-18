@@ -236,4 +236,8 @@ so that it is smooth among other more minor things */
       transform: rotate(1deg);
     }
   }
+
+  .scrollb {
+    scroll-behavior: smooth;
+  }
 }

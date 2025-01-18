@@ -1,7 +1,7 @@
 import { useCursor } from '../../context/CursorContext';
 import { motion } from 'framer-motion';
-import Button from '../Button/button';
-import Badge from '../Badge/badge'
+import { useRef } from 'react'; // Importar useRef
+import Badge from '../Badge/badge';
 import Link from 'next/link';
 
 import Work from '../Work/work';
@@ -10,13 +10,13 @@ import useDarkMode from '../utils/useDarkMode';
 
 import Image from 'next/image';
 
-const heroImg = require('../../src/img/hero_img.svg')
-const arrow = require('../../src/img/curl_arrow.svg')
+const heroImg = require('../../src/img/hero_img.svg');
+const arrow = require('../../src/img/curl_arrow.svg');
 
 const Hero = () => {
     const { setCursorText, setCursorVariant } = useCursor();
-
     const { isDarkMode, toggleDarkMode } = useDarkMode();
+    const workSectionRef = useRef(null); // Referencia para la sección #work
 
     const variants1 = {
         hidden: { filter: "blur(10px)", opacity: 0 },
@@ -53,8 +53,13 @@ const Hero = () => {
         setCursorVariant("default");
     }
 
-    return (
+    const handleScroll = () => {
+        if (workSectionRef.current) {
+            workSectionRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
+    return (
         <div className='scroll-smooth'>
             <section id="main" className={`scroll-smooth  w-full h-auto lg:h-[calc(100vh+50px)] 2xl:h-[calc(100vh+100px)] relative flex px-5 lg:px-8 2xl:px-0 pt-16 sm:pt-24 lg:pt-0 justify-center items-center ${isDarkMode ? 'bg-light' : 'bg-dark'} bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:50px_50px]`}>
                 <div className='container relative mx-auto flex flex-col lg:flex-row gap-8 justify-center items-center -translate-y-[0px] lg:-translate-y-[50px]'>
@@ -65,7 +70,6 @@ const Hero = () => {
                             onMouseEnter={contactEnter}
                             onMouseLeave={contactLeave}
                         >
-
                             <motion.h1
                                 initial="hidden"
                                 animate="visible"
@@ -76,7 +80,6 @@ const Hero = () => {
                                 Oscar I.<br />
                                 Rojas
                             </motion.h1>
-
                         </div>
                         <div className='w-full flex flex-col lg:flex-row items-center lg:items-start relative'>
                             <h2 className={`${isDarkMode ? 'text-dark' : 'text-light'} text-center lg:text-left font-Unbounded uppercase text-xl lg:text-2xl z-10`}>Frontend Developer</h2>
@@ -87,13 +90,13 @@ const Hero = () => {
                                 <Badge text={`n' film photographer`} className={`hidden font-Adam font-bold sm:block z-0 mt-2 lg:mt-0  ${isDarkMode ? 'bg-secondary text-light border-dark' : 'bg-accent border-light'} rotate-0 lg:rotate-12 translate-0 lg:-translate-x-4 lg:-translate-y-4`} />
                             </Link>
                         </div>
-                        <Link
-                            href='#work'
+                        <button
+                            onClick={handleScroll}
                             id='smooth'
                             className={`scroll-smooth hidden lg:flex text-text cursor-none items-center rounded-full border-2 border-border bg-main px-12 py-4 font-bold uppercase shadow-light dark:shadow-dark transition-all duration-300 hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none hoverable font-Adam ${isDarkMode ? 'shadow-dark border-dark bg-accent hover:bg-primary' : 'bg-warning hover:bg-accent shadow-light border-light'}`}
                         >
-                            Wanne see?
-                        </Link>
+                            Wanna see?
+                        </button>
                         <Image
                             src={arrow}
                             width={'100'}
@@ -119,14 +122,17 @@ const Hero = () => {
                 >
                     {isDarkMode ? '🌙' : '☀️'}
                 </button>
-
             </section>
 
-            <section id='work' className="scroll-smooth hidden lg:block z-20 lg:-translate-y-[50px] 2xl:-translate-y-[100px] bg-primary min-h-auto md:min-h-screen 2xl:min-h-[80vh]py-24 rounded-tl-3xl lg:rounded-tl-[50px] 2xl:rounded-tl-[100px] rounded-tr-3xl lg:rounded-tr-[50px] 2xl:rounded-tr-[100px]">
+            <section
+                id='work'
+                ref={workSectionRef} // Asignar la referencia aquí
+                className="scroll-smooth hidden lg:block z-20 lg:-translate-y-[50px] 2xl:-translate-y-[100px] bg-primary min-h-auto md:min-h-screen 2xl:min-h-[80vh]py-24 rounded-tl-3xl lg:rounded-tl-[50px] 2xl:rounded-tl-[100px] rounded-tr-3xl lg:rounded-tr-[50px] 2xl:rounded-tr-[100px]"
+            >
                 <Work />
             </section>
         </div>
     );
-}
+};
 
 export default Hero;
