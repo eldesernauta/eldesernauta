@@ -1,6 +1,6 @@
-# 🚀 Oscar I. Rojas Portfolio
+# 🚀 My portfolio
 
-Welcome to the repository of Oscar I. Rojas’ portfolio website, built with an emphasis on **neobrutalism aesthetics**, dynamic interactivity, and cutting-edge frontend technologies. Explore the live version here: [eldesernauta.com](https://eldesernauta.com).
+Welcome to the repository of my portfolio website, built with an emphasis on **neobrutalism aesthetics**, dynamic interactivity, and cutting-edge frontend technologies. Explore the live version here: [eldesernauta.com](https://eldesernauta.com).
 
 ---
 
@@ -18,7 +18,7 @@ The design embraces **bold, raw, and unapologetic elements**, showcasing:
 
 1. **Smooth Scrolling with Button Interaction**
 
-   - The "Wanna See?" button scrolls smoothly to the work section.
+   - Some buttons scrolls smoothly to specific sections.
    - Intuitive navigation ensures a seamless experience.
 
 2. **Dynamic Cursor Effects**
@@ -39,7 +39,7 @@ The design embraces **bold, raw, and unapologetic elements**, showcasing:
 
 6. **Hero Section**
 
-   - A bold introduction to Oscar’s work, complete with interactive badges and an eye-catching headline.
+   - A bold introduction to my work, complete with interactive badges and an eye-catching headline.
 
 7. **Work Section**
 
@@ -148,7 +148,7 @@ Deployed using **Vercel**, ensuring fast load times and global availability.
 
 ## 🧑‍🎨 Author
 
-**Oscar I. Rojas**
+**Oscar Rojas**
 
 - [Portfolio](https://eldesernauta.com)
 - [LinkedIn](https://www.linkedin.com/in/eldesernauta)
