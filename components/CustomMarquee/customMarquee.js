@@ -1,5 +1,6 @@
-import BaseMarquee from "./baseMarquee";
 import Image from "next/image";
+
+import BaseMarquee from "./baseMarquee";
 
 const separator = require('../../src/img/dotted.svg')
 

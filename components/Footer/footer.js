@@ -1,8 +1,9 @@
 import { Fragment, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { useCursor } from '../../context/CursorContext';
 import Link from "next/link";
+
+import { useCursor } from '../../context/CursorContext';
 
 const Footer = (props) => {
     const [year, setYear] = useState(new Date().getFullYear());

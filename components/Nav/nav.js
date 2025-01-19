@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 
 import { useCursor } from "../../context/CursorContext";
 
 import Drawer from "../Drawer/drawer";
-import Image from "next/image";
-import Link from "next/link";
 
 const infoImg = require("../../src/img/info_img.svg");
 

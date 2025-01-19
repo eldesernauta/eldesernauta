@@ -11,8 +11,6 @@ import { useCursor } from "../../context/CursorContext";
 import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
-import mainImg from '../../src/img/ddb_card.png';
-
 import challenge from '../../src/img/ddb_challenge.jpg';
 import process from '../../src/img/ddb_process.png';
 import solution from '../../src/img/ddb_solution.jpg';
@@ -114,13 +112,6 @@ const DDB = () => {
                 </div>
                 <div className="block lg:hidden container mx-auto z-10 p-0 px-5 pb-0">
                     <iframe src="https://ddbcol.com.co" frameBorder="0" width="100%" allowFullScreen className="h-[600px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
-                    {/* <Image
-                        src={mainImg}
-                        autoPlay
-                        muted
-                        loop
-                        className="w-full h-[600px] mx-auto rounded-2xl"
-                    /> */}
                 </div>
             </section>
 

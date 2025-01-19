@@ -1,10 +1,11 @@
 
-import { useCursor } from '../../context/CursorContext';
 import Image from 'next/image';
-
-import Button from '../Button/button'
 import { useRouter } from 'next/navigation'
+
+import { useCursor } from '../../context/CursorContext';
+
 import Badge from '../Badge/badge';
+import Button from '../Button/button'
 import Card from '../Card/card'
 
 const caseStudy1 = require('../../src/img/goo_card.png')
@@ -17,7 +18,6 @@ const dots = require('../../src/img/dots.svg')
 const bar = require('../../src/img/bar.svg')
 const cursor = require('../../src/img/cursor.svg')
 const flower = require('../../src/img/flower.svg')
-
 
 const WorkMobile = () => {
     const { setCursorText, setCursorVariant } = useCursor();

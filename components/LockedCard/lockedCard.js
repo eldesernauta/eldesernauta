@@ -1,5 +1,6 @@
-import { useCursor } from '../../context/CursorContext';
 import { motion } from "framer-motion";
+
+import { useCursor } from '../../context/CursorContext';
 
 const LockedCard = ({ bgColor, imgUrl, title, description, btnUrl }) => {
 

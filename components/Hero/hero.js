@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react'; // Importar useRef
 import Badge from '../Badge/badge';
 import Link from 'next/link';
-
-import Work from '../Work/work';
+import Image from 'next/image';
 
 import useDarkMode from '../utils/useDarkMode';
 
-import Image from 'next/image';
+import Work from '../Work/work';
+
+
 
 const heroImg = require('../../src/img/hero_img.svg');
 const arrow = require('../../src/img/curl_arrow.svg');

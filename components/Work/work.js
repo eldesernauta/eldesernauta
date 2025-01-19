@@ -3,8 +3,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRouter } from 'next/navigation'
 import Image from 'next/image';
-import Link from 'next/link'
-    ;
+import Link from 'next/link';
+
 import { useCursor } from '../../context/CursorContext';
 
 import Button from '../Button/button'
@@ -106,7 +106,7 @@ const Work = () => {
             <div className="relative lg:sticky lg:top-0 lg:min-h-screen space-y-16 lg:space-y-0 pb-24 ">
 
                 <div ref={progressBarRef} className="progress-bar absolute sm:right-0 md:right-12 lg:right-0 xl:right-0 2xl:right-32 top-0 w-1 bg-light-purple-goo z-900 translate-y-48 xl:translate-y-52 2xl:translate-y-56 rounded-xl hidden lg:block"></div>
-                <div className="absolute sm:right-0 md:right-12 lg:right-0 xl:right-0 2xl:right-32 h-[50%] top-0 w-1 bg-white-goo z-50 translate-y-48 xl:translate-y-52 2xl:translate-y-56 rounded-xl hidden lg:block"></div>
+                
                 {/* Section #1 */}
                 <section ref={section1Ref} className="stickycard lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)] left-0 relative z-30">
                     <div className="container mx-auto flex flex-col lg:h-full lg:flex-row space-y-8 space-y-reverse lg:space-y-0 lg:space-x-8 2xl:space-x-20">

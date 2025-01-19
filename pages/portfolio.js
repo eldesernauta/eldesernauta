@@ -46,24 +46,14 @@ const Portfolio = () => {
                     </div>
                     <div className="w-full flex flex-col lg:hidden gap-8 py-24 items-stretch">
 
-                        <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-8xl text-light flex lg:hidden mb-8 w-full'>The most interesting projects I've worked on</h2>
-                        <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
+                        <h2 className='font-Unbounded font-black text-4xl text-light flex lg:hidden mb-8 w-full'>The most interesting projects I've worked on</h2>
+                        <section className="w-full relative mt-8 px-0 flex flex-col gap-0">
 
                             <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
                                 <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
-                                    <div className="w-full flex justify-between items-start">
-                                        {/* <Image
-                                                src={logo1}
-                                                width={150}
-                                                className="brightness-0"
-                                                alt="logo goo"
-                                            /> */}
-                                        <h2 className='text-dark font-Unbounded text-5xl font-bold uppercase'>01</h2>
-                                    </div>
                                     <div className="w-full flex flex-col justify-between items-end">
-
-                                        <div className="w-full lg:w-[50%] flex flex-col items-start justify-start">
-                                            <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Goo Hub:</h3>
+                                        <div className="w-full flex flex-col items-start justify-start">
+                                            <h3 className="text-3xl font-bold w-full">Goo Hub:</h3>
                                             <p className="mt-4 font-Unbounded text-justify w-full">
                                                 Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
                                             </p>
@@ -81,23 +71,15 @@ const Portfolio = () => {
                             </div>
                         </section>
 
-                        <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
+                        <section className="w-full relative mt-8 px-0 flex flex-col gap-0">
 
                             <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 min-h-[500px] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
                                 <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
-                                    <div className="w-full flex justify-between items-start">
-                                        {/* <Image
-                                                src={logo2}
-                                                width={150}
-                                                className="brightness-0"
-                                                alt="logo goo"
-                                            /> */}
-                                        <h2 className='text-dark font-Unbounded text-5xl font-bold uppercase'>02</h2>
-                                    </div>
+
                                     <div className="w-full flex flex-col  justify-between items-end">
 
-                                        <div className="w-full lg:w-[50%] flex flex-col items-start justify-start">
-                                            <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Audi Spain:</h3>
+                                        <div className="w-full flex flex-col items-start justify-start">
+                                            <h3 className="text-3xl font-bold w-full">Audi Spain:</h3>
                                             <p className="mt-4 font-Unbounded text-justify w-full">
                                                 During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and,,,
                                             </p>
@@ -115,23 +97,14 @@ const Portfolio = () => {
                             </div>
                         </section>
 
-                        <section className="w-full relative mt-8 2xl:mt-12 px-0 flex flex-col gap-0">
+                        <section className="w-full relative mt-8 px-0 flex flex-col gap-0">
 
                             <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
                                 <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
-                                    <div className="w-full flex justify-between items-start">
-                                        {/* <Image
-                                                src={logo3}
-                                                width={150}
-                                                className="brightness-0 -translate-x-8 -translate-y-8"
-                                                alt="logo goo"
-                                            /> */}
-                                        <h2 className='text-dark font-Unbounded text-5xl font-bold uppercase'>03</h2>
-                                    </div>
                                     <div className="w-full flex flex-col  justify-between items-end">
 
-                                        <div className="w-full lg:w-[50%] flex flex-col items-start justify-start">
-                                            <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Incrustes:</h3>
+                                        <div className="w-full flex flex-col items-start justify-start">
+                                            <h3 className="text-3xl font-bold w-full">Incrustes:</h3>
                                             <p className="mt-4 font-Unbounded text-justify w-full">
                                                 Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and...
                                             </p>

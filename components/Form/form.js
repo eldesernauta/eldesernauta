@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-
 import emailjs from 'emailjs-com';
 
 import { useCursor } from "../../context/CursorContext";

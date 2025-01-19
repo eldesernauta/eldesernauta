@@ -11,7 +11,6 @@ import { useCursor } from "../../context/CursorContext";
 import Nav from "../../components/Nav/nav";
 import Footer from "../../components/Footer/footer";
 
-import mainImg from '../../src/img/incrustes_case.png';
 import challenge from '../../src/img/incrustes_challenge.jpg';
 import process from '../../src/img/incrustes_process.jpg';
 import solution from '../../src/img/incrustes_solution.png';
@@ -97,13 +96,6 @@ const Incrustes = () => {
                 </div>
                 <div className="block lg:hidden container mx-auto z-10 p-0 px-5 pb-0">
                     <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" allowFullScreen className="h-[600px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
-                    {/* <Image
-                        src={mainImg}
-                        autoPlay
-                        muted
-                        loop
-                        className="w-full h-[600px] mx-auto rounded-2xl"
-                    /> */}
                 </div>
             </section>
 
