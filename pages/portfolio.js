@@ -48,78 +48,84 @@ const Portfolio = () => {
 
                         <h2 className='font-Unbounded font-black text-4xl text-light flex lg:hidden mb-8 w-full'>The most interesting projects I've worked on</h2>
                         <section className="w-full relative mt-8 px-0 flex flex-col gap-0">
-
-                            <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
-                                <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
-                                    <div className="w-full flex flex-col justify-between items-end">
-                                        <div className="w-full flex flex-col items-start justify-start">
-                                            <h3 className="text-3xl font-bold w-full">Goo Hub:</h3>
-                                            <p className="mt-4 font-Unbounded text-justify w-full">
-                                                Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
-                                            </p>
+                            <Link
+                                href={'/portfolio/goo'}>
+                                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
+                                    <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
+                                        <div className="w-full flex flex-col justify-between items-end">
+                                            <div className="w-full flex flex-col items-start justify-start">
+                                                <h3 className="text-3xl font-bold w-full">Goo Hub:</h3>
+                                                <p className="mt-4 font-Unbounded text-justify w-full">
+                                                    Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
+                                                </p>
+                                            </div>
+                                            <Button
+                                                onClick={() => {
+                                                    router.push('/portfolio/goo')
+                                                }}
+                                                className={`w-full mt-8 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
+                                            >
+                                                Wanne see?
+                                            </Button>
                                         </div>
-                                        <Button
-                                            onClick={() => {
-                                                router.push('/portfolio/goo')
-                                            }}
-                                            className={`w-full mt-8 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
-                                        >
-                                            Wanne see?
-                                        </Button>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </section>
 
                         <section className="w-full relative mt-8 px-0 flex flex-col gap-0">
+                            <Link
+                                href={'/portfolio/ddb'}>
+                                <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
+                                    <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
 
-                            <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 min-h-[500px] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
-                                <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
+                                        <div className="w-full flex flex-col  justify-between items-end">
 
-                                    <div className="w-full flex flex-col  justify-between items-end">
-
-                                        <div className="w-full flex flex-col items-start justify-start">
-                                            <h3 className="text-3xl font-bold w-full">Audi Spain:</h3>
-                                            <p className="mt-4 font-Unbounded text-justify w-full">
-                                                During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and,,,
-                                            </p>
+                                            <div className="w-full flex flex-col items-start justify-start">
+                                                <h3 className="text-3xl font-bold w-full">Audi Spain:</h3>
+                                                <p className="mt-4 font-Unbounded text-justify w-full">
+                                                    During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and,,,
+                                                </p>
+                                            </div>
+                                            <Button
+                                                onClick={() => {
+                                                    router.push('/portfolio/ddb')
+                                                }}
+                                                className={`w-full mt-8 text-center flex justify-center hoverable bg-primary hover:bg-warning shadow-dark border-dark`}
+                                            >
+                                                Wanne see?
+                                            </Button>
                                         </div>
-                                        <Button
-                                            onClick={() => {
-                                                router.push('/portfolio/ddb')
-                                            }}
-                                            className={`w-full mt-8 text-center flex justify-center hoverable bg-primary hover:bg-warning shadow-dark border-dark`}
-                                        >
-                                            Wanne see?
-                                        </Button>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </section>
 
                         <section className="w-full relative mt-8 px-0 flex flex-col gap-0">
+                            <Link
+                                href={'/portfolio/incrustes'}>
+                                <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
+                                    <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
+                                        <div className="w-full flex flex-col  justify-between items-end">
 
-                            <div className="flex bg-primary hover:bg-accent transition-all duration-700 z-10 min-h-[500px] rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
-                                <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
-                                    <div className="w-full flex flex-col  justify-between items-end">
-
-                                        <div className="w-full flex flex-col items-start justify-start">
-                                            <h3 className="text-3xl font-bold w-full">Incrustes:</h3>
-                                            <p className="mt-4 font-Unbounded text-justify w-full">
-                                                Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and...
-                                            </p>
+                                            <div className="w-full flex flex-col items-start justify-start">
+                                                <h3 className="text-3xl font-bold w-full">Incrustes:</h3>
+                                                <p className="mt-4 font-Unbounded text-justify w-full">
+                                                    Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using React, Tailwind, and...
+                                                </p>
+                                            </div>
+                                            <Button
+                                                onClick={() => {
+                                                    router.push('/portfolio/incrustes')
+                                                }}
+                                                className={`w-full mt-8 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
+                                            >
+                                                Wanne see?
+                                            </Button>
                                         </div>
-                                        <Button
-                                            onClick={() => {
-                                                router.push('/portfolio/incrustes')
-                                            }}
-                                            className={`w-full mt-8 text-center flex justify-center hoverable bg-warning hover:bg-primary shadow-dark border-dark`}
-                                        >
-                                            Wanne see?
-                                        </Button>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </section>
                     </div>
                 </section>
