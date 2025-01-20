@@ -104,14 +104,11 @@ Visit the live site: [eldesernauta.com](https://eldesernauta.com)
  Footer/
  Hero/
  HorizontalScroll/
- Input/
  Layout/
  LockedCard/
  Nav/
  SmoothScrolling/
- Textarea/
  utils/
- Values/
  Work/
  WorkMobile/
 /context
