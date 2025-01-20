@@ -79,7 +79,7 @@ const Portfolio = () => {
                                 <div className="flex bg-warning hover:bg-accent transition-all duration-700 z-10 rounded-xl shadow-light items-between justify-start gap-20 mx-auto border-2 border-light p-8 sm:p-12">
                                     <div className='w-full flex flex-col justify-between gap-8 md:gap-0'>
 
-                                        <div className="w-full flex flex-col  justify-between items-end">
+                                        <div className="w-full flex flex-col justify-between items-end">
 
                                             <div className="w-full flex flex-col items-start justify-start">
                                                 <h3 className="text-3xl font-bold w-full">Audi Spain:</h3>
@@ -136,7 +136,7 @@ const Portfolio = () => {
                         <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark hidden sm:flex mb-8'>More, but not</h2>
                         <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark hidden sm:flex'>least<span className='px-8 py-4 text-4xl lg:text-5xl xl:text-6xl text-light bg-primary hover:bg-accent font-black transition-all duration-300 rounded-full border-2 border-dark -mx-4 -rotate-12'>interesting</span>projects</h2>
                     </div>
-                    <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+                    <div className="container mx-auto flex flex-col-reverse lg:flex-row gap-8">
                         <div className="w-full lg:w-3/6 flex items-center">
                             <div className="w-full flex flex-col gap-8">
 
