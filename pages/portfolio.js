@@ -82,7 +82,7 @@ const Portfolio = () => {
                                         <div className="w-full flex flex-col justify-between items-end">
 
                                             <div className="w-full flex flex-col items-start justify-start">
-                                                <h3 className="text-3xl font-bold w-full">Audi Spain:</h3>
+                                                <h3 className="text-3xl font-bold w-full">DDB Colombia:</h3>
                                                 <p className="mt-4 font-Unbounded text-justify w-full">
                                                     During my time at DDB Colombia, I worked with globally recognized brands like Audi, Estée Lauder, Tom Ford, and others. These experiences taught me the importance of attention to detail and,,,
                                                 </p>
