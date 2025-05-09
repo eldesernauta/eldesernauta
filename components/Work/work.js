@@ -126,7 +126,7 @@ const Work = () => {
                                         </div>
                                         <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                         <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
-                                            <span className='font-bold'>Goo Hub</span>, a digital marketing agency, needed a cutting-edge online presence to highlight its dynamic services, including UX/UI design, full-stack development, and digital marketing...
+                                            <span className='font-medium'>Goo Hub</span>, a digital marketing agency, needed a cutting-edge online presence to highlight its dynamic services, including UX/UI design, full-stack development, and digital marketing...
                                         </p>
 
                                         <Button
@@ -191,7 +191,7 @@ const Work = () => {
 
                                         <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                         <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
-                                            During my time at DDB Colombia, I've worked with globally recognized brands like <span className='font-bold'>Audi</span>, <span className='font-bold' s>Estée Lauder</span>, <span className='font-bold' s>Repsol</span>, <span className='font-bold' s>Tom Ford</span>, and others. These experiences taught me the importance of attention to detail and prepared me to face complex challenges head-on.
+                                            During my time at DDB Colombia, I've worked with globally recognized brands like <span className='font-medium'>Audi</span>, <span className='font-medium' s>Estée Lauder</span>, <span className='font-medium' s>Repsol</span>, <span className='font-medium' s>Tom Ford</span>, and others. These experiences taught me the importance of attention to detail and prepared me to face complex challenges head-on.
                                         </p>
 
                                         <Button
@@ -256,7 +256,7 @@ const Work = () => {
 
                                         <hr className='w-3/6 mt-6 h-2 bg-primary' />
                                         <p className="text-dark my-10 text-lg font-Unbounded font-light text-justify z-0">
-                                            Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using <span className='font-bold'>React</span>, <span className='font-bold'>Tailwind</span>, and <span className='font-bold'>GSAP</span>, ensuring every element was faithfully implemented.
+                                            Incrustes, one of my colleagues specializing in UX/UI design, created a detailed prototype in Figma for this project. I collaborated with him to bring his vision to life using <span className='font-medium'>React</span>, <span className='font-medium'>Tailwind</span>, and <span className='font-medium'>GSAP</span>, ensuring every element was faithfully implemented.
                                         </p>
                                         <Button
                                             onClick={() => {
