@@ -32,7 +32,22 @@
 
   @font-face {
     font-family: Unbounded;
+    font-weight: 900;
     src: url("../src/fonts/Unbounded/Unbounded-Black.ttf") format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Unbounded;
+    font-weight: bold;
+    src: url("../src/fonts/Unbounded/Unbounded-Bold.ttf") format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: Unbounded;
+    font-weight: medium;
+    src: url("../src/fonts/Unbounded/Unbounded-Medium.ttf") format("truetype");
     font-display: swap;
   }
 

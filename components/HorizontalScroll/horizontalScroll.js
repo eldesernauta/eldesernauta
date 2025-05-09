@@ -107,7 +107,7 @@ function Lenis() {
                                 <div className="w-full 2xl:w-[50%] flex flex-col items-start justify-start">
                                     <h3 className="text-3xl lg:text-2xl xl:text-3xl font-bold w-full">Goo Hub:</h3>
                                     <p className="mt-4 font-Unbounded font-Light w-full">
-                                        Goo Hub is a digital marketing agency where quality and affordability come together, offering services such as UX/UI design, fullstack web development, and tailored digital marketing strategies.
+                                        Goo Hub, a digital marketing agency, needed a cutting-edge online presence to highlight its dynamic services, including UX/UI design, full-stack development, and digital marketing...
                                     </p>
                                 </div>
                                 <Button

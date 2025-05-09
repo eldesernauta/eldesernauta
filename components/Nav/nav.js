@@ -190,8 +190,8 @@ export default function Nav() {
             </div>
 
           </div>
-          <div className=" absolute bottom-8 right-8 w-full flex gap-8 justify-end items-center order-3">
-            <h6 className="font-Adam">Found me at:</h6>
+          <div className=" absolute bottom-8 right-8 w-full flex gap-4 justify-end items-center order-3">
+            <h6 className="font-Adam">Just follow me:</h6>
             <Link href="https://linkedin.com/in/eldesernauta" target="_blank">
               <FontAwesomeIcon
                 onMouseEnter={linkEnter}

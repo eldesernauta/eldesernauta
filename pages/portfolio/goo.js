@@ -103,14 +103,14 @@ const Goo = () => {
                     <h1 className="text-dark font-Unbounded text-left text-4xl sm:text-5xl lg:text-6xl font-bold leading-[30px] md:leading-[60px] w-full">
                         Goo Hub case study
                     </h1>
-                    <h3 className="text-2xl font-bold text-dark">Revolutionizing digital marketing with interactivity and innovation</h3>
-                    <p className="text-black font-Adam text-lg text-justify">Goo Hub, a digital marketing agency, needed a cutting-edge online presence to reflect its dynamic services, including UX/UI design, full-stack web development, and digital marketing strategies. From crafting unique logos to designing impactful websites, this project was built from scratch to deliver a fully interactive experience.</p>
+                    <h3 className="text-2xl font-bold text-dark">Revolutionizing Digital Marketing with Interactivity and Innovation</h3>
+                    <p className="text-black font-Adam text-lg text-justify">Goo Hub, a digital marketing agency, needed a cutting-edge online presence to highlight its dynamic services, including UX/UI design, full-stack development, and digital marketing strategy. From crafting unique logos to building impactful websites, this project delivers an interactive user experience that blends creativity, functionality, and innovation, setting the stage for Goo Hub’s continued digital growth.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
-                    <iframe src="https://dev.goohub.digital/servicios" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
+                    <iframe src="https://goohub.digital/servicios" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
                 </div>
                 <div className="block lg:hidden container mx-auto z-10 p-0 px-5 pb-0">
-                    <iframe src="https://dev.goohub.digital/servicios" frameBorder="0" width="100%" allowFullScreen className="h-[700px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
+                    <iframe src="https://goohub.digital/servicios" frameBorder="0" width="100%" allowFullScreen className="h-[700px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
                 </div>
             </section>
 
@@ -148,7 +148,7 @@ const Goo = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Challenge</h3>
-                            <p className="text-white text-center lg:text-justify text-lg font-Adam"><strong>Goo Hub</strong> approached us with a vision to showcase their services in a way that stood out in the competitive digital marketing space. The challenge was to create a website that combined seamless interactivity with bold, modern visuals while maintaining excellent performance and usability.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam"><strong>Goo Hub</strong> approached us with a vision to showcase their services in a way that stood out in the competitive digital marketing space. Our challenge was to design a website that combined seamless interactivity and bold, modern visuals while outstanding performance and usability.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Swiper
@@ -206,13 +206,13 @@ const Goo = () => {
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Process</h3>
                             <ol className="list-decimal">
                                 <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Conceptualization: </strong>
-                                    We started by analyzing Goo Hub’s unique selling points and crafting a design that reflected their innovative approach to digital marketing.</li>
+                                    We began by analyzing Goo Hub’s unique selling points and crafting a design that captured and amplified their innovative approach to digital marketing.</li>
                                 <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Tools and Technologies: </strong>
-                                    The project utilized <strong>Next.js</strong> for server-rendered performance, <strong>Tailwind CSS</strong> for responsive design, and <strong>GSAP</strong> alongside <strong>Framer Motion</strong> to bring dynamic animations to life. <strong>Splin</strong>e and <strong>Matter.js</strong> were employed to create interactive 3D elements and physics-based interactions.</li>
+                                    Leveraging technologies like Next.js for server-side rendering and Tailwind CSS for responsive, modern design, we brought dynamic animations to life with GSAP and Framer Motion, while interactive 3D elements and physics-based experiences were created using Spline and Matter.js.</li>
                                 <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Prototyping: </strong>
-                                    Detailed wireframes and prototypes were developed to align the design with Goo Hub's goals, ensuring a user-friendly interface.</li>
+                                    Detailed wireframes and interactive prototypes were developed to ensure that every design decision aligned with Goo Hub’s business goals and enhanced the user experience.</li>
                                 <li className="text-white text-center lg:text-justify text-lg my-2 font-Adam"><strong>Development: </strong>
-                                    Every line of code was meticulously written, implementing the designs and animations to deliver a flawless experience across all devices.</li>
+                                    We meticulously translated the design and animation concepts into clean, optimized code, ensuring a flawless, responsive experience across all devices.</li>
                             </ol>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
@@ -263,7 +263,7 @@ const Goo = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Solution</h3>
-                            <p className="text-white text-center lg:text-justify text-lg font-Adam">We addressed the challenge by integrating advanced interactive elements such as 3D models and smooth, immersive animations. Matter.js was used for physics-based interactions, ensuring a playful yet professional feel. GSAP and Framer Motion brought life to transitions, making every user interaction intuitive and engaging.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">We addressed the challenge by integrating advanced interactive elements such as 3D models, smooth animations, and immersive transitions, creating a playful yet professional user experience. Carefully engineered physics-based interactions and dynamic motion effects made every engagement intuitive, responsive, and aligned with Goo Hub’s bold digital vision.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Image
@@ -280,7 +280,7 @@ const Goo = () => {
                     >
                         <div className="w-6/6 lg:w-3/6 flex flex-col items-start justify-center gap-5">
                             <h3 className="text-2xl text-center lg:text-left w-full font-bold text-white">Result</h3>
-                            <p className="text-white text-center lg:text-justify text-lg font-Adam">The final product was a visually stunning and highly interactive website that not only captured Goo Hub's brand essence but also elevated the user experience. With seamless navigation, responsive design, and bold animations, the site now serves as a testament to Goo Hub's creativity and commitment to quality.</p>
+                            <p className="text-white text-center lg:text-justify text-lg font-Adam">The final product is a visually dynamic and highly interactive website that captures Goo Hub's brand essence and elevates the user experience. With seamless navigation, responsive design, and bold animations, the site stands as a testament to Goo Hub's creativity and commitment to quality.</p>
                         </div>
                         <div className="w-6/6 lg:w-3/6 flex items-center justify-center">
                             <Swiper

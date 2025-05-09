@@ -27,17 +27,17 @@ export default function Home() {
 
   const itemsAccordion = [
     {
-      question: "I studied this out of context career...",
+      question: "Pursued an unexpected career...",
       answer: "Studying advertising may seem out of context for a frontend developer, but it provides a unique perspective. It taught me how to understand user behavior, design compelling visuals, and create engaging narratives—skills that perfectly complement the technical aspects of web development. This background helps me craft not just functional websites but experiences that truly connect with users.",
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
     {
-      question: "I'm a master!",
+      question: "Became a master!",
       answer: "I completed a Master’s in Fullstack Web Development at the University of Catalonia. This intensive program deepened my expertise in both frontend and backend technologies, equipping me with the skills to design scalable, efficient, and dynamic web applications. It was a transformative experience that solidified my passion for coding and innovation.",
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
     {
-      question: "Moreover, I've also studied...",
+      question: "Moreover...",
       answer: "I also explored the world of Cinematography at the Universidad Tecnologica de Pereira. This creative endeavor sharpened my eye for aesthetics, storytelling, and visual composition. These skills greatly enhance my ability to design visually stunning websites and create interactive user experiences that captivate and inspire.",
       bgColor: 'bg-warning hover:bg-primary focus:bg-primary transition-all duration-500'
     },
@@ -76,8 +76,8 @@ export default function Home() {
     <>
       <Nav />
       <Layout>
-        <Hero />
 
+        <Hero />
 
         <section className="block lg:hidden bg-primary min-h-auto rounded-tl-0 rounded-tr-0">
           <WorkMobile />
@@ -181,12 +181,13 @@ export default function Home() {
             </div>
             <div className='w-full lg:w-3/6 flex flex-col gap-4 justify-center items-start'>
               <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-2 lg:mb-4'>What I have</h2>
-              <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-8'>
-                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-dark hover:text-warning bg-accent hover:bg-dark transition-all duration-300 rounded-full border-2 border-accent hover:border-dark -mt-3 mr-4'>
-                  done
+              <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex'>
+                <span className='px-8 py-2 text-4xl lg:text-5xl xl:text-7xl text-dark hover:text-warning bg-accent hover:bg-dark transition-all duration-300 rounded-full border-2 border-accent hover:border-dark -mt-3 -ml-10'>
+                  accomplished
                 </span>
-                so far.
               </h2>
+              <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-dark flex mb-2 lg:mb-4'>so far...</h2>
+
               {itemsAccordion.map((item, index) => (
                 <Accordion
                   key={index}
@@ -205,7 +206,7 @@ export default function Home() {
         <section id="contact" className='w-full pb-12 lg:pb-24 pt-12 lg:pt-24 px-5 lg:px-8 2xl:px-0 bg-dark flex justify-center items-center rounded-tl-[100px] rounded-tr-[100px]'>
           <div className='container mx-auto'>
             <Card width='w-full bg-primary hover:bg-warning transition-all duration-700' className='w-full mb-12 bg-primary'>
-              <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl'>Put in touch!</h2>
+              <h2 className='font-Unbounded font-black text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl'>Let's get in touch!</h2>
               <p className='w-full font-Adam text-lg lg:w-3/6 mt-4 mb-8'>Are you looking for a freelance or a full time web developer? Just send me a message and I'll hit you up ASAP!</p>
               <Form />
             </Card>
