@@ -92,10 +92,10 @@ const Incrustes = () => {
                     <p className="text-black text-lg text-justify font-Adam">In collaboration with <strong>Incrustes</strong> (Andres Sanchez), a talented UX/UI designer, I developed a website that flawlessly captured the bold and creative essence of his Figma prototype. Utilizing <strong>React, Tailwind, GSAP</strong>, and <strong>Framer Motion</strong>, we created an immersive and highly interactive site that stands out for its sleek functionality and thoughtful design elements.</p>
                 </div>
                 <div className="hidden lg:block container mx-auto z-10 p-0 px-5 pb-0">
-                    <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
+                    <iframe src="https://andresuidesign.com" frameBorder="0" width="100%" height="800px" allowFullScreen className="rounded-xl"></iframe>
                 </div>
                 <div className="block lg:hidden container mx-auto z-10 p-0 px-5 pb-0">
-                    <iframe src="https://incrustesdesign.com" frameBorder="0" width="100%" allowFullScreen className="h-[600px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
+                    <iframe src="https://andresuidesign.com" frameBorder="0" width="100%" allowFullScreen className="h-[600px] sm:h-[800px] md:h-[900px] rounded-xl"></iframe>
                 </div>
             </section>
 

@@ -17,7 +17,7 @@ import HorizontalScroll from '../components/HorizontalScroll/horizontalScroll';
 const caseStudy1 = require('../src/img/lce_card.png');
 const caseStudy2 = require('../src/img/toro_card.png');
 const caseStudy3 = require('../src/img/monarch_card.png');
-const caseStudy4 = require('../src/img/audi_card.png');
+const caseStudy4 = require('../src/img/mompli_card.png');
 
 const Portfolio = () => {
     const { setCursorText, setCursorVariant } = useCursor()
@@ -142,16 +142,16 @@ const Portfolio = () => {
 
                                 <Card width="w-auto bg-secondary relative">
                                     <div className='w-full flex justify-start items-center'>
-                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px]">Audi Spain</h3>
+                                        <h3 className="text-3xl md:text-7xl text-dark font-bold leading-[100px]">Mompli</h3>
 
-                                        <Badge text='AEM' className='h-auto font-Adam font-medium bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
+                                        <Badge text='React' className='h-auto font-Adam font-medium bg-primary border-dark -rotate-12 -translate-x-12 translate-y-6' />
                                     </div>
                                     <hr className='w-3/6 mt-6 h-2 border-none bg-primary' />
                                     <p className="text-light my-10 font-Adam text-lg text-justify z-0">
-                                        During my tyme at <strong>DDB Colombia</strong>, I had the opportunity to work with large companies like <strong>Audi, Estee Lauder, Tom Ford, MAC</strong> and much other companies that improved my attention to the detail.
+                                        Working on the Mompli project has allowed me to grow as a frontend developer by building a complete website focused on regulatory compliance and certifications with entities like INVIMA and other regulators in Colombia.
                                     </p>
                                     <p className="text-light hidden 2xl:block my-10 font-Adam text-lg text-justify z-0">
-                                        Not only developing but also working with several CMS, creating email campaings, HTML layouts or a bunch of other cool jobs that teached me a lot.
+                                        This project combines <strong>React</strong> for its component-based structure, <strong>Tailwind CSS</strong> for rapid styling with a utility-first approach, and <strong>GSAP animations</strong> to create smooth transitions and interactive panels.
                                     </p>
 
                                 </Card>
